@@ -196,5 +196,23 @@ body{
     margin-left: 441px;
 }
 
+/*---------------*/
+
+.red-block{
+    margin-top: 80px;
+}
+
+.red-block__grid{
+    width: 1170px;
+}
+
+.red-block__one-block{
+    width: 1170px;
+    height: 340px;
+    background:rgba(255,69,69,0.5);
+}
+
+
+
 
 
