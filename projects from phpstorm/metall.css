@@ -20,6 +20,11 @@
     border: 2px solid #FF4545;
 }
 
+.grid--arm-span{
+    width: 1170px;
+    margin: 0 auto;
+}
+
 /*----------*/
 body{
     margin: 0;
@@ -147,7 +152,6 @@ body{
 /*______*/
 
 .catalog__grid{
-    width: 1170px;
     height: 502px;
 }
 
@@ -198,25 +202,20 @@ body{
 
 /*---------------*/
 
-/*
-.red-block{
+.safety{
     margin-top: 80px;
 }
-
-.red-block__grid{
-    width: 1170px;
+.safety__grid{
     height: 340px;
     display: flex;
 }
 
-.red-block__one-block{
-    width: 1170px;
-    height: 340px;
+.safety__container{
+    width: inherit;
+    height: inherit;
     background:rgba(255,69,69,0.5);
-    display: flex;
 }
-
-.red-block__frame{
+.safety__frame{
     width: 1150px;
     height: 320px;
     box-sizing: border-box;
@@ -226,15 +225,56 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.red-block__logo{
+.safety__logo{
     background-image: url("img/lesson10/rgba_logo.png");
     width: 202px;
     height: 240px;
 }
 
-*/
+.safety__text-box{
+    display: flex;
+    flex-direction: column;
+}
+.safety--text-general-properties{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: absolute;
+    color: #303030;
+}
+.safety__title{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40%;
+    text-align: center;
+    top: 54px;
+    left: 301px;
+}
+.safety__description{
+    text-align: center;
+    top: 92px;
+    left: 109px;
+}
+.safety__list{
+    top: 162px;
+    left: 227px;
+    padding-inline-start: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 .test{
     margin-top: 300px;
