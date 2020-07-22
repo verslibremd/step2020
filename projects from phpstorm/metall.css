@@ -204,15 +204,39 @@ body{
 
 .red-block__grid{
     width: 1170px;
+    height: 340px;
+    display: flex;
 }
 
 .red-block__one-block{
     width: 1170px;
     height: 340px;
     background:rgba(255,69,69,0.5);
+    display: flex;
 }
 
+.red-block__frame{
+    width: 1150px;
+    height: 320px;
+    box-sizing: border-box;
+    border: 10px solid #FFFFFF;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.red-block__logo{
+    background-image: url("img/lesson10/rgba_logo.png");
+    width: 202px;
+    height: 240px;
+}
 
-
+.test{
+    margin-top: 300px;
+    width: inherit;
+    height: 1000px;
+    background-color: #4F5BB8;
+}
 
