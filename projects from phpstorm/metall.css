@@ -296,28 +296,84 @@ body{
     margin-block-start: 0;
     margin-block-end: 0;
     margin-left: 70px;
+    margin-bottom: 60px;
 }
 
 .catalog__container{
     width: 1170px;
     height: 328px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
-
 .container-long-products{
     background-image: url("img/lesson10/catalog-one-container.png");
-    margin-top: 60px;
 }
-
 .catalog__box{
     width: 240px;
     height: 100px;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50%;
+    color: #303030;
+    cursor: pointer;
+    white-space: pre-wrap;
+}
+.catalog__box:hover{
+    background-color: #FF4545;
+    color:#FFFFFF;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.25);
+}
+.catalog__container-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40%;
+    color: #FFFFFF;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 30px;
+    margin-bottom: 27px;
+    margin-left: 69px;
+}
+.catalog__wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 70px;
+}
+.catalog__box--margin-right{
+    margin-right: 23px;
+}
+.catalog__box--margin-top{
+    margin-top: 23px;
+}
+.catalog__box--text-align{
+  line-height: 1;
 }
 
 
+
+
+
+
+
+
+
+.container-pipe-rolling{
+    background-image: url("img/lesson10/catalog-two-container.png");
+}
+
+
+
+
+.container-sheet-metal{
+    background-image: url("img/lesson10/catalog-three-container.png");
+}
 
 
 
