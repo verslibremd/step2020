@@ -275,7 +275,6 @@ body{
 /*----------------*/
 .catalog{
     margin-top: 120px;
-    background-color: burlywood;
 }
 
 .catalog__title{
@@ -300,7 +299,7 @@ body{
 }
 
 .catalog__container{
-    width: 1170px;
+    width: inherit;
     height: 328px;
     display: flex;
     flex-direction: column;
@@ -309,6 +308,14 @@ body{
 .container-long-products{
     background-image: url("img/lesson10/catalog-one-container.png");
 }
+.container-pipe-rolling{
+    background-image: url("img/lesson10/catalog-two-container.png");
+}
+.container-sheet-metal{
+    background-image: url("img/lesson10/catalog-three-container.png");
+    margin-bottom: 0;
+}
+
 .catalog__box{
     width: 240px;
     height: 100px;
@@ -321,8 +328,8 @@ body{
     font-weight: bold;
     line-height: 50%;
     color: #303030;
-    cursor: pointer;
     white-space: pre-wrap;
+    cursor: pointer;
 }
 .catalog__box:hover{
     background-color: #FF4545;
@@ -356,24 +363,98 @@ body{
   line-height: 1;
 }
 
+/*----------------*/
+
+.specials__grid{
+    margin-top: 100px;
+    height: 605px;
+    background-color: antiquewhite;
+}
+
+.specials__title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    line-height: 100%;
+    color: #303030;
+    margin-bottom: 107px;
+    margin-left: 57px;
+}
 
 
+.specials__content{
+    display: flex;
+    flex-direction: row;
+}
 
+.product-item{
+    box-sizing: border-box;
+    width: 250px;
+    height: 380px;
+    background: #FFFFFF;
+    border: 2px solid #FF4545;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 47px;
+}
 
+.product-name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50%;
+    color: #303030;
+    text-align: center;
+    margin-block-end: 0;
+}
 
+.product-har{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 50%;
+    color: #303030;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
 
+.product-one{
+    width: 245px;
+    height: 165px;
+    background-image: url("img/lesson10/product-item-one.png");
+    align-items: center;
+}
 
+.cost{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    color: #303030;
+}
 
-.container-pipe-rolling{
-    background-image: url("img/lesson10/catalog-two-container.png");
+.button-cost{
+    width: 248px;
+    height: 68px;
+    background: #FF4545;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    border: none;
+    padding: 0;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 
 
 
-.container-sheet-metal{
-    background-image: url("img/lesson10/catalog-three-container.png");
-}
 
 
 
