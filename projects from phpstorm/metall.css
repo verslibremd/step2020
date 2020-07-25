@@ -426,7 +426,18 @@ body{
     background-image: url("img/lesson10/product-item-one.png");
     align-items: center;
 }
-
+.product-two{
+    width: 242px;
+    height: 166px;
+    align-items: center;
+    background-image: url("img/lesson10/product-item-two.png");
+}
+.product-four{
+    width: 157px;
+    height: 157px;
+    background-image: url("img/lesson10/product-item-four.png");
+    align-self: center;
+}
 .cost{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
