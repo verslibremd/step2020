@@ -491,6 +491,7 @@ body{
     font-weight: normal;
     color: #303030;
     margin-block-start: 0;
+    margin-block-end: 0 ;
     text-align: center;
     margin-top: 95px;
 }
@@ -504,24 +505,43 @@ body{
     color: rgba(48,48,48,0.8);
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .points{
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
+    justify-content: space-between;
+    margin-top: 63px;
+    margin-left: 10px;
 }
 
 .points__block{
     width: 250px;
     height: 185px;
-    background-color: aquamarine;
-    margin-right: 47px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .points__block--height{
     height: 173px;
+    margin-right: 0;
+}
+
+.points__img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    align-self: center;
+}
+.points__img--two-width{
+    width: 90px;
+}
+.points__img--three-width{
+    width: 68px;
+}
+.points__img--four-width{
+    width: 110px;
 }
 
 .points__text{
@@ -531,12 +551,8 @@ body{
     line-height: 100%;
     text-align: center;
     color: #303030;
+    margin-top: 20px;
 }
-
-.points__text:before{
-    content: url("img/lesson10/points__img-one-block.png");
-}
-
 
 
 
