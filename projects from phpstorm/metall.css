@@ -863,15 +863,55 @@ form p {
     margin-bottom: 20px;
 }
 
+/*--------------*/
 
-
-
-
-
-.test{
-    margin-top: 300px;
-    width: inherit;
-    height: 1000px;
-    background-color: #4F5BB8;
+.black-block__grid--end{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.black-block-end--text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 70%;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.black-block-end__brand{
+    margin-right: 60px;
+    align-items: center;
+}
+
+.black-block-end__inn{
+    margin-right: 20px;
+}
+.black-block-end__ogrn{
+    margin-right: 282px;
+}
+
+.black-block-end__img-one{
+    width: 100px;
+    height: 31px;
+}
+
+.black-block-end__img-two{
+    width: 133px;
+    height: 40px;
+}
+.black-block-end__img-three{
+    width: 115px;
+    height: 45px;
+}
+
+.black-block-end__img-four{
+    width: 50px;
+    height: 45px;
+}
+
+.pict-margin{
+    margin-right: 6px;
+}
