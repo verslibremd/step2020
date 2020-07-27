@@ -63,6 +63,10 @@ body{
     font-weight: 700;
     color: #FFFFFF;
 }
+.black-block__link:hover{
+    color: #303030;
+}
+
 .black-block__link::before{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
@@ -145,6 +149,10 @@ body{
     color: #303030;
     margin-top: 27px;
 }
+.header__tel:hover{
+   color: #FF4545;
+}
+
 .header__tel::before {
     content: url("img/lesson10/header-tell.png");
     margin-right: 8px;
@@ -887,7 +895,6 @@ form p {
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .black-block-end--text{
@@ -914,6 +921,7 @@ form p {
 .black-block-end__img-one{
     width: 100px;
     height: 31px;
+    margin-top: 5px;
 }
 
 .black-block-end__img-two{
@@ -923,11 +931,12 @@ form p {
 .black-block-end__img-three{
     width: 115px;
     height: 45px;
+    margin-bottom: 3px;
 }
 
 .black-block-end__img-four{
     width: 50px;
-    height: 45px;
+    height: 40px;
 }
 
 .pict-margin{
