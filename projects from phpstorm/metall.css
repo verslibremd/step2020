@@ -1,5 +1,18 @@
+body{
+    margin: 0;
+}
 
-.button{                /*кнопка*/
+.grid{                                      /* сетка */
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.grid--arm-span{                            /* большая сетка */
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.button{                                    /*кнопка*/
     width: 211px;
     height: 50px;
     font-family: 'Russo One', sans-serif;
@@ -8,27 +21,34 @@
     cursor: pointer;
 }
 
-.button--pink-background{
+.button--pink-background{                   /* розовая кнопка */
     background-color: #FF4545;
     color: #FFFFFF;
     border: none;
 }
 
-.button--pink-border-fon-white{
+.button--pink-border-fon-white{        /* кнопка с розовым бордером */
     background-color: #FFFFFF;
     color: #FF4545;
     border: 2px solid #FF4545;
 }
 
-.grid--arm-span{
-    width: 1170px;
-    margin: 0 auto;
+.title{                                       /* заголовки */
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #303030;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-/*----------*/
-body{
-    margin: 0;
+.logo{                                           /* логотип */
+    background-image: url("img/lesson10/header-logo.png");
+    width: 208px;
+    height: 50px;
 }
+/*----------*/
 
 .header{
     width: 100%;
@@ -63,15 +83,16 @@ body{
     font-weight: 700;
     color: #FFFFFF;
 }
+.black-block__link:hover{
+    color: #303030;
+}
 .black-block__link::before{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
 }
 
-.grid{
-    width: 1140px;
+.header__grid{
     height: 203px;
-    margin: 0 auto;
 }
 
 .header__navigation-block{
@@ -80,11 +101,6 @@ body{
     align-items: center;
 }
 
-.logo{
-    background-image: url("img/lesson10/header-logo.png");
-    width: 208px;
-    height: 50px;
-}
 .header__logo{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -145,6 +161,9 @@ body{
     color: #303030;
     margin-top: 27px;
 }
+.header__tel:hover{
+   color: #FF4545;
+}
 .header__tel::before {
     content: url("img/lesson10/header-tell.png");
     margin-right: 8px;
@@ -169,13 +188,9 @@ body{
     flex-direction: column;
 }
 
-.range__title{
+.title--range{
     margin-top: 60px;
     margin-left: 68px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 100%;
     color: #FFFFFF;
 }
 
@@ -185,20 +200,26 @@ body{
     font-size: 25px;
     line-height: 50%;
     margin-left: 70px;
+    margin-top: 50px;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-center{
+    width: 90px;
+    height: 10px;
 }
 
 .range__carousel{
-    display: flex;
-    flex-direction: row;
     margin-top: 89px;
 }
-
 .range__left-arrow{
     margin-left: 70px;
 }
 .range__carousel-center{
-    width: 90px;
-    height: 10px;
     margin-left: 441px;
 }
 .range__right-arrow{
@@ -206,11 +227,8 @@ body{
 }
 
 /*---------------*/
-
-.safety{
-    margin-top: 80px;
-}
 .safety__grid{
+    margin-top: 80px;
     height: 340px;
     display: flex;
 }
@@ -277,13 +295,7 @@ body{
     margin-top: 120px;
 }
 
-.catalog__title{
-    font-family: 'Russo One', sans-serif;
-    font-size: 48px;
-    line-height: 100px;
-    color: #303030;
-    margin-block-start: 0;
-    margin-block-end: 0;
+.title--catalog-margin{
     margin-left: 67px;
 }
 .catalog__description{
@@ -368,19 +380,12 @@ body{
 .specials__grid{
     margin-top: 100px;
     height: 605px;
-    background-color: antiquewhite;
 }
 
-.specials__title{
-    font-family: 'Russo One', sans-serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 100%;
-    color: #303030;
+.title--specials--margin{
     margin-bottom: 107px;
     margin-left: 57px;
 }
-
 
 .specials__content{
     display: flex;
@@ -400,25 +405,20 @@ body{
     margin-right: 47px;
 }
 
-.product-name{
+.product--text{
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     font-size: 18px;
     line-height: 50%;
     color: #303030;
-    text-align: center;
     margin-block-end: 0;
+    text-align: center;
 }
-
+.product-name{
+    font-weight: bold;
+}
 .product-har{
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 50%;
-    color: #303030;
     margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: center;
 }
 
 .product-one{
@@ -430,8 +430,8 @@ body{
 .product-two{
     width: 242px;
     height: 166px;
-    align-items: center;
     background-image: url("img/lesson10/product-item-two.png");
+    align-items: center;
 }
 .product-four{
     width: 157px;
@@ -439,29 +439,41 @@ body{
     background-image: url("img/lesson10/product-item-four.png");
     align-self: center;
 }
-.cost{
-    text-align: center;
+
+.cost--text{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 100%;
+}
+.cost{
+    text-align: center;
     color: #303030;
 }
-
 .button-cost{
     width: 248px;
     height: 68px;
     background: #FF4545;
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 100%;
     border: none;
     padding: 0;
     align-self: flex-end;
     cursor: pointer;
+}
+
+.specials-carousel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.specials-carousel__left-arrow--margin{
+    margin-left: 55px;
+    margin-right: 441px;
+}
+.specials-carousel__right-arrow--margin{
+    margin-left: 441px;
+    margin-right: 55px;
 }
 
 /*------------------------*/
@@ -484,14 +496,9 @@ body{
     flex-direction: column;
 }
 
-.about-us__title{
-    font-family: 'Russo One', sans-serif;
+.title--about-us--margin-size{
     font-size: 60px;
-    line-height: 100%;
     font-weight: normal;
-    color: #303030;
-    margin-block-start: 0;
-    margin-block-end: 0 ;
     text-align: center;
     margin-top: 95px;
 }
@@ -563,12 +570,8 @@ body{
 .news__grid{
     height: 636px;
 }
-.news__title{
-    font-family: 'Russo One', sans-serif;
-    font-size: 48px;
+.title--news-margin-size{
     font-weight: normal;
-    line-height: 100%;
-    color: #303030;
     margin-left: 52px;
 }
 
@@ -581,7 +584,6 @@ body{
 .news__block{
     width: 351px;
     height: 447px;
-    background-color: cadetblue;
     display: flex;
     flex-direction: column;
 }
@@ -640,15 +642,11 @@ body{
     height: 629px;
     margin-top: 120px;
 }
-.contacts__title{
+.title--contacts-margin{
     margin-left: 53px;
-    font-family: 'Russo One', sans-serif;
-    font-weight: normal;
     font-size: 48px;
-    line-height: 100%;
-    color: #303030;
-    margin-block-end: 0;
 }
+
 .contacts__content{
     display: flex;
     flex-direction: row;
@@ -867,7 +865,6 @@ form p {
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .black-block-end--text{
@@ -894,6 +891,7 @@ form p {
 .black-block-end__img-one{
     width: 100px;
     height: 31px;
+    margin-top: 5px;
 }
 
 .black-block-end__img-two{
@@ -903,11 +901,12 @@ form p {
 .black-block-end__img-three{
     width: 115px;
     height: 45px;
+    margin-bottom: 3px;
 }
 
 .black-block-end__img-four{
     width: 50px;
-    height: 45px;
+    height: 40px;
 }
 
 .pict-margin{
