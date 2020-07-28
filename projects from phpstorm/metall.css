@@ -174,7 +174,7 @@ body{
     margin: 50px 0 0 70px;
 }
 
-.carousel__center{
+.carousel__center{                       /* карусель */
     width: 90px;
     height: 10px;
 }
@@ -189,16 +189,14 @@ body{
     margin-left: 437px;
 }
 
-/*---------------*/
+/*-------------------------------*/
 .safety__grid{
     margin-top: 80px;
     height: 340px;
     display: flex;
 }
-
 .safety__container{
     width: inherit;
-    height: inherit;
     background:rgba(255,69,69,0.5);
 }
 .safety__frame{
@@ -213,26 +211,19 @@ body{
     align-items: center;
     position: relative;
 }
-
-.safety__logo{
-    background-image: url("img/lesson10/rgba_logo.png");
-    width: 202px;
-    height: 240px;
-}
-
 .safety__text-box{
     display: flex;
     flex-direction: column;
 }
 .safety--text-general-properties{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     line-height: 120%;
+    color: #303030;
     margin-block-start: 0;
     margin-block-end: 0;
     position: absolute;
-    color: #303030;
 }
 .safety__title{
     font-size: 30px;
@@ -252,16 +243,21 @@ body{
     left: 227px;
     padding-inline-start: 20px;
 }
+.safety__logo{
+    background-image: url("img/lesson10/rgba_logo.png");
+    width: 202px;
+    height: 240px;
+}
 
-/*----------------*/
+/*-------------------------------*/
 .catalog{
     margin-top: 120px;
 }
 
 .title--catalog-margin{
-    margin-left: 67px;
+    margin: 0 0 50px 67px;
 }
-.catalog__description{
+.catalog__description{                          /* оставил дублирование намеренно */
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -269,8 +265,7 @@ body{
     color: rgba(48,48,48,0.8);
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-left: 70px;
-    margin-bottom: 60px;
+    margin: 0 0 60px 70px;
 }
 
 .catalog__container{
@@ -338,8 +333,7 @@ body{
   line-height: 1;
 }
 
-/*----------------*/
-
+/*-------------------------------*/
 .specials__grid{
     margin-top: 100px;
     height: 605px;
