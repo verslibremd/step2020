@@ -12,6 +12,12 @@ body{
     margin: 0 auto;
 }
 
+.black-block{                      /* черная полоска с контентом, которая используется в хедере и футере */
+    background-color: #242424;
+    width: inherit;
+    height:40px ;
+}
+
 .button{                                    /*кнопка*/
     width: 211px;
     height: 50px;
@@ -48,51 +54,34 @@ body{
     width: 208px;
     height: 50px;
 }
-/*----------*/
-
+/*-------------------------------*/
 .header{
     width: 100%;
     height: 203px;
 }
 
-.black-block{
-    background-color: #242424;
-    width: inherit;
-    height:40px ;
-}
-.black-block__grid{
-    width: 1140px;
-    height: inherit;
-    margin: 0 auto;
-}
 .header__black-block-content{
+    height: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.black-block__name{
+.black-block__text{
     font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+.black-block__text--name-brand-size{
     font-size: 12px;
     font-weight: 600;
-    color: #FFFFFF;
 }
-.black-block__link{
-    font-family: 'Open Sans', sans-serif;
+.black-block__text--mail-size{
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
 }
-.black-block__link:hover{
-    color: #303030;
-}
-.black-block__link::before{
+.black-block__text--mail-size::before{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
-}
-
-.header__grid{
-    height: 203px;
 }
 
 .header__navigation-block{
@@ -100,24 +89,21 @@ body{
     flex-direction: row;
     align-items: center;
 }
-
-.header__logo{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 88px;
+.logo--header-margin{
+    margin: 15px 88px 15px 0;
 }
 
 .header__menu{
     margin-right: 117px;
 }
-.menu-link {
-    text-decoration: none;
-    color: #303030;
+.header__text{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    color: #303030;
     line-height: 40%;
+    text-decoration: none;
 }
-.menu-link--margin-right{
+.header__text--margin-right{
     margin-right: 25px;
 }
 
@@ -134,11 +120,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-
 .header__price-block-button{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 37px;
+    margin: 15px 37px 15px 0;
     display: flex;
 }
 .button-price{
@@ -153,22 +136,17 @@ body{
     margin-left: 40px;
 }
 
-.header__tel {
-    font-family: 'Open Sans', sans-serif;
+.header__text--tel-size-margin {
     font-size: 35px;
     font-weight: bold;
     line-height: 70%;
-    color: #303030;
     margin-top: 27px;
 }
-.header__tel:hover{
-   color: #FF4545;
-}
-.header__tel::before {
+.header__text--tel-size-margin::before {
     content: url("img/lesson10/header-tell.png");
     margin-right: 8px;
 }
-.header__tel::after{
+.header__text--tel-size-margin::after{
     content: url("img/lesson10/header-basket.png");
     margin-left: 50px;
 }
