@@ -565,45 +565,36 @@ body{
 }
 .title--contacts-margin{
     margin-left: 53px;
-    font-size: 48px;
 }
-
 .contacts__content{
     display: flex;
     flex-direction: row;
 }
-
 .contacts__info{
    margin-top: 120px;
 }
 
-.bold{
+.contacts__text{                                       /* текст */
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     font-size: 18px;
     color: #303030;
+    font-weight: bold;
     line-height: 120%;
 }
-
-.text-contacts{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+.details{
+    font-weight: normal;
     line-height: 70%;
-    color: #303030;
     margin-left: 106px;
     margin-bottom: 40px;
     position: relative;
 }
-
-.text-contacts--line-height{
+.details--line-height{
     line-height: 120%;
 }
-
-.text-contacts--line-height-min{
+.details--line-height-min{
     line-height: 60%;
-    margin-bottom: 32px;
+    margin-bottom: 32px;                            /* конец текста */
 }
-
 .phone:before{
     content: url("img/lesson10/contacts__info-one.png");
     position: absolute;
@@ -627,23 +618,12 @@ body{
     left: -50px;
     bottom: -5px;
 }
-
-.contacts__social-media{
+.social-media{
     display: flex;
     flex-direction: column;
     margin-left: 53px;
 }
-
-.social-media__title{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #303030;
-    margin-block-start: 0;
-}
-
-.link--margin{
+.social-media__link--margin{
     margin-right: 20px;
 }
 
@@ -653,7 +633,6 @@ body{
 }
 
 /*------------------*/
-
 .footer{
     width: auto;
     height: 377px;
