@@ -426,7 +426,6 @@ body{
     margin-top: 120px;
     height: 640px;
 }
-
 .back-logo{
     background-image: url("img/lesson10/about-us__grid-logo.png");
     background-repeat: no-repeat;
@@ -435,19 +434,15 @@ body{
 }
 
 .about-us__content{
-    width:inherit;
     display: flex;
     flex-direction: column;
 }
-
 .title--about-us--margin-size{
     font-size: 60px;
-    font-weight: normal;
     text-align: center;
     margin-top: 95px;
 }
-
-.about-us__text{
+.about-us__description{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -459,7 +454,6 @@ body{
     margin-top: 30px;
     margin-left: 10px;
 }
-
 .points{
     display: flex;
     flex-direction: row;
@@ -467,7 +461,6 @@ body{
     margin-top: 63px;
     margin-left: 10px;
 }
-
 .points__block{
     width: 250px;
     height: 185px;
@@ -478,7 +471,6 @@ body{
     height: 173px;
     margin-right: 0;
 }
-
 .points__img{
     width: 80px;
     height: 80px;
@@ -494,7 +486,6 @@ body{
 .points__img--four-width{
     width: 110px;
 }
-
 .points__text{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
