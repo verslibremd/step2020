@@ -730,41 +730,35 @@ form p {
     color: #FFFFFF;
     border: none;
 }
-/*--------------*/
-
-.black-block__grid--end{
+/*-------------------------------*/
+.grid--black-block-end{
     height: 60px;
     display: flex;
     flex-direction: row;
 }
-
 .black-block-end--text{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 70%;
     color: #FFFFFF;
-    align-items: center;
+    margin-top: 17px;
 }
-
 .black-block-end__brand{
     margin-right: 60px;
     align-items: center;
 }
-
 .black-block-end__inn{
     margin-right: 20px;
 }
 .black-block-end__ogrn{
     margin-right: 282px;
 }
-
 .black-block-end__img-one{
     width: 100px;
     height: 31px;
     margin-top: 5px;
 }
-
 .black-block-end__img-two{
     width: 133px;
     height: 40px;
@@ -774,12 +768,10 @@ form p {
     height: 45px;
     margin-bottom: 3px;
 }
-
 .black-block-end__img-four{
     width: 50px;
     height: 40px;
 }
-
 .pict-margin{
     margin-right: 6px;
 }
