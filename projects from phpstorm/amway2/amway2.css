@@ -8,6 +8,8 @@ body {
     font-weight: bold;
     line-height: 106%;
     color: #000000;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .description{                                           /* описания */
@@ -19,10 +21,23 @@ body {
 }
 
 /*-----------------------------*/
+
+.grid{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .three-pict__wrapper{
     display: flex;
     flex-direction: column;
+    margin-top: 200px;
 }
+.three-pict__text{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .three-pict__one-block{
     display: flex;
@@ -30,12 +45,32 @@ body {
 }
 .three-pict__one-block--width{
     width: 1181px;
-    height: 342px;
+    height: 342px;              /*исправить*/
+    margin: 0 auto;
+    background-color: darkgrey;
+}
+
+.three-pict__one-block-img{
+    background-image: url("/img/img amway2/Group 1.png");
 }
 
 
 
 
+.three-pict__two-block{
+    background-color: #918BA0;
+    height: 342px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.three-pict__two-block-img{
+    background-image: url("/img/img%20amway2/Group%20430.png");
+    width: 400px;
+    height: 300px;
+}
 
 
 
