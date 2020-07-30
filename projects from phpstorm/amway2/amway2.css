@@ -49,11 +49,9 @@ body {
     margin: 0 auto;
     background-color: darkgrey;
 }
-
 .three-pict__one-block-img{
-    background-image: url("/img/img amway2/Group 1.png");
+    
 }
-
 
 
 
@@ -66,11 +64,6 @@ body {
 
 
 
-.three-pict__two-block-img{
-    background-image: url("/img/img%20amway2/Group%20430.png");
-    width: 400px;
-    height: 300px;
-}
 
 
 
