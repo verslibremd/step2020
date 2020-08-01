@@ -9,7 +9,7 @@ body {
     line-height: 106%;
     color: #000000;
     margin-block-start: 0;
-    margin-block-end: 1em;
+    margin-block-end: 0;
     margin-bottom: 20px;
 
 }
@@ -26,27 +26,24 @@ body {
 
 /*-----------------------------*/
 
+/* 1 / 1 */
 .grid{
     width: 1200px;
     margin: 0 auto;
 }
-
 .three-pict__wrapper{
     display: flex;
     flex-direction: column;
     margin-top: 200px;
     margin-bottom: 200px;
 }
-
 .three-pict__one-block{
     display: flex;
     flex-direction: row;
     width: 1181px;
     height: 342px;
     background-color: darkgrey;
-
 }
-
 .three-pict__text{
     display: flex;
     flex-direction: column;
@@ -55,19 +52,16 @@ body {
     align-self: center;
     background-color: #E8D313;
 }
-
 .title--one-block{
     align-self: flex-end;
     margin: 0 20px;
     width: 300px;
 }
-
 .description--one-block{
     align-self: flex-end;
     margin: 20px 20px 0 0;
     width: 300px;
 }
-
 .three-pict__block-img--one-img{
     background-image: url("img amway2/Image8.png");
     width: 585px;
@@ -75,6 +69,67 @@ body {
     align-self: center;
     margin: 0;
 }
+
+/* 2 / 1 */
+
+    /* background-color: #E54B31; */
+.three-pict__two-block{
+    width: 1200px;
+    height: 470px;
+    background: green;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 25px;
+}
+.three-pict__block-img--two-img{
+    background-image: url("img amway2/Image88.png");
+    width: 600px;
+    height: 350px;
+    align-self: center;
+    margin: 0;
+}
+.three-pict__text--block-two{
+    width: 480px;
+    height: 124px;
+    margin: 0 0;
+}
+.title--two-block{
+    width: 340px;
+}
+
+/* 3 / 1 */
+
+.three-pict__three-block{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 342px;
+    background-color: cadetblue;
+}
+.three-pict__text--block-three{
+    width: 615px;
+    height: 184px;
+}
+.three-pict__block-img--three-img{
+    background-image: url("img amway2/Image888.png");
+    width: 585px;
+    height: 342px;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -154,7 +209,7 @@ body {
 
 
 
-
+/*
 
 .three-pict__two-block{
     height: 342px;
@@ -162,6 +217,7 @@ body {
     flex-direction: row-reverse;
     background-color: blueviolet;
 }
+*/
 
 
 /*
