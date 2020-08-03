@@ -123,7 +123,6 @@ body {
     width: 100%;
     height: 587px;
     background-color: #407FFE;
-    margin-bottom: 200px;
 }
 .grid--fast-access{
     height: 100%;
@@ -164,6 +163,48 @@ body {
 .fast-access__button:after{
    content: url("img amway2/Arrow.svg");
     margin-left: 10px;
+}
+/*--------------------------------------------*/
+.two-block-x{
+    margin: 30px 0;
+}
+.two-block-x__container{
+    display: flex;
+    flex-direction: column;
+}
+.two-block-x__one-box{
+    display: flex;
+    flex-direction: row;
+}
+.three-pict__text--one-block{
+    width: 615px;
+    height: 184px;
+}
+.three-pict__text--one-block-margin{
+    margin-right: 74px;
+}
+
+.two-block-x__two-block{
+    display: flex;
+    flex-direction: row;
+}
+.two-block-x__img-one{
+    background-image: url("img amway2/one-block.png");
+    width: 585px;
+    height: 342px;
+    background-size: cover;
+}
+.two-block-x__img-two{
+    background-image: url("img amway2/two-block.png");
+    width: 600px;
+    height: 350px;
+}
+.three-pict__text--two-block{
+    width: 540px;
+    height: 162px;
+}
+.three-pict__text--two-block-margin{
+    margin-left: 60px;
 }
 
 
