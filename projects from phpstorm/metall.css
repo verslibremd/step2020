@@ -32,13 +32,21 @@ body{
     color: #FFFFFF;
     border: none;
 }
+.button--pink-background:hover{
+    background-color: #FFFFFF;
+    color: #FF4545;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
+}
+
 
 .button--pink-border-fon-white{        /* кнопка с розовым бордером */
     background-color: #FFFFFF;
     color: #FF4545;
     border: 2px solid #FF4545;
 }
-
+.button--pink-border-fon-white:hover{       /*сделал ховер*/
+    border: 2px dotted #FF4545;
+}
 .title{                                       /* заголовки */
     font-family: 'Russo One', sans-serif;
     font-size: 48px;
@@ -83,6 +91,9 @@ body{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
 }
+.black-block__text--mail-size:hover{
+                                            /*додумать*/
+}
 
 .header__navigation-block{
     display: flex;
@@ -102,6 +113,10 @@ body{
     color: #303030;
     line-height: 40%;
     text-decoration: none;
+}
+.header__text--hover:hover{
+   color: #FF4545;                                              /*сделал ховер*/
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
 }
 .header__text--margin-right{
     margin-right: 25px;
@@ -173,7 +188,6 @@ body{
     line-height: 50%;
     margin: 50px 0 0 70px;
 }
-
 .carousel__center{                       /* карусель */
     width: 90px;
     height: 10px;
@@ -408,6 +422,9 @@ body{
     align-self: flex-end;
     cursor: pointer;
 }
+.product-item__button-cost:hover{       /*сделал ховер*/
+   border: 2px double #FFFFFF ;
+}
 
 .carousel__left-arrow--margin-specials-block{
     margin-top: 58px;
@@ -557,7 +574,6 @@ body{
     padding-bottom: 7px;
     display: inline-block;
 }
-
 /*-------------------------------*/
 .contacts__grid{
     height: 629px;
@@ -669,6 +685,10 @@ body{
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 20px;
+}
+.footer__text:hover{
+    color: #FF4545;
+    cursor: pointer;
 }
 .footer__text--title{
     font-weight: bold;
