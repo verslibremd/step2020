@@ -208,13 +208,26 @@ body {
 /*------------------------------------------*/
 .all-stars{
     width: 100%;
-    height: 429px;
+    height: 430px;
     background-color: #6E4AC3;
+    display: flex;
+}
+
+.grid--width{
+    width: 1920px;
+    background-color: #918BA0;
+    display: flex;
+
 }
 
 .all-stars__text{
     display: flex;
+}
+
+.all-stars__wrapper{
+    display: flex;
     flex-direction: column;
+    margin-top: 130px;
 }
 .title--align{
     text-align: center;
@@ -225,6 +238,24 @@ body {
 .title--margin-button{
     margin-top: 30px;
 }
+.all-stars__img-one{
+    background-image: url("img amway2/Group 561.png");
+    width: 480px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.all-stars__text:after{
+    content: url("img amway2/Group 505.png");
+    align-self: center;
+    background-position: center;
+}
+
+
+
+
+
 /*-------------------------------------------*/
 .join-us{
     background-color: #F7F7F7;
