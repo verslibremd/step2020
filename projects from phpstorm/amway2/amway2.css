@@ -297,9 +297,6 @@ button:hover{                                 /* при наведении на 
     width: 100%;
     height: 412px;
 }
-.grid__end-page{
-    height: inherit;
-}
 .end-page__content{
     display: flex;
     flex-direction: row;
