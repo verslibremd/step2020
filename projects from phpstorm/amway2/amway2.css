@@ -223,14 +223,16 @@ button:hover{                                 /* при наведении на 
     background-repeat: no-repeat;
     background-size: contain;
     align-self: flex-end;
+    background-position: bottom left;
 }
 .all-stars__img-two{
     background-image: url("img amway2/Group 505.png");
     width: 40%;
     height: 110%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     align-self: flex-end;
+    background-position: bottom right;
 }
 /*-------------------------------------------*/
 .join-us{
