@@ -1,0 +1,18 @@
+.grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+.grid--height{
+    height: 80px;
+    background-color: #918BA0;
+}
+.nav__content{
+    display: flex;
+    flex-direction: row;
+}
+.nav__logo{
+    background-image: url("img canteen/Shefs_club_logo.png");
+    width: 95px;
+   height: 70px;
+    background-color: #6E4AC3;
+}
