@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .grid{
     width: 1200px;
     margin: 0 auto;
@@ -6,13 +9,14 @@
     height: 80px;
     background-color: #918BA0;
 }
-.nav__content{
+.header__content{
     display: flex;
+    height: inherit;
     flex-direction: row;
+    align-items: center;
 }
-.nav__logo{
+.header__logo{
     background-image: url("img canteen/Shefs_club_logo.png");
     width: 95px;
-   height: 70px;
-    background-color: #6E4AC3;
+    height: 70px;
 }
