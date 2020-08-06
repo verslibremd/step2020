@@ -4,7 +4,6 @@
     font-style: normal;
     font-weight: normal;
 }
-
 body{
     margin: 0;
 }
@@ -12,21 +11,68 @@ body{
     width: 1218px;
     margin: 0 auto;
 }
+
+/*-------------!-------------*/
 .grid--height{
     height: 80px;
-    background-color: #918BA0;
+    background-color: bisque;
 }
 .header__content{
     display: flex;
     height: inherit;
     flex-direction: row;
     align-items: center;
+    font-family: "Circe", sans-serif;
 }
 .header__logo{
-    background-image: url("img canteen/Shefs_club_logo.png");
+    background-image: url("img canteen/logo.svg");
     width: 95px;
     height: 70px;
+    margin-right: 10px;
+    margin-left: 24px;
+    background-color: #4F5BB8;
 }
-.header__name-brand{
-    font-family: "Circe", sans-serif;
+.header__logo-description{
+    font-size: 14px;
+    line-height: 143%;
+    color: #333333;
+    margin-right: 154px ;
+}
+.header-menu__link{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 137%;
+    color: #464243;
+}
+.header-menu__link:hover{
+    color: #37A04C;
+}
+.header-menu__link--margin-left-right{
+    margin: 0 60px;
+}
+.phone-number{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333333;
+}
+.phone-number:hover{
+    color: #37A04C;
+    cursor: pointer;
+}
+.phone-number--margin-left-right{
+    margin: 0 55px 0 112px;
+}
+.header__login{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+}
+.header__login:before{
+    content: url("img canteen/login.svg");
+    margin-right: 11px;
 }
