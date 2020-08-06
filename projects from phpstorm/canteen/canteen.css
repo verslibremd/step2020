@@ -1,8 +1,15 @@
+@font-face {
+    font-family: "Circe", sans-serif;
+    src: url("/canteen/fonts/Circe-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body{
     margin: 0;
 }
 .grid{
-    width: 1200px;
+    width: 1218px;
     margin: 0 auto;
 }
 .grid--height{
@@ -19,4 +26,7 @@ body{
     background-image: url("img canteen/Shefs_club_logo.png");
     width: 95px;
     height: 70px;
+}
+.header__name-brand{
+    font-family: "Circe", sans-serif;
 }
