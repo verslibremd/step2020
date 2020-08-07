@@ -95,6 +95,37 @@ body{
     width: 1170px;
     height: 500px;
 }
+.banner__button-stock{
+    width: 74px;
+    height: 30px;
+    background: #FF794F;
+    border-radius: 5px;
+    border: none;
+    font-family: "Circe", sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+}
+.carousel__circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.carousel__circle:hover{
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+}
+
+
+
 .text{
     font-family: "TTNorms", sans-serif;
 }
