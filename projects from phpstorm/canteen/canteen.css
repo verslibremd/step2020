@@ -4,6 +4,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "TTNorms", sans-serif;
+    src: url("/canteen/fonts/TT Norms Pro Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
 body{
     margin: 0;
 }
@@ -11,11 +17,13 @@ body{
     width: 1218px;
     margin: 0 auto;
 }
+.styles-for-text-circe{
+    font-family: "Circe", sans-serif;
+}
 
 /*-------------!-------------*/
 .grid--height{
     height: 80px;
-    background-color: bisque;
 }
 .header__content{
     display: flex;
@@ -28,9 +36,7 @@ body{
     background-image: url("img canteen/logo.svg");
     width: 95px;
     height: 70px;
-    margin-right: 10px;
-    margin-left: 24px;
-    background-color: #4F5BB8;
+    margin: 0 10px 0 24px;
 }
 .header__logo-description{
     font-size: 14px;
@@ -75,4 +81,20 @@ body{
 .header__login:before{
     content: url("img canteen/login.svg");
     margin-right: 11px;
+}
+.header__line{
+    margin-block-start: 0;
+    background-color: #E8EAE7;
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+}
+/*-------------!!-------------*/
+.banner__background{
+    background-image: url("img canteen/fon.png");
+    width: 1170px;
+    height: 500px;
+}
+.text{
+    font-family: "TTNorms", sans-serif;
 }
