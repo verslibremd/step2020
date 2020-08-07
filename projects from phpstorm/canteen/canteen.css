@@ -107,6 +107,18 @@ body{
     color: #FFFFFF;
     cursor: pointer;
 }
+.button{
+    width: 200px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 134px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.button--background{
+    background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
 
 .carousel{
     display: flex;
