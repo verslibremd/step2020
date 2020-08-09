@@ -78,6 +78,9 @@ body{
     color: #333333;
     text-decoration: none;
 }
+.header__login:hover{
+    font-size: 18px;
+}
 .header__login:before{
     content: url("img canteen/login.svg");
     margin-right: 11px;
@@ -90,12 +93,30 @@ body{
     margin-bottom: 30px;
 }
 /*-------------!!-------------*/
+.grid--position{
+    position: relative;
+}
+.arrow-left{
+    background-image: url("img canteen/arrow-left.svg");
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 226px;
+}
 .banner__background{
     background-image: url("img canteen/fon.png");
     width: 1170px;
     height: 500px;
+    margin: 0 auto;
+    display: flex;
 }
-.banner__button-stock{
+.banner__content{
+    margin: 40px 0 40px 70px;
+    display: flex;
+    flex-direction: column;
+}
+.button-stock{
     width: 74px;
     height: 30px;
     background: #FF794F;
@@ -107,6 +128,24 @@ body{
     color: #FFFFFF;
     cursor: pointer;
 }
+.button-stock--margin{
+    margin-bottom: 30px;
+}
+.banner__title{
+    font-family: "TTNorms", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 57px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.banner__description{
+    font-family: "Circe", sans-serif;
+    font-size: 18px;
+    line-height: 133%;
+    color: #F0F1EE;
+    margin-bottom: 30px;
+}
 .button{
     width: 200px;
     height: 60px;
@@ -114,15 +153,30 @@ body{
     border-radius: 134px;
     border: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-family: "Circe", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 133%;
+}
+.button--text-color-grey{
+    color: #333333;
+}
+.button--text-color-white{
+    color: #FFFFFF;
+}
+.button--margin-right-bottom{
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
 .button--background{
     background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
-
 .carousel{
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 .carousel__circle{
     width: 10px;
@@ -130,14 +184,21 @@ body{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
 }
-.carousel__circle:hover{
+.carousel__circle--active{
     width: 15px;
     height: 15px;
     background-color: #FFFFFF;
 }
-
-
-
-.text{
-    font-family: "TTNorms", sans-serif;
+.carousel__circle--margin-left{
+    margin-left: 20px;
 }
+.arrow-right{
+    background-image: url("img canteen/arrow-right.svg");
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 226px;
+    right: 0;
+}
+/*-------------!!!-------------*/
