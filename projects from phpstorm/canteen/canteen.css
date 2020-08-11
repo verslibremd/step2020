@@ -217,6 +217,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 49px;
 }
 .box__pict{
     display: flex;
@@ -238,3 +239,4 @@ body{
     line-height: 137%;
     color: #6D7077;
 }
+/*-------------!! ! !!-------------*/
