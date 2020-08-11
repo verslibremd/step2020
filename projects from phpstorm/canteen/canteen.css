@@ -80,6 +80,7 @@ body{
 }
 .header__login:hover{
     font-size: 18px;
+    color: #37A04C;
 }
 .header__login:before{
     content: url("img canteen/login.svg");
@@ -240,3 +241,43 @@ body{
     color: #6D7077;
 }
 /*-------------!! ! !!-------------*/
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /*обдумать*/
+}
+.phone-number--margin-bottom{
+    margin-bottom: 20px;
+}
+.footer__description{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: "Circe", sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    color: #464243;
+}
+.footer__description--margin-bottom{
+    margin-bottom: 10px;
+}
+
+
+.footer__box--display{
+    display: flex;
+    flex-direction: row;
+}
+.footer__title{
+    font-family: "Circe", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 133%;
+    color: #131315;
+    margin-bottom: 20px;
+}
+.footer__description--color{
+    color: #646365;
+}
+.box-two--margin{
+    margin-top: 43px;
+    margin-left: 46px;
+}
