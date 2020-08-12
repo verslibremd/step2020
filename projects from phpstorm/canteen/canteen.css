@@ -353,6 +353,56 @@ body{
 .hashtags__tags--margin-left{
     margin-left: 44px;
 }
+.cards-item__title{
+    font-family: "Circe", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333333;
+    margin: 0 20px 15px;
+}
+
+.cards__text-el{
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px 15px 20px;
+}
+.text-one{
+    margin-right: 51px;
+    font-family: "Circe", sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    color: #646365;
+}
+.text-one:before{
+    content: url("img canteen/cards-elements.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.text-one:after{
+    content: url("img canteen/cards-elements-two.svg");
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+
+.text-two{
+    font-family: "Circe", sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    color: #646365;
+}
+.text-two--bold{
+    font-weight: bold;
+    color: #333333;;
+}
+
+
+
 
 
 
