@@ -6,10 +6,11 @@
 }
 @font-face {
     font-family: "TTNorms", sans-serif;
-    src: url("/canteen/fonts/TT Norms Pro Regular.otf");
+    src: url("/canteen/fonts/TTNorms-Bold.ttf");
     font-style: normal;
     font-weight: normal;
 }
+
 body{
     margin: 0;
 }
@@ -240,6 +241,73 @@ body{
     line-height: 137%;
     color: #6D7077;
 }
+/*-------------!! !!-------------*/
+.menu{
+    margin: 200px 0;
+}
+.menu__title{
+    font-family: "TTNorms", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    color: #333333;
+    text-align: center;
+}
+.menu__description{
+    font-family: "Circe", sans-serif;
+    font-size: 18px;
+    line-height: 133%;
+    color: #6D7077;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 20px 0 30px 0;
+}
+
+
+
+
+.menu__navigation{
+    text-align: center;
+}
+.menu__button{
+    width: 174px;
+    height: 50px;
+    border-radius: 74px;
+    border: 1px solid #CECFCD;
+    background-color: #FFFFFF;
+    font-family: "Circe", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 133%;
+    text-align: center;
+    color: #A1A75C;
+    cursor: pointer;
+}
+.menu__button--color{
+    background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;;
+    color: #FFFFFF;
+}
+.menu__button--margin-left{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------!! ! !!-------------*/
 .footer__container{
     display: flex;
