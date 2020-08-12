@@ -293,8 +293,8 @@ body{
 }
 .pict-property{
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 370px;
+    height: 220px;
 }
 .cards-pict-one{
     background-image: url("img canteen/cards-one-a.png");
@@ -322,6 +322,36 @@ body{
 .figures-button:hover{
     background: #FFFFFF;
     color: #A1A75C;
+}
+
+.hashtags{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 15px 44px;
+}
+.hashtags__tags{
+    width: 97px;
+    height: 24px;
+    background: #F0F1EE;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    font-family: "Circe", sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #6D7077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hashtags__tags--width-margin{
+    width: 75px;
+    margin: 0 10px;
+}
+.hashtags__tags--width-vol-two{
+    width: 59px;
+}
+.hashtags__tags--margin-left{
+    margin-left: 44px;
 }
 
 
