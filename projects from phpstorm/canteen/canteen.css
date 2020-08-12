@@ -103,6 +103,8 @@ body{
     background-size: contain;
     width: 48px;
     height: 48px;
+}
+.arrow-left--position{
     position: absolute;
     top: 226px;
 }
@@ -199,6 +201,8 @@ body{
     background-size: contain;
     width: 48px;
     height: 48px;
+}
+.arrow-right--position{
     position: absolute;
     top: 226px;
     right: 0;
@@ -253,6 +257,15 @@ body{
     line-height: 57px;
     color: #333333;
     text-align: center;
+    position: relative;
+}
+.arrow-left--position-block-menu{
+    position: absolute;
+    left: 24px;
+}
+.arrow-right--position-block-menu{
+    position: absolute;
+    right: 24px;
 }
 .menu__description{
     font-family: "Circe", sans-serif;
