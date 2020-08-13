@@ -223,7 +223,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 49px;
 }
 .box__pict{
     display: flex;
@@ -247,7 +246,7 @@ body{
 }
 /*-------------!! !!-------------*/
 .menu{
-    margin: 200px 0;
+    margin: 129px 0 84px 0;
 }
 .menu__title{
     font-family: "TTNorms", sans-serif;
@@ -374,22 +373,25 @@ body{
     font-size: 14px;
     line-height: 143%;
     color: #646365;
+    width: 139px;
+    height: 20px;
+    display: flex;
 }
 .text-one:before{
     content: url("img canteen/cards-elements.svg");
     width: 16px;
     height: 16px;
     margin-right: 10px;
-    margin-top: 5px;
+    align-items: center;
 }
 .text-one:after{
     content: url("img canteen/cards-elements-two.svg");
     width: 16px;
     height: 16px;
     margin-left: 5px;
+    background-color: #E54B31;
+    align-self: center;
 }
-
-
 .text-two{
     font-family: "Circe", sans-serif;
     font-size: 14px;
@@ -401,9 +403,93 @@ body{
     color: #333333;;
 }
 
+.cards__line{
+    width: 330px;
+    height: 1px;
+    background-color: #DDDEDB;
+    border-radius: 8px;
+    border: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 
 
+.cards__text-el-two{
+    display: flex;
+    margin-left:20px;
+}
+.text-cards{
+    display: flex;
+    margin-top: 31px;
+}
+.text-three{
+    display: flex;
+    margin-right: 20px;
+}
+.text-three:before{
+    content: url("img canteen/cards-el-three.svg");
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.text-four{
+    display: flex;
+}
+.text-four:before{
+    content: url("img canteen/cards-el-four.svg");
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+.text-items-x{
+    font-family: "Circe", sans-serif;
+    font-size: 16px;
+    line-height: 137%;
+    color: #646365;
+}
+.cards__button{
+    width: 140px;
+    height: 44px;
+    background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
+    border-radius: 26px;
+    border: none;
+    font-family: "Circe", sans-serif;
+    font-size: 18px;
+    line-height: 133%;
+    color: #FFFFFF;
+    padding-left: 20px;
+   align-self: center;
+    margin-left: 27px;
+    margin-top: 20px;
+}
+.pic{
+    display: flex;
+    flex-direction: row;
+}
+.but-x{
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.but-y{
+    align-self: center;
+}
+.button__none{
+    text-decoration: none;
+}
 
+/*--*/
+.cards__button--grey{
+    background: #F0F1EE;
+    padding: 0;
+    color: #646365;
+}
+.but-x--color{
+    margin: 3px 10px 0 2px;
+}
 
 
 
