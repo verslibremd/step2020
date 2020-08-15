@@ -492,8 +492,6 @@ body{
     margin: 3px 10px 0 2px;
 }
 
-
-
 .menu__navigation{
     text-align: center;
 }
@@ -519,26 +517,11 @@ body{
     margin-left: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------!! ! !!-------------*/
-.footer__container{
+.footer__container{                                  /*списки сделать ссылками*/
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /*обдумать*/
+    justify-content: space-around;                  /*обдумать*/
 }
 .phone-number--margin-bottom{
     margin-bottom: 20px;
@@ -554,8 +537,6 @@ body{
 .footer__description--margin-bottom{
     margin-bottom: 10px;
 }
-
-
 .footer__box--display{
     display: flex;
     flex-direction: row;
@@ -572,15 +553,11 @@ body{
     color: #646365;
 }
 .box-two--margin{
-    margin-top: 43px;
-    margin-left: 46px;
+    margin: 43px 0 0 46px;
 }
-
-/*проработать отступы и дублирование*/ /*списки сделать ссылками*/
-
 .form {
     position: relative;
-    top: 10px;              /*проработать отступы и дублирование*/
+    top: 10px;                                  /* проработать отступы*/
 }
 .input {
     width: 270px;
