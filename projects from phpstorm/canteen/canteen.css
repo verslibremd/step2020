@@ -350,7 +350,6 @@ a {
     height: 480px;
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    background-color: #918BA0;
 }
 .pict-property{
     background-repeat: no-repeat;
@@ -542,6 +541,10 @@ a {
 .phone-number--margin-bottom{
     margin-bottom: 20px;
 }
+.box-display{
+    display: flex;
+    flex-direction: column;
+}
 .footer__description{
     margin-block-start: 0;
     margin-block-end: 0;
@@ -568,8 +571,14 @@ a {
 .footer__description--color{
     color: #646365;
 }
+.footer__description--color:hover{
+    color: #37A04C;
+}
 .box-two--margin{
     margin: 43px 0 0 46px;
+}
+.footer__description--text-color{
+    color: #646365;
 }
 .form {
     position: relative;
