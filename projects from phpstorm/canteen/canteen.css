@@ -1,16 +1,15 @@
 @font-face {
     font-family: "Circe", sans-serif;
-    src: url("/canteen/fonts/Circe-Regular.ttf");
+    src: url("fonts/Circe-Regular.ttf");
     font-style: normal;
     font-weight: normal;
 }
-@font-face {                                        /* найти шрифт */
+@font-face {
     font-family: "TTNorms", sans-serif;
-    src: url("/canteen/fonts/TTNorms-Bold.ttf");
+    src: url("fonts/TTNorms-Bold.ttf");
     font-style: normal;
     font-weight: normal;
 }
-
 body{
     margin: 0;
 }
