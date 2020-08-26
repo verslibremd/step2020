@@ -36,6 +36,17 @@ a {
     text-decoration: none;
 }
 
+@media all and (min-width: 768px){
+    .header__logo-description{
+        display: none;
+    }
+   .header-menu{
+       margin-left: 20px;
+   }
+   
+}
+
+
 /*-------------!-------------*/
 .grid--height{
     height: 80px;
@@ -430,7 +441,7 @@ a {
     color: #646365;
 }
 .description-text-in-cards__text-one{
-    margin-right: 51px;
+    margin-right: 32px;
     width: 139px;
     height: 20px;
     display: flex;
@@ -446,7 +457,6 @@ a {
     content: url("img canteen/cards-elements-two.svg");
     width: 16px;
     height: 16px;
-    margin-left: 5px;
     align-self: center;
 }
 .description-text-in-cards__text-two--bold{
