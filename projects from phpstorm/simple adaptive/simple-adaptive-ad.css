@@ -1,0 +1,36 @@
+
+@media all and (max-width: 320px){
+    h1,h2,p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .grid{
+        width: 320px;
+    }
+    .title{
+        font-size: 24px;
+        line-height: 29px;
+        text-shadow: 2px 2px 0 #404040;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .items__img{
+        margin-bottom: 15px;
+    }
+    .items__text{
+        font-size: 14px;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .title-down{
+        font-size: 18px;
+        line-height: 125%;
+        margin: 42px 9px 34px 9px;
+    }
+    .button{
+        margin-bottom: 49px;
+    }
+}
