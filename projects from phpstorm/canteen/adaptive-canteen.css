@@ -1,11 +1,24 @@
 @media all and (max-width: 1025px){
+
+    .grid{
+        width: 768px;
+    }
+    .header__content{
+        width: 728px;
+    }
     .header__logo-description{
         display: none;
     }
     .header__logo{
-        margin-right: 20px;
+        width: 70px;
+        margin: 0 40px 0 0;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .header-menu__link--margin-left-right{
         margin: 0 30px;
+    }
+    .phone-number--margin-left-right{
+        margin: 0 45px 0 48px;
     }
 }
