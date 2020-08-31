@@ -220,7 +220,6 @@ a {
     display: flex;
     flex-direction: row;
     cursor: pointer;
-
 }
 .carousel__circle{
     width: 10px;
@@ -236,6 +235,9 @@ a {
 }
 .carousel__circle--margin-left{
     margin-left: 20px;
+}
+.c-carousel{
+    display: none;
 }
 
 /*-------------!!!-------------*/
