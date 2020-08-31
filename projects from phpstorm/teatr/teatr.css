@@ -1,0 +1,6 @@
+.row>div{
+    height: 150px;
+    background: fuchsia;
+    background-clip: content-box;
+    margin-bottom: 20px;
+}
