@@ -1,0 +1,34 @@
+.header{
+    background-image: url("theatre-pict/Rectangle 3 (1).png");
+    height: 1045px;
+    width: 100%;
+}
+a,a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.phone{
+    color: #FFFFFF;
+    border-bottom: 2px solid #D1A954;
+    text-align: right;
+}
+.header__title{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.header__description{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 150%;
+}
