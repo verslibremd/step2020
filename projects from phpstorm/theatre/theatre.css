@@ -12,11 +12,13 @@ a, a:hover{
     background-image: url("theatre-pict/Rectangle 3 (1).png");
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
 }
 .navigation-menu{
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 .navigation-menu__link{
     font-size: 18px;
