@@ -19,6 +19,9 @@ a, a:hover{
     font-weight: bold;
     margin-top: 2rem;
 }
+.nav{
+    max-width: 824px;
+}
 .navigation-menu__link{
     font-size: 18px;
     line-height: 25px;
@@ -32,10 +35,14 @@ a, a:hover{
     border-bottom: 2px solid #D1A954;
 }
 .col--align{
-    text-align: right;
+    text-align: center;
 }
 
         /*---*/
+
+.ggg{
+    margin-top: 140px;
+}
 
 .header__title{
     color: #FFFFFF;
@@ -44,6 +51,7 @@ a, a:hover{
     line-height: 87px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin-block-end: 0;
 }
 .header__description{
     color: #FFFFFF;
@@ -52,6 +60,7 @@ a, a:hover{
     font-weight: normal;
     font-style: normal;
     font-family: 'Open Sans', sans-serif;
+    margin: 2rem 0;
 }
 .header__button{
     width: 160px;
@@ -64,6 +73,30 @@ a, a:hover{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.col-7--padding-left{
+    padding-left: 0;
+    /*margin-top: 30%;
+    */
+}
+.poster{
+    max-width: 370px;
+    max-height: 510px;
+
+    /*margin-top: 50%;
+    */
+}
+/*
+.content >.row{
+    align-items: center;
+}
+*/
+
+.tre{
+    width: 100%;
+    height: 500px;
+    background-color: darkgrey;
 }
 
 /*
