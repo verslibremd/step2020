@@ -17,7 +17,8 @@ a, a:hover{
 }
 .navigation-menu{
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 51px;
+    max-width: 1110px;
 }
 .nav{
     max-width: 824px;
@@ -83,58 +84,15 @@ a, a:hover{
 .poster{
     max-width: 370px;
     max-height: 510px;
-
     /*margin-top: 50%;
     */
 }
-/*
-.content >.row{
-    align-items: center;
-}
-*/
-
-.tre{
-    width: 100%;
-    height: 500px;
-    background-color: darkgrey;
+        /*---*/
+.history{
+    background-color: #333333;
 }
 
-/*
-.header{
-    background-image: url("theatre-pict/Rectangle 3 (1).png");
-    height: 1045px;
-    width: 100%;
-}
-a,a:hover{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.history__title{
+    text-align: center;
 }
 
-.phone{
-    color: #FFFFFF;
-    border-bottom: 2px solid #D1A954;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    text-align: right;
-}
-.header__title{
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: "Open Sans Condensed", sans-serif;
-}
-
-.header__description{
-    font-family: 'Open Sans', sans-serif;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 150%;
-}*/
