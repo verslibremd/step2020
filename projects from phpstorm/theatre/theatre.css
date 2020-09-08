@@ -82,13 +82,12 @@ a, a:hover{
     */
 }
 
-/*.poster{
+.poster{
     max-width: 370px;
     max-height: 510px;
-    !*margin-top: 50%;
-    *!
+    margin-top: 50%;
 }
- */
+
         /*---*/
 .history{
     background-color: #333333;
