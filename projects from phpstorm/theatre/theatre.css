@@ -83,9 +83,10 @@ a, a:hover{
 }
 
 .poster{
-    max-width: 370px;
-    max-height: 510px;
-    margin-top: 50%;
+    background-image: url("theatre-pict/slider-containerx.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
         /*---*/
