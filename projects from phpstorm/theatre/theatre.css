@@ -42,7 +42,7 @@ a, a:hover{
         /*---*/
 
 .ggg{
-    margin-top: 140px;
+    margin-top: 110px;
 }
 
 .header__title{
@@ -83,10 +83,10 @@ a, a:hover{
 }
 
 .poster{
-    background-image: url("theatre-pict/slider-containerx.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 310px;
+    height: 440px;
 }
 
         /*---*/
