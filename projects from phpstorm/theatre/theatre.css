@@ -1,3 +1,6 @@
+body {
+    background: #FF794F;
+}
 a, a:hover{
     text-decoration: none;
     color: #FFFFFF;
@@ -6,30 +9,28 @@ a, a:hover{
 
     /*------------*/
 
-.header{
+.header--background{
     width: 100%;
-    height: 1045px;
-    background-image: url("theatre-pict/Rectangle 3 (1).png");
-    background-size: contain;
+    background-image: url("theatre-pict/p1.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    font-family: "Open Sans Condensed", sans-serif;
 }
-.navigation-menu{
+.navigation{
     font-weight: bold;
-    margin-top: 51px;
+    padding-top: 51px;
     max-width: 1110px;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 .nav{
     max-width: 824px;
 }
-.navigation-menu__link{
+.navigation__link{
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-.navigation-menu__phone{
+.navigation__phone{
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.05em;
@@ -39,11 +40,16 @@ a, a:hover{
     text-align: center;
 }
 
+.left-block{
+    margin-top: 308px;
+}
         /*---*/
 
+/*
 .ggg{
     margin-top: 110px;
 }
+*/
 
 .header__title{
     color: #FFFFFF;
@@ -53,6 +59,8 @@ a, a:hover{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-block-end: 0;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin-top: 208px;
 }
 .header__description{
     color: #FFFFFF;
@@ -82,17 +90,29 @@ a, a:hover{
     */
 }
 
+.text{
+    color: #FFFFFF;
+}
+.text-f{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.pad{
+    padding-top: 308px;
+}
+
 .poster{
-    background-size: contain;
+    background-image: url("theatre-pict/p2.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 310px;
-    height: 440px;
+    width: 370px;
+    height: 510px;
+    background-position: center;
+    padding-top: 40px;
 }
 
         /*---*/
-.history{
-    background-color: #333333;
-}
+
 
 .history__title{
     text-align: center;
