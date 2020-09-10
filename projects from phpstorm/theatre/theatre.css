@@ -11,8 +11,9 @@ a, a:hover{
 
 .header--background{
     width: 100%;
+    height: 1045px;
     background-image: url("theatre-pict/p1.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .navigation{
@@ -44,25 +45,18 @@ a, a:hover{
     margin-top: 308px;
 }
         /*---*/
-
-/*
-.ggg{
-    margin-top: 110px;
-}
-*/
-
-.header__title{
+.header-content__title{
     color: #FFFFFF;
     font-weight: bold;
     font-size: 64px;
     line-height: 87px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-block-end: 0;
     font-family: "Open Sans Condensed", sans-serif;
-    margin-top: 208px;
 }
-.header__description{
+
+
+.header-content__description{
     color: #FFFFFF;
     font-size: 14px;
     line-height: 150%;
@@ -71,7 +65,8 @@ a, a:hover{
     font-family: 'Open Sans', sans-serif;
     margin: 2rem 0;
 }
-.header__button{
+
+.header-content__button{
     width: 160px;
     height: 50px;
     background: #D1A954;
@@ -82,7 +77,19 @@ a, a:hover{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-family: "Open Sans Condensed", sans-serif;
 }
+
+
+
+
+
+/*
+.ggg{
+    margin-top: 110px;
+}
+*/
+
 
 .col-7--padding-left{
     padding-left: 0;
@@ -91,30 +98,22 @@ a, a:hover{
 }
 
 .text{
-    color: #FFFFFF;
-}
-.text-f{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-}
-.pad{
-    padding-top: 308px;
+    text-align: left;
 }
 
 .poster{
-    background-image: url("theatre-pict/p2.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 370px;
-    height: 510px;
-    background-position: center;
-    padding-top: 40px;
+    width: 300px;
+    height: 440px;
 }
+/*
+.poster--margin{
+    margin-top: 100px;
+}
+*/
 
+.pad{
+    margin-top: 90px;
+}
         /*---*/
-
-
-.history__title{
-    text-align: center;
-}
-
