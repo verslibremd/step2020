@@ -5,6 +5,16 @@ a, a:hover{
     text-decoration: none;
     color: #FFFFFF;
 }
+
+/*------ fixed--------*/
+.left-items{
+    width: 150px;
+    height: 1045px;
+    background: rgba(51, 51, 51, 0.75);
+    z-index: 1;
+    position: fixed;
+}
+
     /*------навигация в хедере------*/
 
 .header{
@@ -60,7 +70,7 @@ a, a:hover{
     line-height: 150%;
     font-weight: normal;
     font-style: normal;
-    text-transform: none;       /*выставить отступы*/
+    text-transform: none;
 }
 .header-content__button{
     width: 160px;
@@ -72,45 +82,16 @@ a, a:hover{
     letter-spacing: 0.1em;
 }
 
-
-
-
-
-.left-block{
-    margin-top: 308px;
-}
         /*---*/
-
-
-
-
-
-
-/*
-
-
-.col-7--padding-left{
-    padding-left: 0;
-    !*margin-top: 30%;
-    *!
+.header-content__poster{
+    margin-top: 100px;
 }
-
-*/
-
-
 .poster{
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
     height: 440px;
 }
-/*
-.poster--margin{
-    margin-top: 100px;
-}
-*/
-
-        /*---*/
 
 .arrow__text{
     margin-top: 1rem;
@@ -120,7 +101,6 @@ a, a:hover{
     margin-right: 1rem;
     margin-left: 0;
 }
-
 .arrow{
     font-style: normal;
     font-weight: bold;
@@ -131,15 +111,7 @@ a, a:hover{
     letter-spacing: 0.1em;
 }
 
-.left-items{
-    width: 150px;
-    height: 1045px;
-    background: rgba(51, 51, 51, 0.75);
-    z-index: 1;
-    position: fixed;
-
-}
-
+/*------------------------*/
 .bot{
     width: 100%;
     height: 1900px;
