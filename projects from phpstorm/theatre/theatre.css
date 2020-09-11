@@ -127,7 +127,6 @@ a, a:hover{
     margin-left: 0;
 }
 
-
 .arrow{
     font-style: normal;
     font-weight: bold;
@@ -136,4 +135,11 @@ a, a:hover{
     font-family: "Open Sans Condensed", sans-serif;
     color: #FFFFFF;
     letter-spacing: 0.1em;
+}
+
+.left-items{
+    width: 150px;
+    background-color: #333333;
+    height: inherit;
+    position: fixed;
 }
