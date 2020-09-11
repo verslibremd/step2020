@@ -117,3 +117,23 @@ a, a:hover{
     margin-top: 90px;
 }
         /*---*/
+
+.arrow__text{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.arrow__text--margin{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+
+.arrow{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+}
