@@ -12,70 +12,69 @@
     <title>Hello, world!</title>
 </head>
 <body>
-    <header class="header header--background">
-        <div class="container left-items">
-
+    <header class="header font-style-header">
+        <div class="left-items"></div>
+        <div class="container">
+            <div class="row navigation">
+                <div class="col-lg-12 col-xl-9 d-flex justify-content-lg-center">
+                    <div class="row nav">
+                        <div class="col-auto"><a class="navigation__link" href="#">главная</a></div>
+                        <div class="col-auto"><a class="navigation__link" href="#">о театре</a></div>
+                        <div class="col-auto"><a class="navigation__link" href="#">наши постановки</a></div>
+                        <div class="col-auto"><a class="navigation__link" href="#">партнеры театра</a></div>
+                        <div class="col-auto"><a class="navigation__link" href="#">контакты</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-3 d-flex justify-content-lg-center">
+                    <div class="row">
+                        <div class="col">
+                            <a class="navigation__phone" href="#">+7 495 123-45-67</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-            <div class="container">
-                <div class="row navigation">
-                    <div class="col-xl-9 col-lg-12 d-flex justify-content-lg-center">
-                        <div class="row nav flex-lg-fill">
-                            <div class="col-2"><a class="navigation__link" href="#">главная</a></div>
-                            <div class="col-2"><a class="navigation__link" href="#">о театре</a></div>
-                            <div class="col-3"><a class="navigation__link" href="#">наши постановки</a></div>
-                            <div class="col-3"><a class="navigation__link" href="#">партнеры театра</a></div>
-                            <div class="col-2"><a class="navigation__link" href="#">контакты</a></div>
+        <div class="container header-content">
+            <div class="row"> <!-- pad ??-->
+                <div class="col-xl-7 col-lg-12 d-flex-column">
+                    <div class="row">
+                        <div class="col col-lg-12 col-xl-12">
+                            <h1 class="d-inline header-content__title font-style-header">большой театр</h1>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-12 d-flex justify-content-lg-center">
-                        <div class="row">
-                            <div class="col col--align">
-                                <a class="navigation__phone" href="#">+7 495 123-45-67</a>
-                            </div>
+                    <div class="row">
+                        <div class="col col-lg-12 col-xl-12">
+                            <p class="header-content__description d-inline">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,<br> с 1886 года — Петербургская консерватория. Первое постоянное в<br> Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных<br> зданий в Европе XVIII.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container header-content">
-                <div class="row pad justify-content-center">
-                    <div class="col-xl-7 col-lg-12 d-flex-column align-items-lg-center pad">
-                        <div class="row">
-                            <div class="col-xl-8 col-lg-12 text ">
-                                <h1 class="header-content__title ">большой театр</h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-12 text header-content__description">
-                                Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,<br> с 1886 года — Петербургская консерватория. Первое постоянное в<br> Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных<br> зданий в Европе XVIII.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-12 text">
-                                <a href="#"><button class="header-content__button" type="button">АФИША</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 d-none d-xl-block">
-                        <div class="row">
-                            <div class="col-xl-12 d-none d-xl-block">
-                                <img class="poster" src="theatre-pict/p2.png" alt="афиша">
-                            </div>
-                        </div>
-                        <div class="row d-flex arrow ">
-                            <a href="#" class="col-5 d-inline-flex arrow__left-arrow">
-                                <img src="theatre-pict/ArrowLeft.svg" alt="svg">
-                                <p class="arrow__text">ПРЕД</p>
-                            </a>
-                            <a href="#" class="col-5 d-inline-flex arrow__right-arrow">
-                                <p class="arrow__text arrow__text--margin">СЛЕД</p>
-                                <img src="theatre-pict/ArrowRight.svg" alt="svg">
-                            </a>
+                    <div class="row">
+                        <div class="col col-lg-12 col-xl-12">
+                            <a href="#"><button class="header-content__button font-style-header d-inline" type="button">АФИША</button></a>
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-5 d-none d-xl-block">
+                    <div class="row">
+                        <div class="col-xl-12 d-none d-xl-block">
+                            <img class="poster" src="theatre-pict/p2.png" alt="афиша">
+                        </div>
+                    </div>
+                    <div class="row d-flex arrow ">
+                        <a href="#" class="col-5 d-inline-flex arrow__left-arrow">
+                            <img src="theatre-pict/ArrowLeft.svg" alt="svg">
+                            <p class="arrow__text">ПРЕД</p>
+                        </a>
+                        <a href="#" class="col-5 d-inline-flex arrow__right-arrow">
+                            <p class="arrow__text arrow__text--margin">СЛЕД</p>
+                            <img src="theatre-pict/ArrowRight.svg" alt="svg">
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
     </header>
-
+<div class="bot">
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

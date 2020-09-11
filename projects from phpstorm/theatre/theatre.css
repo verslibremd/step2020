@@ -5,22 +5,25 @@ a, a:hover{
     text-decoration: none;
     color: #FFFFFF;
 }
+    /*------навигация в хедере------*/
 
-
-    /*------------*/
-
-.header--background{
+.header{
     width: 100%;
     height: 1045px;
     background-image: url("theatre-pict/p1.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
-.navigation{
+.font-style-header{
+    font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.navigation{
     padding-top: 51px;
     max-width: 1110px;
-    font-family: "Open Sans Condensed", sans-serif;
+    text-align: right;
 }
 .nav{
     max-width: 824px;
@@ -29,7 +32,6 @@ a, a:hover{
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 .navigation__phone{
     font-size: 16px;
@@ -37,69 +39,64 @@ a, a:hover{
     letter-spacing: 0.05em;
     border-bottom: 2px solid #D1A954;
 }
-.col--align{
-    text-align: center;
+
+/*-------контент хедера--------*/
+
+.header-content{
+    max-width: 1035px;
+}
+.pad{
+    margin-top: 90px;
 }
 
-.left-block{
-    margin-top: 308px;
-}
-        /*---*/
 .header-content__title{
-    color: #FFFFFF;
-    font-weight: bold;
     font-size: 64px;
     line-height: 87px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: "Open Sans Condensed", sans-serif;
 }
-
-
 .header-content__description{
-    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 150%;
     font-weight: normal;
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
-    margin: 2rem 0;
+    text-transform: none;       /*выставить отступы*/
 }
-
 .header-content__button{
     width: 160px;
     height: 50px;
     background: #D1A954;
     border: none;
-    font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: "Open Sans Condensed", sans-serif;
 }
+
+
+
+
+
+.left-block{
+    margin-top: 308px;
+}
+        /*---*/
+
 
 
 
 
 
 /*
-.ggg{
-    margin-top: 110px;
-}
-*/
 
 
 .col-7--padding-left{
     padding-left: 0;
-    /*margin-top: 30%;
-    */
+    !*margin-top: 30%;
+    *!
 }
 
-.text{
-    text-align: left;
-}
+*/
+
 
 .poster{
     background-size: contain;
@@ -113,9 +110,6 @@ a, a:hover{
 }
 */
 
-.pad{
-    margin-top: 90px;
-}
         /*---*/
 
 .arrow__text{
@@ -139,7 +133,15 @@ a, a:hover{
 
 .left-items{
     width: 150px;
-    background-color: #333333;
-    height: inherit;
+    height: 1045px;
+    background: rgba(51, 51, 51, 0.75);
+    z-index: 1;
     position: fixed;
+
+}
+
+.bot{
+    width: 100%;
+    height: 1900px;
+    background: #37A04C;
 }
