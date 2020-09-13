@@ -6,14 +6,68 @@ a, a:hover{
     color: #FFFFFF;
 }
 
-/*------ fixed--------*/
+    /*------ fixed--------*/
 .left-items{
     width: 150px;
     height: 1045px;
     background: rgba(51, 51, 51, 0.75);
-    z-index: 1;
-    position: fixed;
+    z-index:1;
 }
+
+.left-items__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 575px;
+    margin-top: 125px;
+}
+
+
+
+.left-items__text{
+    color: #C4C4C4;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    align-items: center;
+}
+.left-items__line{
+    width: 80px;
+    border: 3px solid #C4C4C4;
+    transform: rotate(90deg);
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inst{
+    background-image: url("theatre-pict/instagram.svg");
+    width: 26px;
+    height: 26px;
+}
+.facebook{
+    background-image: url("theatre-pict/facebook.svg");
+    width: 15px;
+    height: 26px;
+}
+.vk{
+    background-image: url("theatre-pict/vk.svg");
+    width: 26px;
+    height: 14px;
+}
+.youtube{
+    background-image: url("theatre-pict/youtube.svg");
+    width: 26px;
+    height: 18px;
+}
+.social-media>.social-media__link{
+    margin-bottom: 30px;
+}
+
+
 
     /*------навигация в хедере------*/
 
@@ -50,7 +104,7 @@ a, a:hover{
     border-bottom: 2px solid #D1A954;
 }
 
-/*-------контент хедера--------*/
+    /*-------контент хедера--------*/
 
 .header-content{
     max-width: 1035px;
@@ -82,7 +136,7 @@ a, a:hover{
     letter-spacing: 0.1em;
 }
 
-        /*---*/
+        /*--контент хедера--постер--*/
 .header-content__poster{
     margin-top: 100px;
 }
@@ -117,3 +171,4 @@ a, a:hover{
     height: 1900px;
     background: #37A04C;
 }
+
