@@ -16,6 +16,23 @@
 }
 
 .button{
+    width: 220px;
+    height: 100px;
+    border: 2px solid #FFD600;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFD600;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background: none;
+}
+
+
+/*.button{
     width: 200px;
     height: 50px;
     background: rgba(7, 18, 46, 0.88);
@@ -29,7 +46,7 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-}
+}*/
 .button:hover{
     background: #FFD600;
     color: rgba(7, 18, 46, 0.88);
