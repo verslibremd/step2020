@@ -1,4 +1,77 @@
 
+let a = 2;
+let x = 1 + (a *= 2);
+alert(x);
+
+/*
+let counter = 1;
+let a = counter++;
+alert(a)
+*/
+
+/*
+let a = 1, b = 1;
+
+let c = ++a; // ?
+let d = b++; // ?
+a=2
+b=2
+c=2
+d=1
+*/
+
+/*
+let a = 1;
+let b = 2;
+let c = 3 - (a = b + 1);
+let d = 1 + a;
+alert( d )
+*/
+
+/*
+let counter = 1;
+let a = counter++; //
+alert(a)
+*/
+
+/*
+let counter = 0;
+counter++;
+++counter;
+alert( counter );
+*/
+
+/*
+let many = prompt("как дела ?", "хорошо")
+alert (many)
+*/
+
+/*
+let day = confirm("сегодня понедельник !");
+alert(day);
+*/
+
+/*
+let name = prompt("Ваше имя?", "");
+alert(`ваше имя ${name}`);
+*/
+
+/*
+let age = Number("");
+alert(age);
+alert(typeof age)
+*/
+
+/*
+let str = "123";
+alert(typeof str);
+
+
+let num = Number(str);
+alert(typeof num);
+*/
+
+/*
 let a = 1, b = 1;
 
 let c = ++a; // ? 2
@@ -7,7 +80,7 @@ let d = b++; // ? 1
 
 let a = 2;
 
-let x = 1 + (a *= 2);
+let x = 1 + (a *= 2);*/
 /*
 "" + 1 + 0 //  1 // "10"    -
 "" - 1 + 0 // 0 // -1       -
