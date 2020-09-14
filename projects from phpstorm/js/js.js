@@ -1,7 +1,82 @@
+/*
+let age = prompt ("возраст");
+let message;
+if(age<3) {
+    message= "здр,малыш";
+}
+else if( age < 18){
+    message = "привет";
+}
+else if (age<100){
+    message ="здра";
+}
+else {
+    message = "н в";
+}
+*/
 
+
+//1 --true
+/*
+Число 0, пустая строка "", null, undefined и NaN становятся false. Из-за этого их называют «ложными» («falsy») значениями.
+Остальные значения становятся true, поэтому их называют «правдивыми» («truthy»).
+*/
+
+//2
+
+let company = prompt ("Какое «официальное» название JavaScript?“");
+if (company == "ECMAScript") {
+    alert("да");
+}
+    else{
+        alert("нет");
+}
+
+//3
+let num = prompt ("число");
+if(num>0) {
+    alert("1");
+}
+else if(num < 0){
+    alert("-1");
+}
+else if (num == 0){
+    alert("0");
+}
+
+
+/*let result;
+
+if (a + b < 4) {
+    result = 'Мало';
+} else {
+    result = 'Много';
+}*/
+
+
+
+
+
+/*
+5 > 4         // t
+"ананас" > "яблоко" //
+"2" > "12" // und --- t
+undefined == null  //t спец языка
+undefined === null //f различные типы
+null == "\n0\n" // t --- f
+null === +"\n0\n" //f
+*/
+
+/*
+let name = prompt ("Как вас зовут ?");
+alert(`Вас зовут ${name}`)
+*/
+
+/*
 let a = 2;
 let x = 1 + (a *= 2);
 alert(x);
+*/
 
 /*
 let counter = 1;
@@ -34,7 +109,9 @@ let a = counter++; //
 alert(a)
 */
 
+
 /*
+
 let counter = 0;
 counter++;
 ++counter;
