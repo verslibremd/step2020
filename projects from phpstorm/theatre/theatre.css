@@ -13,7 +13,6 @@ a, a:hover{
     background: rgba(51, 51, 51, 0.75);
     z-index:1;
 }
-
 .left-items__content{
     display: flex;
     flex-direction: column;
@@ -21,8 +20,6 @@ a, a:hover{
     height: 575px;
     margin-top: 125px;
 }
-
-
 
 .left-items__text{
     color: #C4C4C4;
@@ -67,9 +64,10 @@ a, a:hover{
     margin-bottom: 30px;
 }
 
-
-
     /*------навигация в хедере------*/
+.cont-w{
+    max-width: 1110px;
+}
 
 .header{
     width: 100%;
