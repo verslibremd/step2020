@@ -72,7 +72,7 @@ a, a:hover{
     width: 100%;
     height: 1045px;
     background-image: url("theatre-pict/p1.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .font-style-header{
@@ -169,3 +169,9 @@ a, a:hover{
     background: #37A04C;
 }
 
+
+.azt{
+    display: flex;
+    flex-direction: column;
+
+}
