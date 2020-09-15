@@ -1,17 +1,85 @@
+
+/*          2
+let name = prompt("Какое «официальное» название JavaScript?", "");
+if (name == "ECMAScript") {
+    alert("Верно!");
+}
+else {
+    alert("Не знаете? ECMAScript!");
+}
+*/
+
+/*          3
+let number = prompt("Число","");
+if (number > 0) {
+    alert("1");
+}
+else if (number < 0) {
+    alert("-1");
+}
+else {
+   alert("0");
+}
+*/
+
+/*         4
+a = 1;
+b = 2;
+let result = (a + b < 4) ? "мало" : "много";
+alert(result);
+*/
+
+
+/*          5
+let login = prompt("Кто","");
+message = (login == "Сотрудник") ? "привет" :
+    (login == "Директор") ? "Здравствуйте" :
+        (login == "") ? "Нет логина" :
+            "";
+alert(message);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 let age = prompt ("возраст");
 let message;
 if(age<3) {
-    message= "здр,малыш";
+    message= "здравствуй,малыш";
 }
 else if( age < 18){
     message = "привет";
 }
 else if (age<100){
-    message ="здра";
+    message ="здравствуйте";
 }
 else {
-    message = "н в";
+    message = "необычный возраст";
 }
 */
 
@@ -23,6 +91,7 @@ else {
 */
 
 //2
+/*
 
 let company = prompt ("Какое «официальное» название JavaScript?“");
 if (company == "ECMAScript") {
@@ -43,6 +112,7 @@ else if(num < 0){
 else if (num == 0){
     alert("0");
 }
+*/
 
 
 /*let result;
