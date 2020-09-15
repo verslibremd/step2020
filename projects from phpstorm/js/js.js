@@ -31,7 +31,7 @@ alert(result);
 
 
 /*          5
-let login = prompt("Кто","");
+let login = prompt("Кто там","Я вас не звал!!!");
 message = (login == "Сотрудник") ? "привет" :
     (login == "Директор") ? "Здравствуйте" :
         (login == "") ? "Нет логина" :

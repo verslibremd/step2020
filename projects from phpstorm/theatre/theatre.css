@@ -12,6 +12,8 @@ a, a:hover{
     height: 1045px;
     background: rgba(51, 51, 51, 0.75);
     z-index:1;
+    display: flex;
+    flex-direction: column;
 }
 .left-items__content{
     display: flex;
@@ -65,9 +67,6 @@ a, a:hover{
 }
 
     /*------навигация в хедере------*/
-.cont-w{
-    max-width: 1110px;
-}
 
 .header{
     width: 100%;
