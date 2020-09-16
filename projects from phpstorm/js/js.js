@@ -1,6 +1,16 @@
-const thisYear = 2020;
+/*      1
+const THIS_YEAR = 2020;
 let yearOfBirth = prompt("Ваш год рождения");
 alert(thisYear - yearOfBirth);
+*/
+
+/*      2
+let userVolume = prompt("Укажите объем флеш карты в Gb");
+const CONSTANT_VOLUME = 1024;
+let fileSize = 820;
+alert((userVolume*CONSTANT_VOLUME) / fileSize);
+*/
+
 
 
 
