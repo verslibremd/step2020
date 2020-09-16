@@ -43,9 +43,30 @@ alert((volume*VAULT) / user);
 */
 
 
-const RU = 10;
-const USA = 20;
-let nameСurrency = prompt("Валюта","RU или USA");
+/*
+const RU = 20;
+const USA = 1;
+let name = prompt("Валюта","RU или USA");
+if (name == RU){
+    name *
+}
+let sum = prompt("Сумма");
+*/
+
+
+/*
+let a = name * sum;
+let b = sum / name;
+if (name == RU) {
+    alert(a);
+}
+else if (name == USA) {
+    alert(b);
+}
+
+*/
+
+
 
 
 
