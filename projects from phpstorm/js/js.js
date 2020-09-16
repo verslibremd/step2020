@@ -1,3 +1,8 @@
+const thisYear = 2020;
+let yearOfBirth = prompt("Ваш год рождения");
+alert(thisYear - yearOfBirth);
+
+
 
 /*          2
 let name = prompt("Какое «официальное» название JavaScript?", "");
