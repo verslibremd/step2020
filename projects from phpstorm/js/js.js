@@ -13,7 +13,7 @@ alert((userVolume*CONSTANT_VOLUME) / fileSize);
 */
 
 
-/*
+
 
 const RUB_USD = 0.013;
 const USD_RUB = 75.32;
@@ -26,7 +26,7 @@ let name = prompt( "Валюта","RUB, USD, EUR");
 // USD
 if (name == "USD") {
     let sum = prompt("Сумма");
-    let what = prompt("На какую валюту ?", "RUB, USD, EUR");
+    let what = prompt("На какую валюту ?", "RUB, EUR");
     if (what == "RUB") {
         let finalDollRub = sum*USD_RUB;
         let consentFinalDollRub = confirm (`Ваша сумма в рублях ${finalDollRub} Продолжить обмен ?`);
@@ -51,7 +51,7 @@ if (name == "USD") {
 // RUB
 else if (name == "RUB") {
     let sum = prompt("Сумма");
-    let what = prompt("На какую валюту ?", "RUB, USD, EUR");
+    let what = prompt("На какую валюту ?", "USD, EUR");
     if (what == "USD") {
         let finalRubDoll = sum*RUB_USD;
         let consentFinalRubDoll = confirm (`Ваша сумма в долларах ${finalRubDoll} Продолжить обмен ?`);
@@ -76,7 +76,7 @@ else if (name == "RUB") {
 // EUR
 else if (name == "EUR") {
     let sum = prompt("Сумма");
-    let what = prompt("На какую валюту ?", "RUB, USD, EUR");
+    let what = prompt("На какую валюту ?", "RUB, USD");
     if (what == "USD") {
         let finalEuroDoll = sum*EUR_USD;
         let consentFinalEuroDoll = confirm (`Ваша сумма в долларах ${finalEuroDoll} Продолжить обмен ?`);
@@ -98,4 +98,4 @@ else if (name == "EUR") {
         }
     }
 }
-*/
+
