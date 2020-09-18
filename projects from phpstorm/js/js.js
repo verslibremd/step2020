@@ -5,7 +5,8 @@ let yearOfBirth = prompt("Ваш год рождения");
 alert(`Вам ${THIS_YEAR - yearOfBirth} лет!`);
 */
 
-/*          2       остаток от деления
+
+/*
 let userVolume = prompt("Укажите объем флеш карты в Gb");
 const CONSTANT_VOLUME = 1024;
 let fileSize = 820;
@@ -13,8 +14,7 @@ alert((userVolume*CONSTANT_VOLUME) / fileSize);
 */
 
 
-
-
+/*
 const RUB_USD = 0.013;
 const USD_RUB = 75.32;
 const RUB_EUR = 0.011;
@@ -98,4 +98,5 @@ else if (name == "EUR") {
         }
     }
 }
+*/
 
