@@ -13,7 +13,7 @@ body {
     margin-bottom: 20px;
 }
 
-.description{                                           /* описания под заголовком*/
+.description{                                           /* описания */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -22,19 +22,13 @@ body {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-
-.grid{                                      /*сетка*/
+.grid{
     width: 1200px;
     margin: 0 auto;
 }
+/*-----------------------------*/
 
-button:hover{                                 /* при наведении на кнопку*/
-  border: 2px dashed #FFFFFF ;
-}
-
-/*-------------1----------------*/
-
-        /* 1 / 1 */
+/* 1 / 1 */
 .three-pict__wrapper{
     display: flex;
     flex-direction: column;
@@ -42,77 +36,92 @@ button:hover{                                 /* при наведении на 
 .three-pict__one-block{
     display: flex;
     flex-direction: row;
+    width: 1181px;
+    height: 342px;
     margin-bottom: 30px;
 }
 .three-pict__text{
     display: flex;
     flex-direction: column;
+    width: 596px;
+    height: 124px;
     align-self: center;
 }
-.three-pict__text--width{
-    width: 596px;
-}
-.title--position{
+.title--one-block{
     align-self: flex-end;
     margin: 0 20px;
     width: 300px;
 }
-.description--position{
+.description--one-block{
     align-self: flex-end;
     margin: 20px 20px 0 0;
     width: 300px;
 }
-.three-pict__block-img-one-box{
+.three-pict__block-img--one-img{
     background-image: url("img amway2/Image8.png");
     width: 585px;
     height: 342px;
+    align-self: center;
+    margin: 0;
 }
-        /* 1 / 2 */
+
+/* 2 / 1 */
 .three-pict__two-block{
     display: flex;
     flex-direction: row;
     align-self: center;
     margin-bottom: 30px;
 }
-.three-pict__block-img-two-box{
+.three-pict__block-img--two-img{
     background-image: url("img amway2/Image88.png");
     width: 600px;
     height: 350px;
+    align-self: center;
+    margin: 0;
 }
-.three-pict__text--width-height{
+.three-pict__text--block-two{
     width: 480px;
     height: 124px;
+    margin: 0;
 }
-.title--width{
+.title--two-block{
     width: 340px;
 }
-        /* 1 / 3 */
+
+/* 3 / 1 */
+
 .three-pict__three-block{
     display: flex;
     flex-direction: row;
+    width: 1200px;
+    height: 342px;
 }
-.three-pict__text--width-height-box-three{
+.three-pict__text--block-three{
     width: 615px;
     height: 184px;
 }
-.three-pict__block-img-three-box{
+.three-pict__block-img--three-img{
     background-image: url("img amway2/Image888.png");
     width: 585px;
     height: 342px;
+    align-self: center;
 }
-/*---------------------2-----------------------*/
+
+/*------------------------------------------------------*/
 .fast-access{
     width: 100%;
     height: 587px;
     background-color: #407FFE;
 }
-.grid--width{
-    width: 1400px;
+.grid--fast-access{
+    height: 100%;
     display: flex;
     flex-direction: row;
+    width: 1400px;
 }
 .fast-access__pict{
     background-image: url("img amway2/Group667.png");
+    background-repeat: no-repeat;
     width: 824px;
     height: 588px;
 }
@@ -121,29 +130,30 @@ button:hover{                                 /* при наведении на 
     flex-direction: column;
     margin: 231px 0 0 780px;
     width: 431px;
+    height: 124px;
 }
-.title--color-white{
+.title--white{
     color: #FFFFFF;
 }
 .description--margin-bottom-color{
     margin-bottom: 30px;
     color: #FFFFFF;
 }
-.button{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
+.fast-access__button{
     width: 229px;
     height: 36px;
     background: #034580;
     border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
-.button:after{
+.fast-access__button:after{
    content: url("img amway2/Arrow.svg");
     margin-left: 10px;
 }
-/*----------------3------------------*/
+/*--------------------------------------------*/
 .two-block-x{
     margin: 30px 0;
 }
@@ -155,37 +165,34 @@ button:hover{                                 /* при наведении на 
     display: flex;
     flex-direction: row;
 }
-.three-pict__text--width-section-three-box-one{
+.three-pict__text--one-block{
     width: 615px;
+    height: 184px;
 }
-.title--margin-right{
+.three-pict__text--one-block-margin{
     margin-right: 74px;
 }
-.description--margin-right{
-    margin-right: 74px;
+
+.two-block-x__two-block{
+    display: flex;
+    flex-direction: row;
 }
 .two-block-x__img-one{
     background-image: url("img amway2/one-block.png");
     width: 585px;
     height: 342px;
-}
-
-.two-block-x__two-box{
-    display: flex;
-    flex-direction: row;
+    background-size: cover;
 }
 .two-block-x__img-two{
     background-image: url("img amway2/two-block.png");
     width: 600px;
     height: 350px;
 }
-.three-pict__text--width-section-three-box-two{
+.three-pict__text--two-block{
     width: 540px;
+    height: 162px;
 }
-.title--margin-left{
-    margin-left: 60px;
-}
-.description--margin-left{
+.three-pict__text--two-block-margin{
     margin-left: 60px;
 }
 /*------------------------------------------*/
@@ -194,38 +201,50 @@ button:hover{                                 /* при наведении на 
     height: 430px;
     background-color: #6E4AC3;
     display: flex;
-    position: relative;
 }
-.grid--width-display{
+.grid--width{
     width: 1920px;
     display: flex;
     justify-content: center;
 }
+
+.all-stars__text{
+    display: flex;
+}
+
 .all-stars__wrapper{
     display: flex;
     flex-direction: column;
     margin-top: 130px;
+    width: 600px;
+    height: 222px;
 }
 .title--align{
     text-align: center;
 }
-.title--margin-top{
+.title--margin{
     margin-top: 10px;
 }
-.button--margin-top{
+.title--margin-button{
     margin-top: 30px;
 }
-.all-stars__img-one{                                                   /*проработать*/
+.all-stars__img-one{
+    background-image: url("img amway2/Group 561.png");
+    width: 40%;
     height: 110%;
+    background-repeat: no-repeat;
+    background-size: contain;
     align-self: flex-end;
-    position: absolute;
 }
 .all-stars__img-two{
+    background-image: url("img amway2/Group 505.png");
+    width: 40%;
     height: 110%;
-    position: absolute;
-    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-self: flex-end;
 }
+
 /*-------------------------------------------*/
 .join-us{
     background-color: #F7F7F7;
@@ -291,6 +310,9 @@ button:hover{                                 /* при наведении на 
     width: 100%;
     height: 412px;
 }
+.grid__end-page{
+    height: inherit;
+}
 .end-page__content{
     display: flex;
     flex-direction: row;
@@ -314,7 +336,6 @@ button:hover{                                 /* при наведении на 
 .description--margin-bottom-two{
     margin-bottom: 40px;
 }
-.button--size{
+.fast-access__button--size{
     width: 260px;
 }
-/*-------------------------------------*/
