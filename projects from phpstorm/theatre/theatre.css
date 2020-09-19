@@ -5,6 +5,17 @@ a, a:hover{
     text-decoration: none;
     color: #FFFFFF;
 }
+.title{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
 
     /*------ fixed--------*/
 .left-items{
@@ -161,18 +172,10 @@ a, a:hover{
     letter-spacing: 0.1em;
 }
 
-/*------------------------*/
+/*----------о театре--------------*/
 .about{
     margin: 0 auto;
-    padding-top: 150px;
-}
-.about__title{
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    padding-bottom: 100px;
+   padding-top: 150px;
 }
 .about__text-title{
     font-size: 21px;
@@ -196,4 +199,21 @@ a, a:hover{
 }
 .color-y{
     color: #D1A954;
+}
+/*--------------наши постановки---------------*/
+
+.staging{
+    padding-top: 150px;
+}
+.staging__pict{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 443px;
+    height: 550px;
+}
+.staging__pict--active{
+    background-image: url(" theatre-pict/staging-two.png");
+}
+.staging__box{
+    min-width: 1770px;
 }
