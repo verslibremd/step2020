@@ -215,8 +215,9 @@ a, a:hover{
     background-image: url(" theatre-pict/staging-two.png");
 }
 .staging__box{
-    min-width: 1770px;
+    max-width: 1770px;
 }
+
 /*--------------------------*/
 .staging-content-vol-two{
     background-image: url("theatre-pict/staging__content-vol-two.png");
