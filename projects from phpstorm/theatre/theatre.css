@@ -224,6 +224,13 @@ a, a:hover{
     height: 550px;
     margin-top: 150px;
 }
+.staging-content-vol-two__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 760px;
+}
+
 .staging-content-vol-two__title{
     font-family: "Open Sans Condensed", sans-serif;
     font-style: normal;
@@ -239,6 +246,13 @@ a, a:hover{
     font-size: 36px;
     line-height: 54px;
     color: #FFFFFF;
+}
+
+.stars{
+    padding-bottom:25px;
+}
+.stars>img{
+    padding-right: 25px;
 }
 
 /*-----------партнеры театра------------*/
