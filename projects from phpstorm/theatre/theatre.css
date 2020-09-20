@@ -104,6 +104,9 @@ a, a:hover{
     line-height: 25px;
     letter-spacing: 0.1em;
 }
+.navigation__link:hover,.navigation__phone:hover{
+    color: #D1A954;
+}
 .navigation__phone{
     font-size: 16px;
     line-height: 22px;
@@ -266,4 +269,35 @@ a, a:hover{
 /*------------стать меценатом------------*/
 .footer{
     margin-top: 120px;
+    margin-bottom: 500px;
+}
+.footer__contacts{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer__contacts:hover{
+    color: #D1A954;
+}
+.form__box{
+    width: 180px;
+    height: 35px;
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+    padding-left: 15px;
+}
+.form__box--size{
+    width: 310px;
+    height: 100px;
 }
