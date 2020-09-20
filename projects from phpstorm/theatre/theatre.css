@@ -222,6 +222,7 @@ a, a:hover{
     background-image: url("theatre-pict/staging__content-vol-two.png");
     width: 1110px;
     height: 550px;
+    margin-top: 150px;
 }
 .staging-content-vol-two__title{
     font-family: "Open Sans Condensed", sans-serif;
@@ -238,4 +239,16 @@ a, a:hover{
     font-size: 36px;
     line-height: 54px;
     color: #FFFFFF;
+}
+
+/*-----------партнеры театра------------*/
+.partners{
+    padding-top: 150px;
+}
+.partners__box{
+    padding-bottom: 80px;
+}
+/*------------стать меценатом------------*/
+.footer{
+    margin-top: 120px;
 }
