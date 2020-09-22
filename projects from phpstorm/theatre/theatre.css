@@ -214,18 +214,25 @@ a, a:hover{
 .staging{
     padding-top: 150px;
 }
+.bdsm{
+    max-width: 1770px;
+    margin: 0 auto;
+}
 .staging__pict{
     background-size: cover;
     background-repeat: no-repeat;
-    width: 443px;
     height: 550px;
+    width: 442px;
+    background-position: center;
 }
 .staging__pict--active{
     background-image: url(" theatre-pict/staging-two.png");
 }
+/*
 .staging__box{
     max-width: 1770px;
 }
+*/
 
 /*--------------------------*/
 .staging-content-vol-two{
