@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header font-style-OSC-bold">
-        <div class="left-items position-fixed d-none d-lg-flex d-xl-flex">
+        <div class="left-items position-fixed d-none d-lg-flex">
             <div class="left-items__content ">
                 <p class="left-items__text font-style-OSC-bold">контактная информация</p>
                 <hr class="left-items__line">
@@ -28,7 +28,7 @@
         </div>
         <div class="container">
             <div class="row navigation">
-                <div class="col-lg-12 col-xl-9 d-flex justify-content-lg-center">
+                <div class="col-lg-12 col-xl-9 d-flex justify-content-center">
                     <div class="row nav d-none d-lg-flex d-xl-flex">
                         <div class="col-auto"><a class="navigation__link" href="#">главная</a></div>
                         <div class="col-auto"><a class="navigation__link" href="#">о театре</a></div>
@@ -47,8 +47,8 @@
             </div>
         </div>
         <div class="container header-content">
-            <div class="row d-flex justify-content-lg-center align-items-center mr-lg-5">
-                <div class="col-xl-7 col-lg-8 mt-5 d-flex flex-column">
+            <div class="row d-flex justify-content-md-center ">
+                <div class="header-content__left-lock col-xl-7 col-lg-8 d-flex flex-column">
                     <h1 class="d-inline header-content__title font-style-OSC-bold">большой театр</h1>
                     <p class="d-inline header-content__description">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,<br> с 1886 года — Петербургская консерватория. Первое постоянное в<br> Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных<br> зданий в Европе XVIII.</p>
                     <a href="#"><button class="header-content__button font-style-OSC-bold d-inline" type="button">АФИША</button></a>
@@ -56,10 +56,12 @@
                 <div class="col-xl-5 d-none d-xl-block header-content__poster">
                     <div class="row">
                         <div class="col-xl-12 d-none d-xl-block">
-                            <img class="poster" src="theatre-pict/p2.png" alt="афиша">
+                            <a href="#">
+                                <img class="poster" src="theatre-pict/p2.png" alt="афиша">
+                            </a>
                         </div>
                     </div>
-                    <div class="row d-flex arrow ">
+                    <div class="row d-flex arrow">
                         <a href="#" class="col-5 d-inline-flex arrow__left-arrow">
                             <img src="theatre-pict/ArrowLeft.svg" alt="svg">
                             <p class="arrow__text">ПРЕД</p>
@@ -114,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="staging">
+    <!--<section class="staging">
         <h1 class="title"><span class="color-y">наши</span>постановки</h1>
         <div class="container staging__box">
             <div class="row">
@@ -124,7 +126,7 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4">
-                    <div class="staging__pict staging__pict--active d-flex justify-content-center align-items-center">
+                    <div class="staging__pict staging__pict&#45;&#45;active d-flex justify-content-center align-items-center">
                         <a href="#">
                             <img class="search" src="theatre-pict/active.svg" alt="поиск">
                         </a>
@@ -141,15 +143,15 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="container staging-content-vol-two d-flex justify-content-center align-items-center">
-            <div class="row staging-content-vol-two__box ">
-                <div class="col-lg-3">
+        </div>-->
+        <div class="container staging-content-vol-two d-flex justify-content-center">
+            <div class="row staging-content-vol-two__box d-flex flex-row justify-content-lg-between">
+                <div class="col-sm-3 staging-content-vol-two__left">
                     <p class="staging-content-vol-two__title color-y">2018</p>
                     <p class="staging-content-vol-two__title color-y">2019</p>
                     <p class="staging-content-vol-two__title color-y">2020</p>
                 </div>
-                <div class="col-xl-auto col-lg-9 mt-5 staging-content-vol-two__content-right">
+                <div class="col-xl-auto col-sm-9 staging-content-vol-two__right justify-content-md-center">
                     <div class="stars">
                         <img src="theatre-pict/stars.svg" alt="звезда">
                         <img src="theatre-pict/stars.svg" alt="звезда">

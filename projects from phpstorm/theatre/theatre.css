@@ -117,6 +117,10 @@ a, a:hover{
 
 .header-content{
     max-width: 1035px;
+    padding-bottom: 208px;
+}
+.header-content__left-lock{
+    padding-top: 307px;
 }
 .pad{
     margin-top: 90px;
@@ -147,7 +151,8 @@ a, a:hover{
 
         /*--контент хедера--постер--*/
 .header-content__poster{
-    margin-top: 100px;
+    padding-top: 190px;
+
 }
 .poster{
     background-size: contain;
@@ -173,7 +178,9 @@ a, a:hover{
     color: #FFFFFF;
     letter-spacing: 0.1em;
 }
+.arz{
 
+}
 /*----------о театре--------------*/
 .about{
     margin: 0 auto;
@@ -224,14 +231,22 @@ a, a:hover{
 .staging-content-vol-two{
     background-image: url("theatre-pict/staging__content-vol-two.png");
     background-size: cover;
+    width: 100%;
     height: 550px;
     margin-top: 150px;
 }
 .staging-content-vol-two__box{
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-width: 760px;
+    justify-content: space-between;*/
+    max-width: 760px;
+}
+.staging-content-vol-two__left{
+    padding-top: 116px;
+}
+.staging-content-vol-two__right{
+    padding-top: 160px;
+    padding-left: 58px;
 }
 
 .staging-content-vol-two__title{
