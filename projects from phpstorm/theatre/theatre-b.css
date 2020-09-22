@@ -3,3 +3,12 @@
 
 }
 */
+@media (min-width: 768px) {
+    .about__text-title{
+        white-space: nowrap;
+    }
+}
+/*
+@media (min-width: 576px) {
+    .jd div
+}*/

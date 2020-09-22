@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header font-style-OSC-bold">
-        <div class="left-items position-fixed">
+        <div class="left-items position-fixed d-none d-lg-flex d-xl-flex">
             <div class="left-items__content ">
                 <p class="left-items__text font-style-OSC-bold">контактная информация</p>
                 <hr class="left-items__line">
@@ -51,7 +51,7 @@
                 <div class="col-xl-7 col-lg-8 mt-5 d-flex flex-column">
                     <h1 class="d-inline header-content__title font-style-OSC-bold">большой театр</h1>
                     <p class="d-inline header-content__description">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,<br> с 1886 года — Петербургская консерватория. Первое постоянное в<br> Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных<br> зданий в Европе XVIII.</p>
-                    <a class="" href="#"><button class="header-content__button font-style-OSC-bold d-inline" type="button">АФИША</button></a>
+                    <a href="#"><button class="header-content__button font-style-OSC-bold d-inline" type="button">АФИША</button></a>
                 </div>
                 <div class="col-xl-5 d-none d-xl-block header-content__poster">
                     <div class="row">
@@ -77,25 +77,35 @@
         <h1 class="title title--padding-bottom"><span class="color-y">О</span> ТЕАТРЕ</h1>
         <div class="container d-flex justify-content-center">
             <div class="row">
-                <div class="col-xl-auto">
-                    <p class="about__text-title font-style-OSC-bold">
-                        Самый лучший театр СПБ
-                    </p>
-                    <p class="about__text-description text-left">
-                        Как свидетельствуют архивные документы, первое каменное<br> здание Большого театра начали возводить в 1775 году по<br> проекту Антонио Ринальди. В дальнейшем, после того как<br> Ринальди упал с лесов и не мог лично наблюдать за ходом<br> работ, Екатерина II поручила немецкому театральному<br> декоратору и архитектору Людвигу Филиппу Тишбейну создать<br> новый проект театра, который и был воплощён архитекторами<br> Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в<br> 1783 году, хотя, основываясь на других свидетельствах, годом<br> открытия можно считать 1784 год.
-                    </p>
-                </div>
-                <div class="col-xl-auto">
-                    <p class="about__text-title font-style-OSC-bold">
-                        немного о цифрах
-                    </p>
-                    <div>
-                        <img src="theatre-pict/about-one.svg" alt="svg">
-                        <p class="about__text-description-vol-two font-style-OSC-bold"><span class="color-y">1600</span> посадочный мест</p>
+                <div class="col-xl-auto col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="about__text-title font-style-OSC-bold text-sm-center text-md-left">
+                                Самый лучший театр СПБ
+                            </p>
+                            <p class="about__text-description text-left text-sm-center text-md-left">
+                                Как свидетельствуют архивные документы, первое каменное<br> здание Большого театра начали возводить в 1775 году по<br> проекту Антонио Ринальди. В дальнейшем, после того как<br> Ринальди упал с лесов и не мог лично наблюдать за ходом<br> работ, Екатерина II поручила немецкому театральному<br> декоратору и архитектору Людвигу Филиппу Тишбейну создать<br> новый проект театра, который и был воплощён архитекторами<br> Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в<br> 1783 году, хотя, основываясь на других свидетельствах, годом<br> открытия можно считать 1784 год.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="theatre-pict/about-two.svg" alt="svg">
-                        <p class="about__text-description-vol-two font-style-OSC-bold "><span class="color-y">350</span> лет истории</p>
+                </div>
+                <div class="col-xl-auto ml-md-auto col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="about__text-title font-style-OSC-bold text-sm-center mt-sm-3 mt-md-0">
+                                немного о цифрах
+                            </p>
+                            <div class="d-flex flex-sm-row flex-md-column justify-content-sm-around">
+                                <div>
+                                    <img src="theatre-pict/about-one.svg" alt="svg">
+                                    <p class="about__text-description-vol-two font-style-OSC-bold"><span class="color-y">1600</span> посадочный мест</p>
+                                </div>
+                                <div>
+                                    <img src="theatre-pict/about-two.svg" alt="svg">
+                                    <p class="about__text-description-vol-two font-style-OSC-bold"><span class="color-y">350</span> лет истории</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-auto d-none d-xl-block">
