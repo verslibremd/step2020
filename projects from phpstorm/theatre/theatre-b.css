@@ -8,7 +8,11 @@
         white-space: nowrap;
     }
 }
-
+@media (max-width: 1199px) {
+    .bdsm{
+        width: 690px;
+    }
+}
 /*
 staging-content-vol-two__right выставить padding
 */
@@ -22,4 +26,9 @@ footer__contacts text-lg-right -- на sm -nowrap
 
 /*
 form__box--size увеличить для sm
+*/
+
+
+/*
+overflow-hidden
 */
