@@ -208,7 +208,7 @@ a, a:hover{
     padding-top: 150px;
 }
 .staging__pict{
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 443px;
     height: 550px;
@@ -223,7 +223,7 @@ a, a:hover{
 /*--------------------------*/
 .staging-content-vol-two{
     background-image: url("theatre-pict/staging__content-vol-two.png");
-    width: 1110px;
+    background-size: cover;
     height: 550px;
     margin-top: 150px;
 }
