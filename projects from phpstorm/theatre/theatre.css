@@ -78,7 +78,6 @@ a, a:hover{
 }
 
     /*------навигация в хедере------*/
-
 .header{
     width: 100%;
     background-image: url("theatre-pict/p1.png");
@@ -283,9 +282,7 @@ a, a:hover{
 .footer__contacts:hover{
     color: #D1A954;
 }
-/*.footer__form{
-    padding-bottom: 80px;
-}*/
+
 .form__box{
     width: 180px;
     height: 35px;
