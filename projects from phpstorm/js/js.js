@@ -182,7 +182,7 @@ showNumbers(40,79,false);
 function getNextDate(day,month,year) {
     let maxDay = 30;
     if(month == 2) {
-        maxDay == 28;
+        maxDay = isLeapYear(year)? 29:28;
     }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
         maxDay ==31;
     }
@@ -202,15 +202,21 @@ function getNextDate(day,month,year) {
     if (day<10){
         day = "0" + day;
     }
-    f (month<10){
+    if (month<10) {
         month = "0" + month;
     }
     return day + " . " + month + " . " + year;
 }
 
+function isLeapYear(year) {
+    return((year%400) == 0 || ((year % 4) == 0 && (year%100) !=0));
+}
 
 
 
+alert(getNextDate(23,9,2020));
+alert(getNextDate(28,2,2020));
+alert(getNextDate(29,2,2020));
 
 
 
