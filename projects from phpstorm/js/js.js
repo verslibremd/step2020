@@ -37,7 +37,7 @@ alert(result);
 //задачи
 
 /*
-// 1.написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+//1.написать функцию, которая принимает 2 числа и возвращает меньшее из них.
 function min(a,b) {
     if(a>b) {
         return b;
@@ -120,6 +120,8 @@ for (let i = 2; i<=9; i++){
 */
 
 
+
+/*
 //6.написать функцию которая принимает от 1 до 5 числе и возвращает их сумму
 function summ() {
     let result=0;
@@ -133,14 +135,78 @@ alert(summ(10,7));
 
 
 
+*/
 
+/*
+//8.Написать функцию, которая принимает от 1 до 5 числе и возвращает большее из них.
+function max() {
+    let max = arguments [0];
+    for (let i = 0; i<arguments.length; i++){
+        if (arguments[i] > max && i < 4){
+            max = arguments[i];
+        }
+    }
 
+    return max;
+}
+alert(max(70,50,40,110,2));
 
+*/
 
+/*
+// 9.написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. какие числа выводить,
+    //определяется третьим параметром типа bool (true - четные, false - нечетные).
 
+function showNumbers(a,b,even) {
+    for (let i = a; i <= b; i++) {
+        if (even){
+            if ((i % 2) == 0){
+                document.write(i + "<br>");
+            }
+        }else {
+            if ((i % 2) != 0){
+                document.write(i + "<br>");
+            }
+        }
 
+    }
+}
+showNumbers(5,50,true);
+document.write("<hr>");
+showNumbers(40,79,false);
+*/
 
+// написать функцию, которая принимает дату ( день, месяц, год) и возвращает дату следующего дня в виде строки <<дд.мм.гггг>>.
+// Проверку на високосный год желаетельно написать отдельной функции.
 
+function getNextDate(day,month,year) {
+    let maxDay = 30;
+    if(month == 2) {
+        maxDay == 28;
+    }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+        maxDay ==31;
+    }
+
+    if (day == maxDay){
+        day == 1;
+        if (month == 12){
+            month==1;
+            year++;
+        }else {
+            month++
+        }
+    }else {
+        day++;
+    }
+
+    if (day<10){
+        day = "0" + day;
+    }
+    f (month<10){
+        month = "0" + month;
+    }
+    return day + " . " + month + " . " + year;
+}
 
 
 
