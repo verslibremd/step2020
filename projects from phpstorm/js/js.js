@@ -102,7 +102,9 @@ alert(isSimple(7));
 alert(isSimple(26));
 */
 
+/*
 //5. Написать функцию, которая принимает число и выводит таблицу * для этого числа. Вызовитие функцию для всех числе от 2 до 9.
+
 
 function table(x) {
     for (let i = 1; i<=10; i++){
@@ -115,8 +117,19 @@ function table(x) {
 for (let i = 2; i<=9; i++){
     table(i);
 }
+*/
 
 
+//6.написать функцию которая принимает от 1 до 5 числе и возвращает их сумму
+function summ() {
+    let result=0;
+    for (let i = 0; i<arguments.length; i++){
+        result += arguments[i];
+    }
+
+    return result;
+}
+alert(summ(10,7));
 
 
 
