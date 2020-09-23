@@ -1,3 +1,146 @@
+//Функции
+
+/*
+function show5Blocks() {
+    for (let i=1; i<=5; i++){
+        document.write("<h2> Header "+ i +" </h2>");
+    }
+}
+//show5Blocks();  //вызов функции
+
+function incAndLog(x) {
+    x = x + 1;
+    alert("inc x = " + x );
+    Log.innerHTML += "<br>inc x = " + x;
+}
+incAndLog(x);
+
+function incAndLog(x) {
+    x = x + 1;
+    alert("inc x = " + x );
+    Log.innerHTML += "<br>inc x = " + x;
+}
+
+let x = 2;
+Log.innerHTML += "<br>inc x = " + x;
+incAndLog(x);
+Log.innerHTML += "<br>inc x = " + x;
+
+//пример ф.куба
+function cube(x) {
+    return x*x*x;
+}
+let result = cube(10);
+alert(result);
+*/
+
+//задачи
+
+/*
+// 1.написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+function min(a,b) {
+    if(a>b) {
+        return b;
+    }else {
+        return a;
+    }
+}
+alert(min(90,4));
+//return (a>b)? b:a; с помощью тернарного оператора
+*/
+
+/*
+//2.написать функцию, которая возводит переданное число в указанную степень
+//x - число / y степень/ while (y >= 1), можно (y>0)
+function power(x,y) {
+    let result = 1;
+    while (y >= 1){
+        result = result * x;
+        y--;
+    }
+    return result;
+}
+
+alert(power(2,3));
+*/
+
+/*
+//3. написать ф, которая принимает 2 числа и знак (+,-,*,/), считает пример и возвращает результат
+function calc(a, b, operator) {
+    switch (operator) {
+        case "+":
+            return a+b;
+        case "-":
+            return a-b;
+        case "*":
+            return a*b;
+        case "/":
+            return a/b;
+    }
+}
+alert(calc(10,15,"+"));
+
+alert(calc(10,15,"-"));
+
+alert(calc(10,15,"*"));
+
+alert(calc(10,15,"/"));
+*/
+
+/*
+//4.Написать функцию, которая проверяет , является ли переданное ей число простым
+function isSimple(x) {
+  for (let i = x - 1; i > 1; i--){
+      if ((x % i) == 0){
+          return "Число не простое";
+      }
+  }
+
+  return "число простое";
+}
+alert(isSimple(7));
+alert(isSimple(26));
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //циклы
 
 //while
@@ -161,6 +304,10 @@ for (let i = x - 1; i >1; i--){
 }
 alert((result)? "число простое": "число не простое");
 */
+
+
+
+
 
 
 /*
