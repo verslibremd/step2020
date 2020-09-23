@@ -1,6 +1,34 @@
+/*
 @media all and (min-width : 1824px){
-    .pad{
-        margin-top: 270px;
+
+}
+*/
+@media (min-width: 768px) {
+    .about__text-title{
+        white-space: nowrap;
     }
 }
+@media (max-width: 1199px) {
+    .bdsm{
+        width: 690px;
+    }
+}
+/*
+staging-content-vol-two__right выставить padding
+*/
 
+/*
+staging-content-vol-two__text размер шрифта
+*/
+/*
+footer__contacts text-lg-right -- на sm -nowrap
+*/
+
+/*
+form__box--size увеличить для sm
+*/
+
+
+/*
+overflow-hidden
+*/
