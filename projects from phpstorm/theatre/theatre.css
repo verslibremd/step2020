@@ -228,6 +228,9 @@ a, a:hover{
 .staging__pict--active{
     background-image: url(" theatre-pict/staging-two.png");
 }
+.scroll{
+    overflow-x: scroll;
+}
 
 /*--------------------------*/
 .staging-content-vol-two{

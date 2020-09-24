@@ -1,8 +1,12 @@
 
-/*lg*/
-@media (max-width: 1199px) {
+        /*lg*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .bdsm{
         width: 690px;
+    }
+    .about__text-title{
+        white-space: nowrap;
     }
     .staging-content-vol-two__box{
         max-width: 690px;
@@ -16,23 +20,30 @@
     .form__button{
         margin-left: 82px;
     }
-    .footer__address{
+   .footer__address{
         padding-right: 30px;
     }
 }
 
+        /*md*/
 
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .about__text-title{
         white-space: nowrap;
     }
-}
-@media (max-width: 1199px) {
-    .bdsm{
-        width: 690px;
+    .staging-content-vol-two__text{
+        font-size: 29px;
     }
+    .form__box--size{
+        margin-right: 5px;
+    }
+    
 }
+
+
+
+
+
 /*
 staging-content-vol-two__right выставить padding
 */
