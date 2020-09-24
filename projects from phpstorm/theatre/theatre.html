@@ -14,7 +14,29 @@
 </head>
 <body>
     <header class="header font-style-OSC-bold">
-        <div class="left-items position-fixed d-none d-lg-flex">
+        <section class="left-menu sticky-top d-none d-md-flex d-lg-none"> <!--меню для md-->
+            <button type="button" class="close cross text-white" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <nav class="left-menu__nav d-flex flex-column font-style-OSC-bold">
+                <a class="navigation__link" href="#">главная</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">о театре</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">наши постановки</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">партнеры театра</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">контакты</a>
+            </nav>
+            <div class="left-menu__social-media d-flex flex-column justify-content-between">
+                <div class="facebook-inst d-flex flex-row justify-content-between">
+                    <a href="#"><img src="theatre-pict/md-f.svg" alt="social-media"></a>
+                    <a href="#"><img src="theatre-pict/md-i.svg" alt="social-media"></a>
+                </div>
+                <div class="youtube-vk d-flex flex-row justify-content-between">
+                    <a href="#"><img src="theatre-pict/md-y.svg" alt="social-media"></a>
+                    <a href="#"><img src="theatre-pict/md-vk.svg" alt="social-media"></a>
+                </div>
+            </div>
+        </section>
+        <div class="left-items position-fixed d-none d-lg-flex"> <!--меню для lg,xl-->
             <div class="left-items__content ">
                 <p class="left-items__text font-style-OSC-bold">контактная информация</p>
                 <hr class="left-items__line">
@@ -118,7 +140,7 @@
     </section>
     <section class="staging">
         <h1 class="title"><span class="color-y">наши</span>постановки</h1>
-        <div class="container bdsm scroll">
+        <div class="container bdsm scroll overflow-hidden">
             <div class="row d-flex flex-row no-gutters ">
                 <div class="col-xl-3 col-md-7 col-sm-8 ">
                     <a href="#">

@@ -76,6 +76,42 @@ a, a:hover{
 .social-media>.social-media__link{
     margin-bottom: 30px;
 }
+/*-------левое меню для md-----------*/
+.left-menu{
+    width: 300px;
+    background: #333333;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.cross{
+    margin: 30px 0 0 238px;
+}
+.left-menu__nav{
+    margin: 140px 0 0 39px;
+    /*height: 370px;*/
+}
+.navigation__link--margin-t{
+    margin-top: 35px;
+}
+.left-menu__social-media{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 126px;
+    margin: 89px 0 0 89px;
+}
+.facebook-inst{
+    display: flex;
+    flex-direction: row;
+}
+.youtube-vk{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
     /*------навигация в хедере------*/
 .header{
