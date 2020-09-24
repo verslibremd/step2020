@@ -138,6 +138,7 @@ a, a:hover{
     font-weight: normal;
     font-style: normal;
     text-transform: none;
+    margin: 30px 0;
 }
 .header-content__button{
     width: 160px;
@@ -228,9 +229,7 @@ a, a:hover{
 .staging__pict--active{
     background-image: url(" theatre-pict/staging-two.png");
 }
-.scroll{
-    overflow-x: scroll;
-}
+
 
 /*--------------------------*/
 .staging-content-vol-two{
@@ -285,7 +284,6 @@ a, a:hover{
 /*------------стать меценатом------------*/
 .footer{
     margin-top: 120px;
-    margin-bottom: 500px;
 }
 .footer__contacts{
     font-family: "Open Sans Condensed", sans-serif;

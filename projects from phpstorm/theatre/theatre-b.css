@@ -5,6 +5,9 @@
     .bdsm{
         width: 690px;
     }
+    .scroll{
+        overflow-x: scroll;
+    }
     .about__text-title{
         white-space: nowrap;
     }
@@ -37,29 +40,27 @@
     .form__box--size{
         margin-right: 5px;
     }
-    
+    .scroll{
+        overflow-x: scroll;
+    }
 }
 
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .bdsm{
+        width: 510px;
+    }
+    .staging-content-vol-two__text{
+        font-size: 25px;
+    }
+    .form__box--size{
+        width:450px;
+    }
+    .footer__contacts{
+        white-space: nowrap;
+    }
+    .scroll{
+        overflow-x: scroll;
+    }
+}
 
-
-
-/*
-staging-content-vol-two__right выставить padding
-*/
-
-/*
-staging-content-vol-two__text размер шрифта
-*/
-/*
-footer__contacts text-lg-right -- на sm -nowrap
-*/
-
-/*
-form__box--size увеличить для sm
-*/
-
-
-/*
-overflow-hidden
-*/
