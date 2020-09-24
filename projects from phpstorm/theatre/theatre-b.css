@@ -1,8 +1,28 @@
-/*
-@media all and (min-width : 1824px){
 
+/*lg*/
+@media (max-width: 1199px) {
+    .bdsm{
+        width: 690px;
+    }
+    .staging-content-vol-two__box{
+        max-width: 690px;
+    }
+    .staging-content-vol-two__text{
+        font-size: 34px;
+    }
+    .form__box--size{
+        width: 270px;
+    }
+    .form__button{
+        margin-left: 82px;
+    }
+    .footer__address{
+        padding-right: 30px;
+    }
 }
-*/
+
+
+
 @media (min-width: 768px) {
     .about__text-title{
         white-space: nowrap;

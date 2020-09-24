@@ -238,9 +238,6 @@ a, a:hover{
     margin-top: 150px;
 }
 .staging-content-vol-two__box{
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
     max-width: 760px;
 }
 .staging-content-vol-two__left{
