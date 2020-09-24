@@ -110,9 +110,14 @@ a, a:hover{
     flex-direction: row;
 }
 
+/* меню для sm*/
+.menu-mobile{
+    z-index:1;
+}
+.menu-mobile__pict{
+    margin: 50px 0 0 33px;
 
-
-
+}
     /*------навигация в хедере------*/
 .header{
     width: 100%;
