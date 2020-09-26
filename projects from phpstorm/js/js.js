@@ -179,6 +179,7 @@ showNumbers(40,79,false);
 // написать функцию, которая принимает дату ( день, месяц, год) и возвращает дату следующего дня в виде строки <<дд.мм.гггг>>.
 // Проверку на високосный год желаетельно написать отдельной функции.
 
+/*
 function getNextDate(day,month,year) {
     let maxDay = 30;
     if(month == 2) {
@@ -217,6 +218,7 @@ function isLeapYear(year) {
 alert(getNextDate(23,9,2020));
 alert(getNextDate(28,2,2020));
 alert(getNextDate(29,2,2020));
+*/
 
 
 
