@@ -76,7 +76,46 @@ a, a:hover{
 .social-media>.social-media__link{
     margin-bottom: 30px;
 }
+/*-------левое меню для md-----------*/
+.left-menu{
+    width: 300px;
+    background: #333333;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.cross{
+    margin: 30px 0 0 238px;
+}
+.left-menu__nav{
+    margin: 140px 0 0 39px;
+    /*height: 370px;*/
+}
+.navigation__link--margin-t{
+    margin-top: 35px;
+}
+.left-menu__social-media{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 126px;
+    margin: 89px 0 0 89px;
+}
+.facebook-inst{
+    display: flex;
+    flex-direction: row;
+}
+.youtube-vk{
+    display: flex;
+    flex-direction: row;
+}
 
+/* меню для sm*/
+
+.menu-mobile__pict{
+    margin: 50px 0 0 33px;
+
+}
     /*------навигация в хедере------*/
 .header{
     width: 100%;
@@ -138,6 +177,7 @@ a, a:hover{
     font-weight: normal;
     font-style: normal;
     text-transform: none;
+    margin: 30px 0;
 }
 .header-content__button{
     width: 160px;
@@ -229,6 +269,7 @@ a, a:hover{
     background-image: url(" theatre-pict/staging-two.png");
 }
 
+
 /*--------------------------*/
 .staging-content-vol-two{
     background-image: url("theatre-pict/staging__content-vol-two.png");
@@ -238,9 +279,6 @@ a, a:hover{
     margin-top: 150px;
 }
 .staging-content-vol-two__box{
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
     max-width: 760px;
 }
 .staging-content-vol-two__left{
@@ -285,7 +323,6 @@ a, a:hover{
 /*------------стать меценатом------------*/
 .footer{
     margin-top: 120px;
-    margin-bottom: 500px;
 }
 .footer__contacts{
     font-family: "Open Sans Condensed", sans-serif;

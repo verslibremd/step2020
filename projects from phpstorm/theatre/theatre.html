@@ -12,9 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
-<body>
+<body>  <!--тут есть недостатки, я знаю, где они. иногда будет казаться будто что-то сделано небрежно
+ или  как-то нагло вываленно. я все еще верстаю. я доведу до нормального состояния верстку, но пока мне нужна
+    обратная связь по бутстрапу, и замечания по верстке( явные не нужно, я знаю, про меню для телефона и планшетов)-->
     <header class="header font-style-OSC-bold">
-        <div class="left-items position-fixed d-none d-lg-flex">
+        <div class="menu-mobile d-none d-sm-inline d-md-none"> <!--меню для sm-->
+            <a href="#"><img class="menu-mobile__pict" src="theatre-pict/menu-sm.svg" alt="menu"></a>
+        </div>
+        <section class="left-menu sticky-top d-none d-md-flex d-lg-none"> <!--меню для md-->
+            <button type="button" class="close cross text-white" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <nav class="left-menu__nav d-flex flex-column font-style-OSC-bold">
+                <a class="navigation__link" href="#">главная</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">о театре</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">наши постановки</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">партнеры театра</a>
+                <a class="navigation__link navigation__link--margin-t" href="#">контакты</a>
+            </nav>
+            <div class="left-menu__social-media d-flex flex-column justify-content-between">
+                <div class="facebook-inst d-flex flex-row justify-content-between">
+                    <a href="#"><img src="theatre-pict/md-f.svg" alt="social-media"></a>
+                    <a href="#"><img src="theatre-pict/md-i.svg" alt="social-media"></a>
+                </div>
+                <div class="youtube-vk d-flex flex-row justify-content-between">
+                    <a href="#"><img src="theatre-pict/md-y.svg" alt="social-media"></a>
+                    <a href="#"><img src="theatre-pict/md-vk.svg" alt="social-media"></a>
+                </div>
+            </div>
+        </section>
+        <div class="left-items position-fixed d-none d-lg-flex"> <!--меню для lg,xl-->
             <div class="left-items__content ">
                 <p class="left-items__text font-style-OSC-bold">контактная информация</p>
                 <hr class="left-items__line">
@@ -118,14 +145,14 @@
     </section>
     <section class="staging">
         <h1 class="title"><span class="color-y">наши</span>постановки</h1>
-        <div class="container bdsm ">
-            <div class="row d-flex flex-row overflow-hidden">
-                <div class="col-xl-3 col-sm-8">
+        <div class="container bdsm scroll overflow-hidden">
+            <div class="row d-flex flex-row no-gutters ">
+                <div class="col-xl-3 col-md-7 col-sm-8 ">
                     <a href="#">
                         <img class="staging__pict" src="theatre-pict/projects__item.png" alt="изображенние">
                     </a>
                 </div>
-                <div class="col-xl-3 col-sm-4 pl-sm-0">
+                <div class="col-xl-3 col-md-4 col-sm-4 pl-sm-0">
                     <div class="staging__pict staging__pict--active d-flex justify-content-center align-items-center">
                         <a href="#">
                             <img class="search" src="theatre-pict/active.svg" alt="поиск">
@@ -145,7 +172,7 @@
             </div>
         </div>
         <div class="container staging-content-vol-two d-flex justify-content-center">
-            <div class="row staging-content-vol-two__box d-flex flex-row justify-content-lg-between">
+            <div class="row staging-content-vol-two__box d-flex flex-row justify-content-between">
                 <div class="col-sm-3 staging-content-vol-two__left">
                     <p class="staging-content-vol-two__title color-y">2018</p>
                     <p class="staging-content-vol-two__title color-y">2019</p>
@@ -167,7 +194,7 @@
     <section class="partners">
         <h1 class="title"><span class="color-y">партнеры</span>театра</h1>
         <div class="container">
-            <div class="row partners__box ">
+            <div class="row partners__box">
                 <div class="col-xl-3 col-md-4 col-sm-6">
                     <a href="#"><img src="theatre-pict/partners-logo.svg" alt="логотип партнеров"></a>
                 </div>
@@ -203,13 +230,13 @@
             <div class="row d-flex flex-lg-wrap">
                 <div class="col-xl-3 col-lg-12 order-sm-2 order-xl-1">
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
                             <div class="row d-flex justify-content-sm-between mt-lg-4 mt-sm-5 mt-xl-0">
                                 <div class="col-xl-12 col-sm-6 d-flex flex-sm-column">
                                     <a href="#"><p class="footer__contacts">+7 (812) 123-45-55</p></a>
                                     <a href="#"><p class="footer__contacts">+7 (812) 123-45-66</p></a>
                                 </div>
-                                <div class="col-xl-12 col-sm-6 d-flex flex-sm-column">
+                                <div class="col-xl-12 col-sm-6 d-flex flex-sm-column footer__address">
                                     <a href="#"><p class="footer__contacts text-sm-right text-xl-left">info@theater.ru</p></a>
                                     <a href="#"><p class="footer__contacts text-sm-right text-xl-left">г. санкт-петербург, невский 140</p></a>
                                 </div>
@@ -217,12 +244,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8 order-sm-1 order-xl-2">
+                <div class="col-xl-8 order-sm-1 order-xl-2 d-flex justify-content-sm-center">
                     <form action="">
                         <div class="row">
                             <div class="col-xl-4 col-md-4 col-sm-6">
                                 <div class="row">
-                                    <div class="col-xl-12">
+                                    <div class="col-xl-12 ">
                                         <input class="form__box mb-4" type="text" placeholder="Имя">
                                         <input class="form__box" type="text" placeholder="Телефон">
                                     </div>
@@ -246,7 +273,7 @@
                             <div class="col-xl-8 col-md-8 col-sm-12">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p class="form__description">* Ваши данные не будут переданы третьим лицам, 100%<br> вероятность. Конфиденциальность мы гарантируем, и защищаем<br> персональные данные согласно законку ФЗ-52.</p>
+                                        <p class="form__description text-sm-center">* Ваши данные не будут переданы третьим лицам, 100%<br> вероятность. Конфиденциальность мы гарантируем, и защищаем<br> персональные данные согласно законку ФЗ-52.</p>
                                     </div>
                                 </div>
                             </div>
