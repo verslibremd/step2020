@@ -1,241 +1,17 @@
-//Функции
 
 /*
-function show5Blocks() {
-    for (let i=1; i<=5; i++){
-        document.write("<h2> Header "+ i +" </h2>");
-    }
+let x = 10;
+
+function func() {
+    x = x + 100;
 }
-//show5Blocks();  //вызов функции
+func();
 
-function incAndLog(x) {
-    x = x + 1;
-    alert("inc x = " + x );
-    Log.innerHTML += "<br>inc x = " + x;
-}
-incAndLog(x);
-
-function incAndLog(x) {
-    x = x + 1;
-    alert("inc x = " + x );
-    Log.innerHTML += "<br>inc x = " + x;
-}
-
-let x = 2;
-Log.innerHTML += "<br>inc x = " + x;
-incAndLog(x);
-Log.innerHTML += "<br>inc x = " + x;
-
-//пример ф.куба
-function cube(x) {
-    return x*x*x;
-}
-let result = cube(10);
-alert(result);
-*/
-
-//задачи
-
-/*
-//1.написать функцию, которая принимает 2 числа и возвращает меньшее из них.
-function min(a,b) {
-    if(a>b) {
-        return b;
-    }else {
-        return a;
-    }
-}
-alert(min(90,4));
-//return (a>b)? b:a; с помощью тернарного оператора
-*/
-
-/*
-//2.написать функцию, которая возводит переданное число в указанную степень
-//x - число / y степень/ while (y >= 1), можно (y>0)
-function power(x,y) {
-    let result = 1;
-    while (y >= 1){
-        result = result * x;
-        y--;
-    }
-    return result;
-}
-
-alert(power(2,3));
-*/
-
-/*
-//3. написать ф, которая принимает 2 числа и знак (+,-,*,/), считает пример и возвращает результат
-function calc(a, b, operator) {
-    switch (operator) {
-        case "+":
-            return a+b;
-        case "-":
-            return a-b;
-        case "*":
-            return a*b;
-        case "/":
-            return a/b;
-    }
-}
-alert(calc(10,15,"+"));
-
-alert(calc(10,15,"-"));
-
-alert(calc(10,15,"*"));
-
-alert(calc(10,15,"/"));
-*/
-
-/*
-//4.Написать функцию, которая проверяет , является ли переданное ей число простым
-function isSimple(x) {
-  for (let i = x - 1; i > 1; i--){
-      if ((x % i) == 0){
-          return "Число не простое";
-      }
-  }
-
-  return "число простое";
-}
-alert(isSimple(7));
-alert(isSimple(26));
-*/
-
-/*
-//5. Написать функцию, которая принимает число и выводит таблицу * для этого числа. Вызовитие функцию для всех числе от 2 до 9.
-
-
-function table(x) {
-    for (let i = 1; i<=10; i++){
-        document.write(x + " * " + i + " = " + x * i + "<br>");
-    }
-    document.write("<hr>");
-}
-//table(6);
-
-for (let i = 2; i<=9; i++){
-    table(i);
-}
-*/
-
-
-
-/*
-//6.написать функцию которая принимает от 1 до 5 числе и возвращает их сумму
-function summ() {
-    let result=0;
-    for (let i = 0; i<arguments.length; i++){
-        result += arguments[i];
-    }
-
-    return result;
-}
-alert(summ(10,7));
-
-
+alert(x);
 
 */
 
 /*
-//8.Написать функцию, которая принимает от 1 до 5 числе и возвращает большее из них.
-function max() {
-    let max = arguments [0];
-    for (let i = 0; i<arguments.length; i++){
-        if (arguments[i] > max && i < 4){
-            max = arguments[i];
-        }
-    }
-
-    return max;
-}
-alert(max(70,50,40,110,2));
-
-*/
-
-/*
-// 9.написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. какие числа выводить,
-    //определяется третьим параметром типа bool (true - четные, false - нечетные).
-
-function showNumbers(a,b,even) {
-    for (let i = a; i <= b; i++) {
-        if (even){
-            if ((i % 2) == 0){
-                document.write(i + "<br>");
-            }
-        }else {
-            if ((i % 2) != 0){
-                document.write(i + "<br>");
-            }
-        }
-
-    }
-}
-showNumbers(5,50,true);
-document.write("<hr>");
-showNumbers(40,79,false);
-*/
-
-// написать функцию, которая принимает дату ( день, месяц, год) и возвращает дату следующего дня в виде строки <<дд.мм.гггг>>.
-// Проверку на високосный год желаетельно написать отдельной функции.
-
-function getNextDate(day,month,year) {
-    let maxDay = 30;
-    if(month == 2) {
-        maxDay = isLeapYear(year)? 29:28;
-    }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
-        maxDay ==31;
-    }
-
-    if (day == maxDay){
-        day == 1;
-        if (month == 12){
-            month==1;
-            year++;
-        }else {
-            month++
-        }
-    }else {
-        day++;
-    }
-
-    if (day<10){
-        day = "0" + day;
-    }
-    if (month<10) {
-        month = "0" + month;
-    }
-    return day + " . " + month + " . " + year;
-}
-
-function isLeapYear(year) {
-    return((year%400) == 0 || ((year % 4) == 0 && (year%100) !=0));
-}
-
-
-
-alert(getNextDate(23,9,2020));
-alert(getNextDate(28,2,2020));
-alert(getNextDate(29,2,2020));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //циклы
@@ -243,7 +19,7 @@ alert(getNextDate(29,2,2020));
 
 
 //while
-/*
+/!*
 //вывести # столько раз сколько указал пользователь
 
 let  x = parseInt(prompt("введите число","1"));
@@ -259,16 +35,16 @@ while (x>0) {
 }
 
 
-*/
-/*
+*!/
+/!*
 //пользователь ввел число, а на экране вывелись все числа от введенного до 0
 let  x = parseInt(prompt("введите число","1"));
 while (x>=0){
     document.write(x + "<br>");
     x--;
-}*/
+}*!/
 
-/*
+/!*
 //запросить число и степень. возвести число в указанную степень и вывести результат
 let  x = parseInt(prompt("введите число","1"));
 let  y = parseInt(prompt("введите степень","1"));
@@ -280,9 +56,9 @@ while (y>0) {
     y--;
 }
 document.write("число " +x+ " в степени " +z+ " = " + result);
-*/
+*!/
 
-/*
+/!*
 //запросить 2 числа и запросить общие делители
     let  x = parseInt(prompt("введите число","1"));
     let  y = parseInt(prompt("введите число","1"));
@@ -293,9 +69,9 @@ document.write("число " +x+ " в степени " +z+ " = " + result);
     }
             min--;
     }
-*/
+*!/
 
-/*
+/!*
 //посчитать факториал введенного пользователем числа
 let  x = parseInt(prompt("введите число","5"));
 let number = x;
@@ -305,19 +81,19 @@ while (x>0) {
     x--;
 }
 document.write("факториал числа " + number + " равен " + result);
-*/
+*!/
 
 //Do while
 
-/*
+/!*
 // предлагать пользователю решить пример 2+2*2 до тех пор пока он не решит его правильно
 do {
     var x = prompt("решите пример: 2 + 2 * 2 = "); // не работает с let
 }while (x != 6);
 alert("Браво!!!!");
-*/
+*!/
 
-/*
+/!*
 //делить число 1000 на 2 пока не получится число меньше 50. вывести это число и сколько делений произвели
 let x = 1000;
 let y = 2;
@@ -328,12 +104,12 @@ do {
   count++;
 } while (x>=50);
 document.write("число: " + x + ", делений: " + count);
-*/
+*!/
 
 
 //for
 
-/*
+/!*
 
 //вывести все числа от 1 до 100, которые кратны указанному пользователем числу.
 /!*
@@ -369,8 +145,8 @@ for (let i = 1; i <= 100; i++) {
 
 *!/
 
-*/
-/*
+*!/
+/!*
 
 //вывести каждый 4-й элемент из указанного пользователем диапазона. Пользователь указывает min и max значение диапазона.
 
@@ -384,10 +160,10 @@ for (let i = x; i <= y; i++) {
     }
     counter++;
 }
-*/
+*!/
 
 
-/*
+/!*
 //запросить число и проверить, простое ли она. простое делиться без остатка только на себя и на 1
 let  x = parseInt(prompt("введите число","10"));
 let result = true;  // флаг
@@ -398,8 +174,8 @@ for (let i = x - 1; i >1; i--){
     }
 }
 alert((result)? "число простое": "число не простое");
-*/
-/*
+*!/
+/!*
 // с break
 let  x = parseInt(prompt("введите число","10"));
 let result = true;  // флаг
@@ -411,14 +187,14 @@ for (let i = x - 1; i >1; i--){
     }
 }
 alert((result)? "число простое": "число не простое");
-*/
+*!/
 
 
 
 
 
 
-/*
+/!*
 let month = prompt("введите номер месяца","1");
 switch (month) {
     case "1" :
@@ -460,9 +236,9 @@ switch (month) {
     default:
         alert("неверно введен месяц");
 }
-*/
+*!/
 
-/*
+/!*
 let x1 = prompt("введите число 1");
 x1 = parseInt(x1);
 let x2 = prompt("введите число 2");
@@ -488,26 +264,356 @@ switch (operator) {
     default:
         alert("неизвестный оператор");
 }
+*!/
 */
 
+/*
+//Функции
+
+/!*
+function show5Blocks() {
+    for (let i=1; i<=5; i++){
+        document.write("<h2> Header "+ i +" </h2>");
+    }
+}
+//show5Blocks();  //вызов функции
+
+function incAndLog(x) {
+    x = x + 1;
+    alert("inc x = " + x );
+    Log.innerHTML += "<br>inc x = " + x;
+}
+incAndLog(x);
+
+function incAndLog(x) {
+    x = x + 1;
+    alert("inc x = " + x );
+    Log.innerHTML += "<br>inc x = " + x;
+}
+
+let x = 2;
+Log.innerHTML += "<br>inc x = " + x;
+incAndLog(x);
+Log.innerHTML += "<br>inc x = " + x;
+
+//пример ф.куба
+function cube(x) {
+    return x*x*x;
+}
+let result = cube(10);
+alert(result);
+*!/
+
+//задачи
+
+/!*
+//1.написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+function min(a,b) {
+    if(a>b) {
+        return b;
+    }else {
+        return a;
+    }
+}
+alert(min(90,4));
+//return (a>b)? b:a; с помощью тернарного оператора
+*!/
+
+/!*
+//2.написать функцию, которая возводит переданное число в указанную степень
+//x - число / y степень/ while (y >= 1), можно (y>0)
+function power(x,y) {
+    let result = 1;
+    while (y >= 1){
+        result = result * x;
+        y--;
+    }
+    return result;
+}
+
+alert(power(2,3));
+*!/
+
+/!*
+//3. написать ф, которая принимает 2 числа и знак (+,-,*,/), считает пример и возвращает результат
+function calc(a, b, operator) {
+    switch (operator) {
+        case "+":
+            return a+b;
+        case "-":
+            return a-b;
+        case "*":
+            return a*b;
+        case "/":
+            return a/b;
+    }
+}
+alert(calc(10,15,"+"));
+
+alert(calc(10,15,"-"));
+
+alert(calc(10,15,"*"));
+
+alert(calc(10,15,"/"));
+*!/
+
+/!*
+//4.Написать функцию, которая проверяет , является ли переданное ей число простым
+function isSimple(x) {
+  for (let i = x - 1; i > 1; i--){
+      if ((x % i) == 0){
+          return "Число не простое";
+      }
+  }
+
+  return "число простое";
+}
+alert(isSimple(7));
+alert(isSimple(26));
+*!/
+
+/!*
+//5. Написать функцию, которая принимает число и выводит таблицу * для этого числа. Вызовитие функцию для всех числе от 2 до 9.
 
 
-/*      1
-const THIS_YEAR = 2020;
-let yearOfBirth = prompt("Ваш год рождения");
-alert(`Вам ${THIS_YEAR - yearOfBirth} лет!`);
+function table(x) {
+    for (let i = 1; i<=10; i++){
+        document.write(x + " * " + i + " = " + x * i + "<br>");
+    }
+    document.write("<hr>");
+}
+//table(6);
+
+for (let i = 2; i<=9; i++){
+    table(i);
+}
+*!/
+
+
+
+/!*
+//6.написать функцию которая принимает от 1 до 5 числе и возвращает их сумму
+function summ() {
+    let result=0;
+    for (let i = 0; i<arguments.length; i++){
+        result += arguments[i];
+    }
+
+    return result;
+}
+alert(summ(10,7));
+
+
+
+*!/
+
+/!*
+//8.Написать функцию, которая принимает от 1 до 5 числе и возвращает большее из них.
+function max() {
+    let max = arguments [0];
+    for (let i = 0; i<arguments.length; i++){
+        if (arguments[i] > max && i < 4){
+            max = arguments[i];
+        }
+    }
+
+    return max;
+}
+alert(max(70,50,40,110,2));
+
+*!/
+
+/!*
+// 9.написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. какие числа выводить,
+    //определяется третьим параметром типа bool (true - четные, false - нечетные).
+
+function showNumbers(a,b,even) {
+    for (let i = a; i <= b; i++) {
+        if (even){
+            if ((i % 2) == 0){
+                document.write(i + "<br>");
+            }
+        }else {
+            if ((i % 2) != 0){
+                document.write(i + "<br>");
+            }
+        }
+
+    }
+}
+showNumbers(5,50,true);
+document.write("<hr>");
+showNumbers(40,79,false);
+*!/
+
+/!*
+// написать функцию, которая принимает дату ( день, месяц, год) и возвращает дату следующего дня в виде строки <<дд.мм.гггг>>.
+// Проверку на високосный год желаетельно написать отдельной функции.
+
+function getNextDate(day,month,year) {
+    let maxDay = 30;
+    if(month == 2) {
+        maxDay = isLeapYear(year)? 29:28;
+    }else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+        maxDay ==31;
+    }
+
+    if (day == maxDay){
+        day == 1;
+        if (month == 12){
+            month==1;
+            year++;
+        }else {
+            month++
+        }
+    }else {
+        day++;
+    }
+
+    if (day<10){
+        day = "0" + day;
+    }
+    if (month<10) {
+        month = "0" + month;
+    }
+    return day + " . " + month + " . " + year;
+}
+
+function isLeapYear(year) {
+    return((year%400) == 0 || ((year % 4) == 0 && (year%100) !=0));
+}
+
+
+
+alert(getNextDate(23,9,2020));
+alert(getNextDate(28,2,2020));
+alert(getNextDate(29,2,2020));
+*!/
+
+
+
 */
+
+/*
+// Рекурсия
+
+/!*
+// факториал
+function factorial (x) {
+    //console.log("Вызвана функция factorial с параметром" + x);
+    if (x==1) {
+        return x;
+    }
+    return factorial(x-1) * x;
+}
+alert(factorial(5));
+*!/
+
+/!*
+let x = parseInt(prompt("введите первое число","10"));
+let y = parseInt(prompt("введите второе число","20"));
+
+/!*function showNumbers(x,y) {
+    if(x <= y){
+        document.write(x + "<br>");
+        showNumbers(x+1,y);
+    }
+}
+showNumbers(x,y);*!/
+
+/!*
+function showNumbers2(x,y) {
+    if(y >= x){
+        document.write(y + "<br>");
+        showNumbers2(x,y-1);
+    }
+}
+showNumbers2(x,y);
+*!/
+*!/
+
+/!*
+//рекурсия
+function reverse(x) {
+    let rest = x%10;
+    document.write(rest);
+
+    let newNumber = (x-rest) / 10;
+    if ( newNumber > 9){
+        reverse(newNumber);
+    } else{
+        document.write(newNumber);
+    }
+}
+reverse(12345);
+
+*!/
+
+/!*
+//считает сумму числа
+function summ(x) {
+    let rest = x % 10;
+
+    let newNumber = (x- rest) / 10;
+
+    if (newNumber >9){
+        document.write(rest + " + ");
+        return rest + summ(newNumber);
+    }else {
+        document.write(rest + " + " + newNumber);
+        return rest + newNumber;
+    }
+}
+alert(summ(135791));
+*!/
+
+/!*
+//скобки
+function showHooks(x) {
+    if (x==1){
+        return "()";
+    }else{
+        return "(" + showHooks(x-1) + ")";
+    }
+}
+document.write(showHooks(10));
+*!/
+*/
+/*
+let x = 10;
+
+function func() {
+    x = x + 100;
+}
+func();
+
+alert(x);
+
+*/
+
+//Объекты
+
+ 
+
+
+
+
 
 
 /*
+
+      1
+const THIS_YEAR = 2020;
+let yearOfBirth = prompt("Ваш год рождения");
+alert(`Вам ${THIS_YEAR - yearOfBirth} лет!`);
+
+
 let userVolume = prompt("Укажите объем флеш карты в Gb");
 const CONSTANT_VOLUME = 1024;
 let fileSize = 820;
 alert((userVolume*CONSTANT_VOLUME) / fileSize);
-*/
 
 
-/*
 const RUB_USD = 0.013;
 const USD_RUB = 75.32;
 const RUB_EUR = 0.011;
@@ -591,5 +697,5 @@ else if (name == "EUR") {
         }
     }
 }
-*/
 
+*/
