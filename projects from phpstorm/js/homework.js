@@ -9,7 +9,13 @@ let result = numMin;
 while (numMin<numMax){
     result = result + ++numMin;
 }
-alert(result);
+alert("сумма чисел диапазона равна " + result);
+
+
+/*
+
+
+*/
 
 
 
