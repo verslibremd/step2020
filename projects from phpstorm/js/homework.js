@@ -1,10 +1,17 @@
-/*
+
 //1. Подсчитать сумму всех чисел в заданном пользователем
 //диапазоне.
 
 let numMin = parseInt(prompt("введите первое число диапазона","1"));
 let numMax = parseInt(prompt("введите второе число диапазона","5"));
-*/
+let result = numMin;
+
+while (numMin<numMax){
+    result = result + ++numMin;
+}
+alert(result);
+
+
 
 
 
