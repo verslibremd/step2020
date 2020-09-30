@@ -494,10 +494,7 @@ alert(getNextDate(29,2,2020));
 =======
 */
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d7d4988229782eb6ab73f16b8f63236f219562f0
 /*
 // Рекурсия
 
@@ -583,6 +580,7 @@ function showHooks(x) {
 document.write(showHooks(10));
 *!/
 */
+
 /*
 let x = 10;
 
@@ -626,7 +624,9 @@ function getWidth(obj) {
 //ширина alert(getWidth(rectangle));
 
 //
+function isPoint() {
 
+}
 
 
 
