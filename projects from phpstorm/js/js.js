@@ -493,11 +493,6 @@ alert(getNextDate(29,2,2020));
 *!/
 =======
 */
->>>>>>> a2dc7d0511583e02f6c06f0c262044c5ab4b19fa
-
-
-
-*/
 
 /*
 // Рекурсия
@@ -596,9 +591,42 @@ alert(x);
 
 */
 
-//Объекты
+//Объекты, массивы, строки
 
- 
+//объекты
+
+//1.функция принимает объект-прямоугольник и выводит инфу о нем( где какая точка расположена)
+
+let rectangle = {
+    point1: {
+        x:2,
+        y:5
+    },
+    point2: {
+        x:7,
+        y:3
+    }
+};
+
+function rectangleInfo(obj) {
+    document.write("Точка 1, координата x = " + obj.point1.x + "<br>");
+    document.write("Точка 1, координата y = " + obj.point1.y+ "<br>");
+    document.write("Точка 2, координата x = " + obj.point2.x+ "<br>");
+    document.write("Точка 2, координата y = " + obj.point2.y+ "<br>");
+}
+
+//rectangleInfo(rectangle);
+function getWidth(obj) {
+    return obj.point2.x - obj.point1.x;
+}
+//ширина alert(getWidth(rectangle));
+
+//
+
+
+
+
+
 
 
 
