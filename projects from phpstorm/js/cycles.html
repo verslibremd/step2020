@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Запросить у пользователя 10 чисел и подсчитать, сколько
+    он ввел положительных,
+     отрицательных и нулей. При этом
+    также посчитать, сколько
+    четных
+    и нечетных.
+    Вывести статистику на экран.
+    Учтите, что достаточно одной пере-
+    менной (не 10) для ввода чисел пользователем.*/
+
+    let positiveNumber = 0;
+    let negativeNumber = 0;
+    let zero = 0;
+    let evenNumber = 0;
+    let oddNumber = 0;
+    let i = 0;
+    let userNumber = prompt("введите число");
+    for (i=1; i<=10; i++){
+        if (userNumber>0){
+            positiveNumber++;
+        }
+        else if(userNumber<0){
+            negativeNumber++;
+        }
+        else if(userNumber == 0){
+            zero++;
+        }
+        else if(userNumber % 2 !== 0){
+            evenNumber++;
+        }
+        else if(userNumber % 2 == 0){
+            oddNumber++;
+        }
+    }
+    document.write(`положительных чисел = ${positiveNumber}, отрицательных чисел = ${negativeNumber}, нулей = ${zero}, четных = ${evenNumber}, нечетных = ${oddNumber}`);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
