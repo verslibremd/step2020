@@ -489,9 +489,9 @@ function isLeapYear(year) {
 alert(getNextDate(23,9,2020));
 alert(getNextDate(28,2,2020));
 alert(getNextDate(29,2,2020));
-<<<<<<< HEAD
+
 *!/
-=======
+
 */
 
 
