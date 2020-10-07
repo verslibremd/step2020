@@ -631,8 +631,247 @@ function isPoint() {
 
 */
 
+//массивы
+
+//ЗАДАНИЕ 1.
+// создать массив из 10 случайных чисел и написать несколько функций для работы с ним.
+
+let arr =[];
+
+    for (let i = 0; i<10; i++){
+        arr.push(parseInt(Math.random()*100));
+}
+
+    //1.функция принимает массив и выводит его на экран
+function showArray(array) {
+    for (let item of array){                //let item - просто переменная
+        document.write(item+"<br>");
+    }
+}
+    //showArray(arr);
+
+// 2.функция принимает массив и выводит только четные элементы
+
+function showEvenArrayElements(array) {
+    for (let element of array){
+        if (element%2 == 0){
+            document.write(element+"<br>");
+        }
+    }
+}
+//showEvenArrayElements(arr);
+
+// 3.функция принимает массив и возвращает сумму всех элементов массива
+
+function sumArray(array) {
+        let sum = 0;
+    for (let item of array){
+        sum+=item;
+    }
+
+    return sum;
+}
+    //showArray(arr);// показывает сам массив
+//alert("сумма элементов массива равна " + sumArray(arr)); // сумма элементов массива
+
+// 4. функция принимает массив и возвращает его максимальный элемент
+
+function maxArray(array) {
+    let max = array[0];
+    for (let item of array){
+       if (item > max){
+           max = item;
+       }
+    }
+    return max;
+}
+
+    //showArray(arr);
+  //  alert("Макссимум " + maxArray(arr));
+
+//5. функция добавления нового элемента в массив по указанному индексу
+    function addElement(array, element, index) {
+        return array.splice(index,0,element);           // массив [10, 20,40,50] элемент 11, индекс 2 ) пример
+    }
+
+   /* showArray(arr);
+    addElement(arr,77,2);
+    document.write("<hr>");
+    showArray(arr);*/
+
+    // функция удаления элмента из массива по указанному индексу
+
+function deleteElement(array, index) {
+    return array.splice(index, 1);
+}
+
+/*showArray(arr);
+deleteElement(arr,2);
+document.write("<hr>");
+showArray(arr);*/
 
 
+//ЗАДАНИЕ 2
+// создать один массив из 5 случайных чисел
+let arr2 = [];
+for (let i = 0; i<5; i++){
+    arr2.push(parseInt(Math.random()*100));
+}
+
+//1. функция принимает 2 массива и возвращает новый массив , в котором собраны все элементы из двух массивов без повторения
+
+function getUniqueArray(array1,array2) {
+    let result = [];
+    for (let item of array1) {
+        if(!result.includes(item)){
+            result.push(item);
+        }
+    }  for (let item of array2) {
+        if(!result.includes(item)){
+            result.push(item);
+        }
+    }
+    return result;
+}
+
+/*showArray(arr);
+document.write("<hr>");
+showArray(arr2);
+document.write("<hr>");
+showArray(getUniqueArray(arr,arr2));*/
+
+
+//2. функция принимает 2 массива и возвращает новый массив , в котором собраны все общие элементы без повторений
+
+function getCommonElements(array1,array2) {
+    let result = [];
+    for (let item of array2) {
+        if(array1.includes(item) && !result.includes(item)){
+            result.push(item);
+        }
+    }
+    return result;
+}
+/*showArray(arr);
+document.write("<hr>");
+showArray(arr2);
+document.write("<hr>");
+showArray(getCommonElements(arr,arr2));*/
+
+//3. функция принимает 2 массива и возвращает новый массив , в котором собраны все элементы из первого массива , которых нет во втором массиве
+
+function getElements(array1,array2) {
+    let result = [];
+    for (let item of array1) {
+        if(!array2.includes(item)){
+            result.push(item);
+        }
+    }
+    return result;
+}
+
+/*showArray(arr);
+document.write("<hr>");
+showArray(arr2);
+document.write("<hr>");
+showArray(getElements(arr,arr2))*/
+
+
+//ЗАДАНИЕ 3
+//Создать массив фруктов и отсортировать его по алфавиту
+
+let fruits  = [
+    "lemon",
+    "banana",
+    "apple"
+];
+
+fruits.sort();
+//showArray(fruits);
+
+//вывод на экран с помощью document.write в виде списка ( спомощью тегов ul  и li)
+
+function showFruits(array) {
+    document.write("<ul>");
+    for (let item of array){
+    document.write("<li>" + item + "</li>");
+    }
+    document.write("</ul>");
+}
+
+//showFruits(fruits);
+
+//2. поиск фрукта в массиве. Функция принимает название фрукта и возвращает индекс найденного элемента или - 1, если не найден. Поиск должен быть нерегистрированным
+
+function getIndex(array,name) {
+    for (let key in array){
+        if (array[key] == name){
+            return key;
+        }
+    }
+    return -1;
+}
+//alert(getIndex(fruits,"banana"));
+
+//рекурсия
+
+/*
+//  1.
+
+function power(x,y) {
+    if (y == 1){
+        return x;
+    }
+    let result = power(x,y-1) * x;
+    document.write("вычисляем " + x + " в степени " + (y-1) + " и умножаем " + x + " = " + result + "<br>");
+    return  result;
+}
+alert(power(3,3));
+*/
+
+/*
+//2.
+
+function getMaxDivider(x,y) {
+  if (y == 0) {
+      return x;
+  }
+  return getMaxDivider(y, x % y);
+}
+alert(getMaxDivider(6,12));
+
+/!*getMaxDivider(6,12);
+getMaxDivider(12,6);
+getMaxDivider(6,0);*!/
+*/
+
+/*//3
+function getMaxNumber(number,max) {
+    let lastNumber = number % 10;
+    if (!max || lastNumber > max){
+        max = lastNumber;
+    }
+    if (number>10){
+        return getMaxNumber((number - lastNumber) / 10 , max);
+    }else {
+        return (max>number) ? max : number;
+    }
+}
+alert(getMaxNumber(79654));*/
+
+/*//4
+function isSimple(x,i) {
+    i = i || x - 1;
+    if (i == 1){
+        return "число простое";
+    }
+    if (x%i == 0) {
+        return "число не простое";
+    }else {
+        return isSimple(x,i-1)
+    }
+}
+alert(isSimple(8));*/
 
 
 
@@ -738,3 +977,4 @@ else if (name == "EUR") {
 }
 
 */
+
