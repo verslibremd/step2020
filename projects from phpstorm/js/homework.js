@@ -242,3 +242,117 @@ do {
 му, которая запрашивает у пользователя первона-
 чальный объем воды и рассчитывает, на сколько дней
 работы этого хватит.*/
+
+/*/!*1. Создайте функцию sayError(), которая будет выводить (при помощи диалогового окна alert)
+сообщение с текстом «Some error occurred!».*!/
+        function sayError() {
+            alert("Some error occurred!");
+        }
+        sayError();*/
+/*
+/!*2. Создайте функцию showError(x), которая будет выводить (при помощи диалогового окна alert)
+сообщение с текстом «Error X occurred!», где Х — текст из аргумента функции
+(например, вызов showError(‘Out of memory’) должен вывести сообщение «Error Out of memory occurred!»).   *!/
+
+    function sayError(x) {
+        alert("Error " + x + " occurred!");
+    }
+    sayError("Out of memory");
+*/
+/*
+/!*3. Создайте функцию createHeaders(N), которая создаст на странице N заголовков второго уровня (<h2>)
+с надписями Header1, Header2 … HeaderN.*!/
+
+    function createHeaders(n) {
+        for (let i = 1; i<=n; i++){
+            document.write("<h2> Header" + i);
+        }
+    }
+    n = parseInt(prompt("число"));
+    createHeaders(n)
+*/
+/*/!*4. Создайте функцию checkPassword(x), которая вернет значение true, если в качестве аргумента в нее будет
+передан допустимый пароль (одно из значений «Step», «Web» или «JavaScript»). Иначе функция должна вернуть false.*!/
+
+    function checkPassword(x) {
+        if (x == "Step" || x == "Web" || x == "JavaScript"){
+            return alert("true");
+        }else {
+            return alert("false");
+        }
+    }
+    x = prompt("пароль");
+    checkPassword(x);*/
+/*/!*5. Создайте функцию определения знака числа sign(x), которая вернет значение –1, если аргумент «х» — от-
+рицательное число, 1 — если положительное, 0 — если аргумент «х» равен нулю.*!/
+    function sign(x) {
+        if (x<0){
+            return alert("-1");
+        }else if (x == 0){
+            return alert("0");
+        }else if(x>0){
+            return alert(1);
+        }
+    }
+    x = parseInt(prompt("число"));
+    sign(x);*/
+/*/!*6. Предложите имя (согласно правилам именования) и создайте функцию, которая будет возвращать
+названия дней недели по их номеру: 0-Sunday, 1-Monday, 2-Tuesday, 3-Wednesday, 4-Thursday, 5-Friday, 6-Saturday.*!/
+
+    function getNameOfDay(x) {
+        switch (x) {
+            case 0:
+                return alert("Sunday");
+                break;
+            case 1:
+                return alert("Monday");
+                break;
+            case 2:
+                return alert("Tuesday");
+                break;
+            case 3:
+                return alert("Wednesday");
+                break;
+            case 4:
+                return alert("Thursday");
+                break;
+            case 5:
+                return alert("Friday");
+                break;
+            case 6:
+                return alert("Saturday");
+                break;
+            default:
+                return alert( "Воскресенья и других дней кроме указанных не существует" );
+        }
+    }
+
+    x = +prompt("цифра");
+    getNameOfDay(x);*/
+
+/*//Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
+
+    function getMin(a,b) {
+        if (a<b) return a;
+        else return b;
+    }
+    alert(getMin(2,5));
+    alert(getMin(3,-1));
+    alert(getMin(1,1));*/
+/*//Напишите функцию pow(x,n), которая возвращает x в степени n.
+// Иначе говоря, умножает x на себя n раз и возвращает результат.
+//Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).P.S.
+// В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
+
+let x = parseInt(prompt("число"));
+let n = parseInt(prompt("степень"));
+
+function pow(x,n) {
+    let result = 1;
+    while (n>=1){
+        result*= x;
+        n--;
+    }
+    return result;
+}
+alert(pow(x,n));*/
