@@ -36,16 +36,18 @@
 
 
 //написать функцию которая считает кол-во гласных букв в переданной строке
-let str = "корова";
-    function glass(str) {
-        let arr = ["а", "я", "о", "е", "у" ,"ю", "ы" ,"и", "э","е"];
-            for (let char of str){
 
-            }
-        arr.indexOf(str, 0)
 
+let arr = ['а', 'о'];
+let word = 'Иван';
+let count = 0;
+
+word.toLowerCase().split('').forEach(function (item) {
+    if (arr.includes(item)) {
+        count++;
     }
-
+});
+alert(count);
 
 
 
