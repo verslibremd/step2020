@@ -14,22 +14,27 @@
     let auto = {
         manufacturer : "Honda",
         model : "Logo",
-        "year of issue" : 2000,
-        "average speed" : 80,
+        yearOfIssue : 2000,
+        averageSpeed : 80,
+        info: function () {
+            document.write("Производитель " + this.manufacturer + "<br>");
+            document.write("Модель " + this.model + "<br>");
+            document.write("Год выпуска " + this.yearOfIssue + "<br>");
+            document.write("Средняя скорость " + this.averageSpeed + " км.ч" + "<hr>");
+
+        }
     };
 
 //1. Функция для вывода на экран информации об автомобиле.
 
-    function autoInfo(obj) {
-        document.write("Производитель: " + obj.manufacturer + "<br>");
-        document.write("Модель: " + obj.model + "<br>");
-        document.write("Год выпуска: " + obj["year of issue"] + "<br>" );
-        document.write("Средняя скорость: " + obj["average speed"] + " км.ч" + "<hr>" );
+    function autoInfo() {
+        auto.info()
     }
-   // autoInfo(auto);
+   autoInfo(auto);
 
 //2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью.
 // Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+
 
 </script>
 
