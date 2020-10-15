@@ -1,3 +1,4 @@
+
 /*//циклы
 /!*
 //вывести числа от 4 до 400 на экран
@@ -359,9 +360,9 @@ function pow(x,n) {
 }
 alert(pow(x,n));*!/*/
 
-//объекты
+/*//объекты
 
-/*/!*Создайте пустой объект user.
+/!*!/!*Создайте пустой объект user.
     Добавьте свойство name со значением John.
     Добавьте свойство surname со значением Smith.
     Измените значение свойства name на Pete.
@@ -371,9 +372,9 @@ alert(pow(x,n));*!/*/
  user.name = "John";
  user.surname = "Smith";
  user.name = "Pete";
- delete user.name;*/
+ delete user.name;*!/
 
-/*
+/!*
 //Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
 
 let obj = {};
@@ -387,9 +388,9 @@ function isEmpty(obj) {
 alert(isEmpty(obj));
 obj.name = "Dima";
 alert(isEmpty(obj));
-*/
+*!/
 
-/*//Сумма свойств объекта
+/!*!//Сумма свойств объекта
 
 //У нас есть объект, в котором хранятся зарплаты нашей команды:
 /!*
@@ -431,9 +432,9 @@ let sum = 0;
 for (let key in salaries) {
     sum += salaries[key];
 }
-alert(sum); // 390*!/*/
+alert(sum); // 390*!/!*!/
 
-/*//Умножаем все числовые свойства на 2
+/!*!//Умножаем все числовые свойства на 2
 //Создайте функцию multiplyNumeric(obj),
 // которая умножает все числовые свойства объекта obj на 2
 
@@ -452,27 +453,28 @@ function multiplyNumeric(obj) {
 }
 multiplyNumeric(menu);
 alert(menu.width);
-alert(menu.height);*/
+alert(menu.height);*!/*/
 
+/*
 //Массивы
 
-/*// сумма элементов массива
+/!*!// сумма элементов массива
 let arr = [1,2,3,4,5];
 let sum = 0;
 
 for (let i = 0; i<arr.length; i++){
     sum+=arr[i];
 }
-//alert(sum);*/
+//alert(sum);*!/
 
-/*// содержимое массива
+/!*!// содержимое массива
 let arr2 = [33,"sun",12,"planet"];
 
 for(let i = 0;i<arr2.length;i++){
    // alert(arr2[i]);
-}*/
+}*!/
 
-/*//новое значение по указанному индексу
+/!*!//новое значение по указанному индексу
 let arr55 = [1,2,3];
 
 function naW(arr,index,newValue) {      //функция записывает новое значение по указанному индексу
@@ -483,9 +485,9 @@ function naW(arr,index,newValue) {      //функция записывает н
 
 naW(arr55,0,0);
 alert(arr55);
-*/
+*!/
 
-/*// поиск элемента в массиве и возврат его индекса
+/!*!// поиск элемента в массиве и возврат его индекса
 let arr = [1,2,3,4,5];
 
 let sea = arr.indexOf(5);
@@ -498,9 +500,9 @@ let arrD = [1,2,3,4,5,6,7,9,0,8];
 let index= arrD.lastIndexOf(8);
 alert(index);
 
-*/
+*!/
 
-/*//сколько раз некоторое искомое значение встречается в массиве.
+/!*!//сколько раз некоторое искомое значение встречается в массиве.
 
 let arr6 = [12,45,-3,82,12,78,12];
 // счетчик для подсчета количества раз вхождения искомого значения в массив
@@ -543,9 +545,9 @@ while(index != -1){
 // на экране 3
 alert(counter);
 
-*/
+*!/
 
-/*
+/!*
 //сортировка
 /!*let arr = [10,1,3,33,6];
 arr.sort();
@@ -602,9 +604,9 @@ function compareN(a,b) {
 }
 a.sort(compareN);
 alert(a);*!/
-*/
+*!/
 
-/*//Операции с массивами
+/!*!//Операции с массивами
 //Давайте произведём 5 операций с массивом.
 
 //Создайте массив styles с элементами «Джаз» и «Блюз».
@@ -619,22 +621,21 @@ styles.push("Рок-н-ролл");
 styles[1] = "Классика"; // styles[Math.floor((styles.length - 1) / 2)] = "Классика";
 alert(styles.shift());
 styles.unshift("Рэп","Рэгги");
-alert(styles);*/
+alert(styles);*!/
+*/
 
+/*//Строки
 
-
-//Строки
-
-/*//Пример поиска значения в строке
+/!*!//Пример поиска значения в строке
 var str = "earth and sun";
 
 var index = str.indexOf("sun");
 alert(index);
 
 index = str.indexOf("moon");
-alert(index);*/
+alert(index);*!/
 
-/* сколько раз слово встречается в строке
+/!* сколько раз слово встречается в строке
 var str = "test it is test sun test no";
 var counter = 0;
 var wordToFind = "test";
@@ -646,5 +647,5 @@ while(index != -1){
 }
 
 // 3
-alert(counter);*/
+alert(counter);*!/*/
 
