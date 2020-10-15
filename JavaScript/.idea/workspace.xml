@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/projects from phpstorm/Новая папка" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projects from phpstorm/metall.css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602785640657</updated>
       <workItem from="1602785642079" duration="2955000" />
+      <workItem from="1602792811574" duration="430000" />
     </task>
     <servers />
   </component>
@@ -53,9 +54,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1602788423702">
+    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1602793137735">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1602788423702" />
+    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1602793137735" />
   </component>
 </project>

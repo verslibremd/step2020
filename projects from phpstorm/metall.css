@@ -44,13 +44,11 @@ body{
     color: #FF4545;
     border: 2px solid #FF4545;
 }
-<<<<<<< HEAD
+
 .button--pink-border-fon-white:hover{       /*сделал ховер*/
     border: 2px dotted #FF4545;
 }
-=======
 
->>>>>>> master
 .title{                                       /* заголовки */
     font-family: 'Russo One', sans-serif;
     font-size: 48px;
@@ -95,12 +93,11 @@ body{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
 }
-<<<<<<< HEAD
+
 .black-block__text--mail-size:hover{
                                             /*додумать*/
 }
-=======
->>>>>>> master
+
 
 .header__navigation-block{
     display: flex;
@@ -121,13 +118,12 @@ body{
     line-height: 40%;
     text-decoration: none;
 }
-<<<<<<< HEAD
+
 .header__text--hover:hover{
    color: #FF4545;                                              /*сделал ховер*/
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
 }
-=======
->>>>>>> master
+
 .header__text--margin-right{
     margin-right: 25px;
 }
@@ -198,10 +194,7 @@ body{
     line-height: 50%;
     margin: 50px 0 0 70px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 .carousel__center{                       /* карусель */
     width: 90px;
     height: 10px;
@@ -312,7 +305,6 @@ body{
 .container-sheet-metal{
     background-image: url("img/lesson10/catalog-three-container.png");
     margin-bottom: 0;
-<<<<<<< HEAD
 }
 
 .catalog__box{
@@ -362,8 +354,6 @@ body{
   line-height: 1;
 }
 
-=======
-}
 
 .catalog__box{
     width: 240px;
@@ -412,7 +402,7 @@ body{
   line-height: 1;
 }
 
->>>>>>> master
+
 /*-------------------------------*/
 .title--specials--margin{
     margin: 100px 0 107px 57px ;
@@ -488,12 +478,11 @@ body{
     align-self: flex-end;
     cursor: pointer;
 }
-<<<<<<< HEAD
+
 .product-item__button-cost:hover{       /*сделал ховер*/
    border: 2px double #FFFFFF ;
 }
-=======
->>>>>>> master
+
 
 .carousel__left-arrow--margin-specials-block{
     margin-top: 58px;
@@ -643,10 +632,7 @@ body{
     padding-bottom: 7px;
     display: inline-block;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 /*-------------------------------*/
 .contacts__grid{
     height: 629px;
@@ -759,13 +745,12 @@ body{
     margin-block-end: 0;
     margin-bottom: 20px;
 }
-<<<<<<< HEAD
+
 .footer__text:hover{
     color: #FF4545;
     cursor: pointer;
 }
-=======
->>>>>>> master
+
 .footer__text--title{
     font-weight: bold;
     font-size: 24px;
