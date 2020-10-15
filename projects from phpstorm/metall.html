@@ -9,70 +9,269 @@
 </head>
 <body>
     <section class="header">
-        <div class="black-block">
-            <div class="black-block__grid header__black-block-content">
-                <p class="black-block__name">Интернет магазин металлопроката и строительных материалов. Металлобаза.</p>
-                <p class="black-block__link">zakaz@metal71.ru</p>
-                <img class="black-block__visa" src="img/lesson10/visa.png" alt="иконка visa">
+        <div class="black-block">       <!--черная полоска с контентом, которая используется так же в футере-->
+            <div class="grid header__black-block-content">
+                <p class="black-block__text black-block__text--name-brand-size">Интернет магазин металлопроката и строительных материалов. Металлобаза.</p>
+                <p class="black-block__text black-block__text--mail-size">zakaz@metal71.ru</p>
+                <img src="img/lesson10/visa.png" alt="иконка visa">
             </div>
         </div>
         <div class="grid">
-            <div class="header__content">
                 <div class="header__navigation-block">
-                    <div class="header__logo logo"></div>
+                    <div class="logo logo--header-margin"></div>
                     <div class="header__menu">
-                        <a class="menu-link menu-link--margin-right" href="#">каталог</a>
-                        <a class="menu-link menu-link--margin-right" href="#">о компании</a>
-                        <a class="menu-link menu-link--margin-right" href="#">оплата</a>
-                        <a class="menu-link menu-link--margin-right" href="#">доставка</a>
-                        <a class="menu-link" href="#">контакты</a>
+                        <a class="header__text header__text--margin-right" href="#">каталог</a>
+                        <a class="header__text header__text--margin-right" href="#">о компании</a>
+                        <a class="header__text header__text--margin-right" href="#">оплата</a>
+                        <a class="header__text header__text--margin-right" href="#">доставка</a>
+                        <a class="header__text" href="#">контакты</a>
                     </div>
                         <a href="https://www.google.ru/" target="_blank"><input class="button button--pink-background" type="button" value="заказать звонок"></a>
                 </div>
                 <hr class="header__line">
                 <div class="header__price-block">
-                    <div class="header__price-block-button button-link">
+                    <div class="header__price-block-button">
                         <a href="https://www.google.ru/" target="_blank"><input class="button button--pink-background button-price" type="button" value="прайс"></a>
-                        <a class="button-link button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="сортовый прокат"></a>
-                        <a class="button-link button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="трубный прокат"></a>
-                        <a class="button-link button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="листовой прокат"></a>
+                        <a class="button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="сортовый прокат"></a>
+                        <a class="button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="трубный прокат"></a>
+                        <a class="button-link--margin" href="https://www.google.ru/" target="_blank"><input class="button button--pink-border-fon-white" type="button" value="листовой прокат"></a>
                     </div>
-                    <div class="header__tel">52-20-50</div>
+                    <div class="header__text header__text--tel-size-margin">52-20-50</div>
+                </div>
+        </div>
+    </section>
+    <section class="range">
+        <div class="range__grid grid--arm-span">
+            <div class="range__content">
+                <h1 class="title title--range">Большой ассортимент<br> металлопроката всегда<br> в наличие на нашем<br> складе</h1>
+                <a href="https://www.google.ru/" target="_blank"><input class="button button--pink-background button--range-size-margin" type="button" value="каталог"></a>
+                <div class="carousel">
+                    <img class="carousel__left-arrow carousel__left-arrow--margin" src="img/lesson10/pod-header-right-arrow.png" alt="svg левая стрелка">
+                    <img class="carousel__center carousel__center-margin" src="img/lesson10/pod-header-carousel-center.png" alt="svg центральная часть карусели">
+                    <img class="carousel__right-arrow carousel__right-arrow--margin" src="img/lesson10/pod-header-left-arrow.png" alt="svg правая стрелка">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="safety">
+        <div class="safety__grid grid--arm-span">
+            <div class="safety__container">
+                <div class="safety__frame">
+                    <div class="safety__text-box">
+                        <h2 class="safety__title safety--text-general-properties">Покупайте металлопрокат безопасно!</h2>
+                        <p class="safety__description safety--text-general-properties">Мы обеспечиваем безопасную и непрерывную работу даже в таких сложных условиях!<br>
+                        Заказать металлопрокат просто, а главное безопасно — онлайн-оплата и бесконтактная доставка:</p>
+                        <ol class="safety__list safety--text-general-properties">
+                            <li>Выберите товар в каталоге и оформите заказ;</li>
+                            <li>Менеджер сформирует счет для оплаты и вышлет его вместе с ссылкой на онлайн-оплату;</li>
+                            <li>После оплаты менеджер формирует заказ на доставку;</li>
+                            <li>Вы принимаете груз, доставленный нашим автотранспортом.</li>
+                        </ol>
+                    </div>
+                    <div class="safety__logo"></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="catalog">
-        <div class="grid catalog__grid">
-            <div class="catalog__content">
-                <h1 class="catalog__title">Большой ассортимент<br> металлопроката всегда<br> в наличие на нашем<br> складе</h1>
-                <a href="https://www.google.ru/" target="_blank"><input class="button button--pink-background button--catalog-size-margin" type="button" value="каталог"></a>
-                <div class="catalog__carousel">
-                    <img class="catalog__left-arrow" src="img/lesson10/pod-header-right-arrow.png" alt="svg левая стрелка">
-                    <img class="catalog__carousel-center" src="img/lesson10/pod-header-carousel-center.png" alt="svg центральная часть карусели">
-                    <img class="catalog__right-arrow" src="img/lesson10/pod-header-left-arrow.png" alt="svg правая стрелка">
+        <div class="grid--arm-span">
+            <p class="title title--catalog-margin">Каталог металлопроката</p>
+            <p class="catalog__description">ООО «Металл Тула» специализируется на оптово-розничной торговле металлопроката и профильных<br>
+                труб в Тульском регионе. Мы гарантируем высокое качество обслуживания и индивидуальный подход к<br>
+                каждому клиенту. Компания располагает возможностью постоянно иметь на складе полный<br>
+                ассортимент металлопроката для удовлетворения потребительского спроса.</p>
+            <div class="catalog__container container-long-products ">
+                <h2 class="catalog__container-title">Сортовой прокат</h2>
+                <div class="catalog__wrapper">
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="арматура, катанка"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="уголок"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="круг"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box" type="button" value="балка, швеллер"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-top" type="button" value="круг конструкционный"></a>
+                </div>
+            </div>
+            <div class="catalog__container container-pipe-rolling">
+                <h2 class="catalog__container-title">Трубный прокат</h2>
+                <div class="catalog__wrapper">
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="трубы ВГП"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="трубы круглые"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right catalog__box--text-align" type="button" value="трубы профильные прямоугольные"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--text-align" type="button" value="трубы профильные квадратные"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-top catalog__box--text-align" type="button" value="трубы стальные электросварные оцинкованные"></a>
+                </div>
+            </div>
+            <div class="catalog__container container-sheet-metal">
+                <h2 class="catalog__container-title">Листовой прокат</h2>
+                <div class="catalog__wrapper">
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="лист г/к СТ3"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right" type="button" value="лист х/к"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-right catalog__box--text-align" type="button" value="лист г/к низколкгированный"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--text-align" type="button" value="лист г/к конструкционный"></a>
+                    <a href="https://www.google.ru/" target="_blank"><input class="catalog__box catalog__box--margin-top catalog__box--text-align" type="button" value="просечно-вытяжной лист(ПВЛ)"></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="red-block">
-        <div class="grid red-block__grid">
-            <div class="red-block__one-block">
-                <div class="red-block__frame">
-                    <div class="red-block__logo">
+    <section class="specials">
+        <div class="grid">
+            <h1 class="title title--specials--margin">Спецпредложения</h1>
+            <div class="specials__content">
+                <div class="product-item">
+                    <p class="product-item__product-name product--text">Труба профильная</p>
+                    <p class="product-item__product-har product--text">40х20х1,5</p>
+                    <div class="product-item__product-one"></div>
+                    <span class="product-item__cost product-item__cost--text">66₽/м</span>
+                    <a href="https://www.google.ru/" target="_blank"><input class="product-item__button-cost product-item__cost--text" type="button" value="быстрый заказ"></a>
+                </div>
+                <div class="product-item">
+                    <p class="product-item__product-name product--text">Труба профильная</p>
+                    <p class="product-item__product-har product--text">80х80х3</p>
+                    <div class="product-item__product-two-three"></div>
+                    <span class="product-item__cost product-item__cost--text">286₽/м</span>
+                    <a href="https://www.google.ru/" target="_blank"><input class="product-item__button-cost product-item__cost--text" type="button" value="быстрый заказ"></a>
+                </div>
+                <div class="product-item">
+                    <p class="product-item__product-name product--text">Труба профильная</p>
+                    <p class="product-item__product-har product--text">60х60х2</p>
+                    <div class="product-item__product-two-three"></div>
+                    <span class="product-item__cost product-item__cost--text">158₽/м</span>
+                    <a href="https://www.google.ru/" target="_blank"><input class="product-item__button-cost product-item__cost--text" type="button" value="быстрый заказ"></a>
+                </div>
+                <div class="product-item">
+                    <p class="product-item__product-name product--text">Заглушки для труб</p>
+                    <p class="product-item__product-har product--text">пластиковые</p>
+                    <div class="product-item__product-four"></div>
+                    <span class="product-item__cost product-item__cost--text">3₽/шт</span>
+                    <a href="https://www.google.ru/" target="_blank"><input class="product-item__button-cost product-item__cost--text" type="button" value="быстрый заказ"></a>
+                </div>
+            </div>
+            <div class="carousel">
+                <img class="carousel__left-arrow carousel__left-arrow--margin-specials-block" src="img/lesson10/pod-header-right-arrow.png" alt="svg левая стрелка">
+                <img class="carousel__center carousel__center--margin-specials-block" src="img/lesson10/pod-header-carousel-center.png" alt="svg центральная часть карусели">
+                <img class="carousel__right-arrow carousel__right-arrow--margin-specials-block" src="img/lesson10/pod-header-left-arrow.png" alt="svg правая стрелка">
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+       <div class="grid about-us__grid back-logo">
+           <div class="about-us__content">
+                <h1 class="title title--about-us--margin-size">ООО «Металл Тула»</h1>
+               <p class="about-us__description">Мы ставим своей целью долгосрочное и взаимовыгодное сотрудничество, приобретенное путем<br> минимальных затрат Вашего времени и денег.</p>
+               <div class="points">
+                   <div class="points__block">
+                       <img class="points__img" src="img/lesson10/points__img-one-block.png" alt="">
+                       <span class="points__text ">Широкий<br> ассортимент</span>
+                   </div>
+                   <div class="points__block">
+                       <img class="points__img points__img--two-width" src="img/lesson10/points__img-two.png" alt="">
+                       <span class="points__text ">Низкие цены</span>
+                   </div>
+                   <div class="points__block">
+                       <img class="points__img points__img--three-width" src="img/lesson10/points__img-three.png" alt="">
+                       <span class="points__text "> Гарантия на все<br> товары</span>
+                   </div>
+                   <div class="points__block points__block--height">
+                       <img class="points__img points__img--four-width" src="img/lesson10/points__img-four.png" alt="">
+                       <span class="points__text ">Быстрая доставка</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="news">
+        <div class="grid news__grid">
+            <h1 class="title title--news-margin-size">Новости</h1>
+            <div class="news__content">
+                <div class="cards">
+                    <div class="cards__img-one"></div>
+                    <p class="cards__text">Работает для вас все<br> праздники</p>
+                    <p class="cards__date">29 мая</p>
+                </div>
+                <div class="cards">
+                    <div class="cards__img-two"></div>
+                    <p class="cards__text">Где применяется<br> профильная труба?</p>
+                    <p class="cards__date">29 мая</p>
+                </div>
+                <div class="cards">
+                    <div class="cards__img-three"></div>
+                    <p class="cards__text">Сколько нужно арматуры<br> для фундамента?</p>
+                    <p class="cards__date">29 мая</p>
+                </div>
+            </div>
+            <a class="cards__date cards__date--cards-all-border" href="#">Смотреть все</a>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="grid contacts__grid">
+            <h1 class="title title--contacts-margin">Контакты</h1>
+            <div class="contacts__content">
+                <div class="contacts__info">
+                    <div class="contact">
+                    <p class="phone details contacts__text"> <span class="contacts__text">Телефон:</span> 52-20-50 </p>
+                    <p class="address details details--line-height contacts__text"> <span class="contacts__text">Адрес:</span> Тула,<br> Новомосковское ш. 34</p>
+                    <p class="working-hours details details--line-height contacts__text"> <span class="contacts__text"> Время работы:</span> ПН-ПТ<br> 8:00-18:00,СБ 8:00-14:00</p>
+                    <p class="mail details details--line-height-min contacts__text"> <span class="contacts__text">Почта:</span> zakaz@metal71.ru</p>
+                    </div>
+                    <div class="social-media">
+                        <h3 class="contacts__text">Мы в социальных сетях</h3>
+                        <div class="social-media__wrapper">
+                            <a class="social-media__link social-media__link--margin" href="https://www.google.ru/" target="_blank"><img src="img/lesson10/contacts__social-media-1.png"></a>
+                            <a class="social-media__link social-media__link--margin" href="https://www.google.ru/" target="_blank"><img src="img/lesson10/contacts__social-media-2.png"></a>
+                            <a class="social-media__link social-media__link--margin" href="https://www.google.ru/" target="_blank"><img src="img/lesson10/contacts__social-media-3.png"></a>
+                            <a class="social-media__link social-media__link--margin" href="https://www.google.ru/" target="_blank"><img src="img/lesson10/contacts__social-media-4.png"></a>
+                            <a href="https://www.google.ru/" target="_blank"><img src="img/lesson10/contacts__social-media-5.png"></a>
+                        </div>
                     </div>
                 </div>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.0731911259477!2d37.63494938648215!3d54.16106713430334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343fc808171075%3A0x266e624c35c2440f!2z0J3QvtCy0L7QvNC-0YHQutC-0LLRgdC60L7QtSDRiC4sIDM0LCDQotGD0LvQsCwg0KLRg9C70YzRgdC60LDRjyDQvtCx0LsuLCAzMDAwNDU!5e0!3m2!1sru!2sru!4v1595840442175!5m2!1sru!2sru" width="539" height="539" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
-
         </div>
-
+    </section>
+    <section class="footer">
+        <div class="grid">
+            <div class="footer__content">
+                <div class="footer__logo-and-price">
+                    <div class="logo logo--footer-margin"></div>
+                    <a href="https://www.google.ru/" target="_blank"><input class="button button--pink-background button-price" type="button" value="прайс"></a>
+                </div>
+                <div class="footer__catalog">
+                    <h3 class="footer__text footer__text--title">Каталог товара</h3>
+                    <p class="footer__text">Трубный прокат</p>
+                    <p class="footer__text">Сортовой прокат</p>
+                    <p class="footer__text">Листовой прокат</p>
+                </div>
+                <div class="footer__info">
+                    <h3 class="footer__text footer__text--title">Информация</h3>
+                    <p class="footer__text">Новости</p>
+                    <p class="footer__text">Как купить</p>
+                    <p class="footer__text">Доставка</p>
+                    <p class="footer__text">О магазине</p>
+                    <p class="footer__text">Контакт</p>
+                </div>
+                <form class="footer__form" action="mailto:verslibre.md@gmail.com" enctype="text/plain">
+                        <p class="footer__form-text">узнавай о поступлениях<br> первым!</p>
+                        <input class="footer__form-text footer__form-text--size-color-mail field" placeholder="Введите ваш e-mail" name="e-mail">
+                        <p class="footer__form-text footer__form-text--size-color-mail footer__form-text-color-check ">выберите рассылку</p>
+                        <p class="footer__form-text footer__form-text-margin-check"><input type="checkbox" value="choice">Первая компания</p>
+                        <button class="footer__button">ПОДПИСАТЬСЯ</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-<section class="test">
-    <h2 class="red-block__title">Покупайте металлопрокат безопасно!</h2>
-    <p class="red-block__description-one">Мы обеспечиваем безопасную и непрерывную работу даже в таких сложных условиях!<br>
-        Заказать металлопрокат просто, а главное безопасно — онлайн-оплата и бесконтактная доставка:</p>
-</section>
-
+    <div class="black-block black-block-end ">
+        <div class=" grid grid--black-block-end">
+            <p class="black-block-end__brand black-block-end--text">© Металл Тула, 2020</p>
+            <p class="black-block-end__inn black-block-end--text">ИНН: 7107131023</p>
+            <p class="black-block-end__ogrn black-block-end--text">ОГРН: 1197154002210</p>
+            <img class="black-block-end__img-one pict-margin" src="img/lesson10/black-block__end-0.png" alt="">
+            <img class="black-block-end__img-two pict-margin"  src="img/lesson10/black-block__end-2.png" alt="">
+            <img class="black-block-end__img-three pict-margin" src="img/lesson10/black-block__end-3.png" alt="">
+            <img class="black-block-end__img-four pict-margin" src="img/lesson10/black-block__end-4.png" alt="">
+        </div>
+    </div>
 </body>
 </html>

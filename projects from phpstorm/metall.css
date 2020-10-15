@@ -1,5 +1,24 @@
+body{
+    margin: 0;
+}
 
-.button{                /*кнопка*/
+.grid{                                      /* сетка */
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.grid--arm-span{                            /* большая сетка */
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.black-block{                      /* черная полоска с контентом, которая используется в хедере и футере */
+    background-color: #242424;
+    width: inherit;
+    height:40px ;
+}
+
+.button{                                    /*кнопка*/
     width: 211px;
     height: 50px;
     font-family: 'Russo One', sans-serif;
@@ -8,65 +27,61 @@
     cursor: pointer;
 }
 
-.button--pink-background{
+.button--pink-background{                   /* розовая кнопка */
     background-color: #FF4545;
     color: #FFFFFF;
     border: none;
 }
 
-.button--pink-border-fon-white{
+.button--pink-border-fon-white{        /* кнопка с розовым бордером */
     background-color: #FFFFFF;
     color: #FF4545;
     border: 2px solid #FF4545;
 }
 
-/*----------*/
-body{
-    margin: 0;
+.title{                                       /* заголовки */
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #303030;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
+.logo{                                           /* логотип */
+    background-image: url("img/lesson10/header-logo.png");
+    width: 208px;
+    height: 50px;
+}
+/*-------------------------------*/
 .header{
     width: 100%;
     height: 203px;
 }
 
-.black-block{
-    background-color: #242424;
-    width: inherit;
-    height:40px ;
-}
-.black-block__grid{
-    width: 1140px;
-    height: inherit;
-    margin: 0 auto;
-}
 .header__black-block-content{
+    height: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.black-block__name{
+.black-block__text{
     font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+.black-block__text--name-brand-size{
     font-size: 12px;
     font-weight: 600;
-    color: #FFFFFF;
 }
-.black-block__link{
-    font-family: 'Open Sans', sans-serif;
+.black-block__text--mail-size{
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
 }
-.black-block__link::before{
+.black-block__text--mail-size::before{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
-}
-
-.grid{
-    width: 1140px;
-    height: 203px;
-    margin: 0 auto;
 }
 
 .header__navigation-block{
@@ -74,29 +89,21 @@ body{
     flex-direction: row;
     align-items: center;
 }
-
-.logo{
-    background-image: url("img/lesson10/header-logo.png");
-    width: 208px;
-    height: 50px;
-}
-.header__logo{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 88px;
+.logo--header-margin{
+    margin: 15px 88px 15px 0;
 }
 
 .header__menu{
     margin-right: 117px;
 }
-.menu-link {
-    text-decoration: none;
-    color: #303030;
+.header__text{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    color: #303030;
     line-height: 40%;
+    text-decoration: none;
 }
-.menu-link--margin-right{
+.header__text--margin-right{
     margin-right: 25px;
 }
 
@@ -113,109 +120,86 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-
 .header__price-block-button{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 37px;
+    margin: 15px 37px 15px 0;
     display: flex;
 }
 .button-price{
     width: 101px;
 }
+.button-price:hover{
+    background-color: #FFFFFF;
+    color: #FF4545;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
+}
 .button-link--margin{
     margin-left: 40px;
 }
 
-.header__tel {
-    font-family: 'Open Sans', sans-serif;
+.header__text--tel-size-margin {
     font-size: 35px;
     font-weight: bold;
     line-height: 70%;
-    color: #303030;
     margin-top: 27px;
 }
-.header__tel::before {
+.header__text--tel-size-margin::before {
     content: url("img/lesson10/header-tell.png");
     margin-right: 8px;
 }
-.header__tel::after{
+.header__text--tel-size-margin::after{
     content: url("img/lesson10/header-basket.png");
     margin-left: 50px;
 }
 
-/*______*/
-
-.catalog__grid{
-    width: 1170px;
+/*-------------------------------*/
+.range__grid{
     height: 502px;
 }
-
-.catalog__content{
+.range__content{
     background-image: url("img/lesson10/pod-header-pict.png");
     width: 100%;
     height: 100%;
-    background-size: cover;
     display: flex;
     flex-direction: column;
 }
-
-.catalog__title{
-    margin-top: 60px;
-    margin-left: 68px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 100%;
+.title--range{
+    margin: 60px 0 0 68px ;
     color: #FFFFFF;
 }
-
-.button--catalog-size-margin{
+.button--range-size-margin{             /* тянется невидимой рукой на всю ширину изображения */
     width: 195px;
     height: 70px;
     font-size: 25px;
     line-height: 50%;
-    margin-left: 70px;
+    margin: 50px 0 0 70px;
 }
 
-.catalog__carousel{
-    display: flex;
-    flex-direction: row;
-    margin-top: 89px;
-}
-
-.catalog__left-arrow{
-    margin-left: 70px;
-}
-.catalog__carousel-center{
+.carousel__center{                       /* карусель */
     width: 90px;
     height: 10px;
+}
+.carousel__left-arrow--margin{
+    margin-left: 70px;
+}
+.carousel__center-margin{
+    margin-top: 98px;
     margin-left: 441px;
 }
-.catalog__right-arrow{
-    margin-left: 441px;
+.carousel__right-arrow--margin{
+    margin-left: 437px;
 }
 
-/*---------------*/
-
-.red-block{
+/*-------------------------------*/
+.safety__grid{
     margin-top: 80px;
-}
-
-.red-block__grid{
-    width: 1170px;
     height: 340px;
     display: flex;
 }
-
-.red-block__one-block{
-    width: 1170px;
-    height: 340px;
+.safety__container{
+    width: inherit;
     background:rgba(255,69,69,0.5);
-    display: flex;
 }
-
-.red-block__frame{
+.safety__frame{
     width: 1150px;
     height: 320px;
     box-sizing: border-box;
@@ -225,18 +209,569 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-
-.red-block__logo{
+.safety__text-box{
+    display: flex;
+    flex-direction: column;
+}
+.safety--text-general-properties{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #303030;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: absolute;
+}
+.safety__title{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40%;
+    text-align: center;
+    top: 54px;
+    left: 301px;
+}
+.safety__description{
+    text-align: center;
+    top: 92px;
+    left: 109px;
+}
+.safety__list{
+    top: 162px;
+    left: 227px;
+    padding-inline-start: 20px;
+}
+.safety__logo{
     background-image: url("img/lesson10/rgba_logo.png");
     width: 202px;
     height: 240px;
 }
 
-.test{
-    margin-top: 300px;
-    width: inherit;
-    height: 1000px;
-    background-color: #4F5BB8;
+/*-------------------------------*/
+.catalog{
+    margin-top: 120px;
 }
 
+.title--catalog-margin{
+    margin: 0 0 50px 67px;
+}
+.catalog__description{                          /* оставил дублирование намеренно */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    color: rgba(48,48,48,0.8);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0 0 60px 70px;
+}
+
+.catalog__container{
+    width: inherit;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.container-long-products{
+    background-image: url("img/lesson10/catalog-one-container.png");
+}
+.container-pipe-rolling{
+    background-image: url("img/lesson10/catalog-two-container.png");
+}
+.container-sheet-metal{
+    background-image: url("img/lesson10/catalog-three-container.png");
+    margin-bottom: 0;
+}
+
+.catalog__box{
+    width: 240px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50%;
+    color: #303030;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+.catalog__box:hover{
+    background-color: #FF4545;
+    color:#FFFFFF;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.25);
+}
+.catalog__container-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40%;
+    color: #FFFFFF;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 30px;
+    margin-bottom: 27px;
+    margin-left: 69px;
+}
+.catalog__wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 70px;
+}
+.catalog__box--margin-right{
+    margin-right: 23px;
+}
+.catalog__box--margin-top{
+    margin-top: 23px;
+}
+.catalog__box--text-align{
+  line-height: 1;
+}
+
+/*-------------------------------*/
+.title--specials--margin{
+    margin: 100px 0 107px 57px ;
+}
+
+.specials__content{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-item{
+    width: 250px;
+    height: 380px;
+    background: #FFFFFF;
+    border: 2px solid #FF4545;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 47px;
+}
+.product--text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 50%;
+    color: #303030;
+    margin-block-end: 0;
+    text-align: center;
+}
+.product-item__product-name{
+    font-weight: bold;
+}
+.product-item__product-har{
+    font-weight: 600;
+    margin-block-start: 0;
+}
+.product-item__product-one{
+    width: 245px;
+    height: 165px;
+    background-image: url("img/lesson10/product-item-one.png");
+    align-items: center;
+}
+.product-item__product-two-three{
+    width: 242px;
+    height: 166px;
+    background-image: url("img/lesson10/product-item-two.png");
+    align-items: center;
+}
+.product-item__product-four{
+    width: 157px;
+    height: 157px;
+    background-image: url("img/lesson10/product-item-four.png");
+    align-self: center;
+}
+.product-item__cost{
+    text-align: center;
+    color: #303030;
+}
+.product-item__cost--text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+.product-item__button-cost{
+    width: 248px;
+    height: 68px;
+    background: #FF4545;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.carousel__left-arrow--margin-specials-block{
+    margin-top: 58px;
+    margin-left: 55px;
+}
+.carousel__center--margin-specials-block{
+    margin-top: 58px;
+    margin-left: 441px;
+}
+.carousel__right-arrow--margin-specials-block{
+    margin-left: 441px;
+}
+
+/*-------------------------------*/
+.about-us__grid{
+    margin-top: 120px;
+    height: 640px;
+}
+.back-logo{
+    background-image: url("img/lesson10/about-us__grid-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(2px 7px 17px rgba(0,0,0,0.2));
+}
+
+.about-us__content{
+    display: flex;
+    flex-direction: column;
+}
+.title--about-us--margin-size{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 95px;
+}
+.about-us__description{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: rgba(48,48,48,0.8);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.points{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 63px;
+    margin-left: 10px;
+}
+.points__block{
+    width: 250px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+}
+.points__block--height{
+    height: 173px;
+    margin-right: 0;
+}
+.points__img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    align-self: center;
+}
+.points__img--two-width{
+    width: 90px;
+}
+.points__img--three-width{
+    width: 68px;
+}
+.points__img--four-width{
+    width: 110px;
+}
+.points__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #303030;
+    margin-top: 20px;
+}
+
+/*-------------------------------*/
+.news__grid{
+    margin-top: 120px;
+    height: 636px;
+}
+.title--news-margin-size{
+    font-weight: normal;
+    margin: 0 0 94px 52px;
+}
+
+.news__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cards{
+    width: 351px;
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+}
+.cards__img-one{
+    background-image: url("img/lesson10/news__block-one.png");
+    width: 350px;
+    height: 370px;
+}
+.cards__img-two{
+    background-image: url("img/lesson10/cards__img-two.png");
+    width: 350px;
+    height: 370px;
+}
+.cards__img-three{
+    background-image: url("img/lesson10/cards__img-three.png");
+    width: 350px;
+    height: 370px;
+}
+.cards__text{
+    font-family: 'Open Sans', sans-serif;   /* дублирование только в этой строчке, если его убрать, то код увеличится. */
+    font-weight: bold;
+    font-size: 24px;
+    color: #303030;
+    line-height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 10px;
+}
+.cards__date{
+    font-family: 'Open Sans', sans-serif;       /* убрал дублирование в двух блоках, там где это было целесообразно  */
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40%;
+    color: rgba(48,48,48,0.6);
+    margin-top: 15px;
+}
+.cards__date--cards-all-border{
+    margin-top: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(48,48,48,0.6);
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+/*-------------------------------*/
+.contacts__grid{
+    height: 629px;
+    margin-top: 120px;
+}
+.title--contacts-margin{
+    margin-left: 53px;
+}
+.contacts__content{
+    display: flex;
+    flex-direction: row;
+}
+.contacts__info{
+   margin-top: 120px;
+}
+
+.contacts__text{                                       /* текст */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #303030;
+    font-weight: bold;
+    line-height: 120%;
+}
+.details{
+    font-weight: normal;
+    line-height: 70%;
+    margin-left: 106px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.details--line-height{
+    line-height: 120%;
+}
+.details--line-height-min{
+    line-height: 60%;
+    margin-bottom: 32px;                            /* конец текста */
+}
+.phone:before{
+    content: url("img/lesson10/contacts__info-one.png");
+    position: absolute;
+    left: -50px;
+    bottom: -7px;
+}
+.address:before{
+    content: url("img/lesson10/contacts__info-two.png");
+    position: absolute;
+    left: -50px;
+    bottom: -5px;
+}
+.working-hours:before{
+    content: url("img/lesson10/contacts__info-three.png");
+    position: absolute;
+    left: -50px
+}
+.mail:before{
+    content: url("img/lesson10/contacts__info-four.png");
+    position: absolute;
+    left: -50px;
+    bottom: -5px;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+}
+.social-media__link--margin{
+    margin-right: 20px;
+}
+
+.maps{
+   margin-left: 252px;
+    margin-top: 42px;
+}
+
+/*-------------------------------*/
+.footer{
+    width: 100%;
+    height: 377px;
+    background-color: #C4C4C4;
+    margin-top: 120px;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+}
+.footer__logo-and-price{
+    margin-top: 46px;
+}
+.logo--footer-margin {
+    margin-bottom: 30px;
+}
+
+.footer__catalog{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 102px 0 45px;
+}
+.footer__info{
+    margin-top: 60px;
+    margin-right: 83px;
+}
+.footer__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40%;
+    color: #303030;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 20px;
+}
+.footer__text--title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #FF4545;
+    margin-bottom: 30px;
+}
+
+.footer__form{
+    width: 272px;
+    height: 191px;
+    border: 3px solid #FF4545;
+    margin-top: 46px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+form p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.footer__form-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #303030;
+}
+.field{
+    width: 222px;
+    height: 20px;
+    border: none;
+    margin: 10px 0 10px 0;
+}
+.footer__form-text--size-color-mail{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30%;
+    color: rgba(0,0,0,0.4);
+}
+.footer__form-text-color-check {
+    color: rgba(0,0,0,0.6);
+}
+.footer__form-text-margin-check{
+    font-size: 12px;
+    line-height: 50%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.footer__button{
+    width: 140px;
+    height: 30px;
+    background: #FF4545;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 70%;
+    color: #FFFFFF;
+    border: none;
+}
+/*-------------------------------*/
+.grid--black-block-end{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.black-block-end--text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 70%;
+    color: #FFFFFF;
+    margin-top: 17px;
+}
+.black-block-end__brand{
+    margin-right: 60px;
+    align-items: center;
+}
+.black-block-end__inn{
+    margin-right: 20px;
+}
+.black-block-end__ogrn{
+    margin-right: 282px;
+}
+.black-block-end__img-one{
+    width: 100px;
+    height: 31px;
+    margin-top: 5px;
+}
+.black-block-end__img-two{
+    width: 133px;
+    height: 40px;
+}
+.black-block-end__img-three{
+    width: 115px;
+    height: 45px;
+    margin-bottom: 3px;
+}
+.black-block-end__img-four{
+    width: 50px;
+    height: 40px;
+}
+.pict-margin{
+    margin-right: 6px;
+}
