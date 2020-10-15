@@ -32,13 +32,25 @@ body{
     color: #FFFFFF;
     border: none;
 }
+.button--pink-background:hover{
+    background-color: #FFFFFF;
+    color: #FF4545;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
+}
+
 
 .button--pink-border-fon-white{        /* кнопка с розовым бордером */
     background-color: #FFFFFF;
     color: #FF4545;
     border: 2px solid #FF4545;
 }
+<<<<<<< HEAD
+.button--pink-border-fon-white:hover{       /*сделал ховер*/
+    border: 2px dotted #FF4545;
+}
+=======
 
+>>>>>>> master
 .title{                                       /* заголовки */
     font-family: 'Russo One', sans-serif;
     font-size: 48px;
@@ -83,6 +95,12 @@ body{
     content: url("img/lesson10/header-mail.png");
     margin-right: 10px;
 }
+<<<<<<< HEAD
+.black-block__text--mail-size:hover{
+                                            /*додумать*/
+}
+=======
+>>>>>>> master
 
 .header__navigation-block{
     display: flex;
@@ -103,6 +121,13 @@ body{
     line-height: 40%;
     text-decoration: none;
 }
+<<<<<<< HEAD
+.header__text--hover:hover{
+   color: #FF4545;                                              /*сделал ховер*/
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25 );
+}
+=======
+>>>>>>> master
 .header__text--margin-right{
     margin-right: 25px;
 }
@@ -173,7 +198,10 @@ body{
     line-height: 50%;
     margin: 50px 0 0 70px;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 .carousel__center{                       /* карусель */
     width: 90px;
     height: 10px;
@@ -284,6 +312,7 @@ body{
 .container-sheet-metal{
     background-image: url("img/lesson10/catalog-three-container.png");
     margin-bottom: 0;
+<<<<<<< HEAD
 }
 
 .catalog__box{
@@ -333,6 +362,57 @@ body{
   line-height: 1;
 }
 
+=======
+}
+
+.catalog__box{
+    width: 240px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50%;
+    color: #303030;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+.catalog__box:hover{
+    background-color: #FF4545;
+    color:#FFFFFF;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.25);
+}
+.catalog__container-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40%;
+    color: #FFFFFF;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 30px;
+    margin-bottom: 27px;
+    margin-left: 69px;
+}
+.catalog__wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 70px;
+}
+.catalog__box--margin-right{
+    margin-right: 23px;
+}
+.catalog__box--margin-top{
+    margin-top: 23px;
+}
+.catalog__box--text-align{
+  line-height: 1;
+}
+
+>>>>>>> master
 /*-------------------------------*/
 .title--specials--margin{
     margin: 100px 0 107px 57px ;
@@ -408,6 +488,12 @@ body{
     align-self: flex-end;
     cursor: pointer;
 }
+<<<<<<< HEAD
+.product-item__button-cost:hover{       /*сделал ховер*/
+   border: 2px double #FFFFFF ;
+}
+=======
+>>>>>>> master
 
 .carousel__left-arrow--margin-specials-block{
     margin-top: 58px;
@@ -557,7 +643,10 @@ body{
     padding-bottom: 7px;
     display: inline-block;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 /*-------------------------------*/
 .contacts__grid{
     height: 629px;
@@ -670,6 +759,13 @@ body{
     margin-block-end: 0;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
+.footer__text:hover{
+    color: #FF4545;
+    cursor: pointer;
+}
+=======
+>>>>>>> master
 .footer__text--title{
     font-weight: bold;
     font-size: 24px;
