@@ -1,0 +1,66 @@
+
+        /*lg*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .bdsm{
+        width: 690px;
+    }
+    .scroll{
+        overflow-x: scroll;
+    }
+    .about__text-title{
+        white-space: nowrap;
+    }
+    .staging-content-vol-two__box{
+        max-width: 690px;
+    }
+    .staging-content-vol-two__text{
+        font-size: 34px;
+    }
+    .form__box--size{
+        width: 270px;
+    }
+    .form__button{
+        margin-left: 82px;
+    }
+   .footer__address{
+        padding-right: 30px;
+    }
+}
+
+        /*md*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about__text-title{
+        white-space: nowrap;
+    }
+    .staging-content-vol-two__text{
+        font-size: 29px;
+    }
+    .form__box--size{
+        margin-right: 5px;
+    }
+    .scroll{
+        overflow-x: scroll;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .bdsm{
+        width: 510px;
+    }
+    .staging-content-vol-two__text{
+        font-size: 25px;
+    }
+    .form__box--size{
+        width:450px;
+    }
+    .footer__contacts{
+        white-space: nowrap;
+    }
+    .scroll{
+        overflow-x: scroll;
+    }
+}
+

@@ -1,0 +1,392 @@
+body {
+    background: #333333;
+}
+a, a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.title{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+    /*------ fixed--------*/
+.left-items{
+    width: 150px;
+    height: 1045px;
+    background: rgba(51, 51, 51, 0.75);
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+}
+.left-items__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 575px;
+    margin-top: 125px;
+}
+
+.left-items__text{
+    color: #C4C4C4;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    align-items: center;
+}
+.left-items__line{
+    width: 80px;
+    border: 3px solid #C4C4C4;
+    transform: rotate(90deg);
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inst{
+    background-image: url("theatre-pict/instagram.svg");
+    width: 26px;
+    height: 26px;
+}
+.facebook{
+    background-image: url("theatre-pict/facebook.svg");
+    width: 15px;
+    height: 26px;
+}
+.vk{
+    background-image: url("theatre-pict/vk.svg");
+    width: 26px;
+    height: 14px;
+}
+.youtube{
+    background-image: url("theatre-pict/youtube.svg");
+    width: 26px;
+    height: 18px;
+}
+.social-media>.social-media__link{
+    margin-bottom: 30px;
+}
+/*-------левое меню для md-----------*/
+.left-menu{
+    width: 300px;
+    background: #333333;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.cross{
+    margin: 30px 0 0 238px;
+}
+.left-menu__nav{
+    margin: 140px 0 0 39px;
+    /*height: 370px;*/
+}
+.navigation__link--margin-t{
+    margin-top: 35px;
+}
+.left-menu__social-media{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 126px;
+    margin: 89px 0 0 89px;
+}
+.facebook-inst{
+    display: flex;
+    flex-direction: row;
+}
+.youtube-vk{
+    display: flex;
+    flex-direction: row;
+}
+
+/* меню для sm*/
+
+.menu-mobile__pict{
+    margin: 50px 0 0 33px;
+
+}
+    /*------навигация в хедере------*/
+.header{
+    width: 100%;
+    background-image: url("theatre-pict/p1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.font-style-OSC-bold{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.navigation{
+    padding-top: 51px;
+    max-width: 1110px;
+    text-align: right;
+}
+.nav{
+    max-width: 824px;
+}
+.navigation__link{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+.navigation__link:hover,.navigation__phone:hover{
+    color: #D1A954;
+}
+.navigation__phone{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #D1A954;
+}
+
+    /*-------контент хедера--------*/
+
+.header-content{
+    max-width: 1035px;
+    padding-bottom: 208px;
+}
+.header-content__left-lock{
+    padding-top: 307px;
+}
+.pad{
+    margin-top: 90px;
+}
+
+.header-content__title{
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+}
+.header-content__description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    margin: 30px 0;
+}
+.header-content__button{
+    width: 160px;
+    height: 50px;
+    background: #D1A954;
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+
+        /*--контент хедера--постер--*/
+.header-content__poster{
+    padding-top: 190px;
+
+}
+.poster{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 440px;
+}
+
+.arrow__text{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.arrow__text--margin{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+.arrow{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+}
+.arz{
+
+}
+/*----------о театре--------------*/
+.about{
+    margin: 0 auto;
+   padding-top: 150px;
+}
+.about__text-title{
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 40px;
+}
+.about__text-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.about__text-description-vol-two{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    padding-top: 15px;
+}
+.color-y{
+    color: #D1A954;
+}
+/*--------------наши постановки---------------*/
+
+.staging{
+    padding-top: 150px;
+}
+.bdsm{
+    max-width: 1770px;
+    margin: 0 auto;
+}
+.staging__pict{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 442px;
+    background-position: center;
+}
+.staging__pict--active{
+    background-image: url(" theatre-pict/staging-two.png");
+}
+
+
+/*--------------------------*/
+.staging-content-vol-two{
+    background-image: url("theatre-pict/staging__content-vol-two.png");
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin-top: 150px;
+}
+.staging-content-vol-two__box{
+    max-width: 760px;
+}
+.staging-content-vol-two__left{
+    padding-top: 116px;
+}
+.staging-content-vol-two__right{
+    padding-top: 160px;
+    padding-left: 58px;
+}
+
+.staging-content-vol-two__title{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.staging-content-vol-two__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.stars{
+    padding-bottom:25px;
+}
+.stars>img{
+    padding-right: 25px;
+}
+
+/*-----------партнеры театра------------*/
+.partners{
+    padding-top: 150px;
+}
+.partners__box{
+    padding-bottom: 80px;
+}
+/*------------стать меценатом------------*/
+.footer{
+    margin-top: 120px;
+}
+.footer__contacts{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer__contacts:hover{
+    color: #D1A954;
+}
+
+.form__box{
+    width: 180px;
+    height: 35px;
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+    padding-left: 15px;
+}
+.form__box--size{
+    width: 310px;
+    height: 100px;
+}
+.form__description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    padding-top: 40px;
+    color: #989898;
+}
+.form__button{
+    width: 190px;
+    height: 50px;
+    background: #D1A954;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.footer__line{
+    border: 1px solid #565656;
+    margin: 80px 0 30px 0;
+}
+.footer__text-end-block{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+    display: inline;
+}
