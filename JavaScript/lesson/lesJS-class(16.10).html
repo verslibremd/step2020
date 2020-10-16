@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class</title>
+</head>
+<body>
+<script>
+   /* class MyClass{
+        name = 10;
+
+        constructor(arg) {
+            if (arg !== false){
+                this.name = arg;
+            }
+        }
+        method1(){
+            alert("my name = " + this.name);
+
+        }
+
+    }
+    let obj = new MyClass("Dima");// параметр в конструктор
+    obj.method1();
+
+    let obj2 = new MyClass("Sasha");
+    obj2.method1();*/
+
+    /*class User {
+        constructor(name) {
+            this.name = name;
+        }
+
+        set name(val){
+            if (val.length<2){
+                alert("нужно больше символов")
+            }
+            else {
+                this._name = val;
+            }
+        }
+
+        get name(){
+            if (this._name === "Dima"){
+                return "ERROR";
+            }
+            return this._name;
+        }
+
+    }
+
+    let obj = new User("Dima");
+    alert(obj.name);
+    // get когда обращаешься к свойству
+    // set когда присвоим
+*/
+
+//покупатель
+   //имя (более 2 символов)
+   // фамилия
+   // счет покупатель( только num)
+
+
+   class Shopper{
+    /*bil = 0;*/
+
+    constructor(name,surname,bil) {
+        this.name = name;
+        this.surname = surname;
+        this.bil = bil;
+
+    }
+    metInfo(){
+       alert("Имя : " + this.name);
+       alert("фамилия : " + this.surname);
+       alert("счет : " + this.bil);
+    }
+
+  /* argBil(){
+        alert("Счет : " + this.bil);
+    }*/
+
+    set name (len){
+        if (len.length <= 2){
+            alert("ERROR");
+        }
+        else {
+            this._name = len;
+        }
+
+    }
+    get name (){
+        return this._name;
+    }
+
+    set bil (a){
+        if (a !== Number || a<0){
+            return alert("ERROR");
+        }
+        else {
+            this._bil = a;
+        }
+    }
+
+    get bil (){
+        return this._bil;
+    }
+
+   }
+
+
+   let obj = new Shopper("yyy","Мальченко","adsad");//
+   obj.metInfo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

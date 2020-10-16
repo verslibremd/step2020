@@ -2,9 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/_перебрать/new/step2020" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/_перебрать/step2020" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/_перебрать/step2020/step2020" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/step2020" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/step2020/step2020" vcs="Git" />
   </component>
