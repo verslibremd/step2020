@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ по строкам (Мальченко)</title>
+</head>
+<body>
+<script>
+
+/*//1. Написать функцию сокращения строки. Функция принимает строку и ее максимальную длину.
+  // Если длина строки больше, чем максимальная, то необходимо отбросить лишние символы,
+  // добавив вместо них троеточие.
+  // Например: truncate(“Hello, world!”, 8) должна вернуть“Hello...”.
+
+    function getStr(str,maxLength) {
+        let result =  str;
+        if (str.length > maxLength){
+          return result = str.slice (0,maxLength) + " . . .";
+        }
+    }
+     alert(getStr("1234567890",3));*/
+
+/* //3. Написать функцию, которая считает количество слов в предложении.
+
+    let str = prompt("предложение");
+
+    function calcWord(str) {
+       let result = str.split(" ");
+        alert(`количество слов в вашем предложении : ${result.length}`);
+    }
+  calcWord(str);*/
+
+/*//6. Написать функцию, которая принимает строку и символ и выводит индексы,
+// по которым находится этот символ в строке.
+// Также вывести, сколько всего раз встречается этот символ в строке.
+
+    function showIndex(str,symbol) {
+
+        let pos = 0; // индексы
+        while (true){
+           let res = str.indexOf(symbol,pos);
+           if (res == -1){
+               break;
+           }
+           pos = res + 1;
+           alert(`индекс символа : ${pos}`);
+        }
+
+       let i = 0;   // сколько всего раз встречается этот символ в строке
+       let j = str.indexOf(symbol);
+       while (j != -1){
+           i++;
+           j = str.indexOf(symbol,j+1);
+       } alert(`количество раз, которое символ встречается в строке:  ${i}`);
+
+    }
+    showIndex("Дмитрий","и");*/
+
+
+
+
+</script>
+
+</body>
+</html>
