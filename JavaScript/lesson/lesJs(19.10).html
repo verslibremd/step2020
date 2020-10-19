@@ -50,16 +50,16 @@
        {id: 11, sum: 2},
    ];
 
-   items.slice();
+   let cop = items.slice();
 
    function sad(x){     //сумма
        let sums = 0;
-       for (let i = 0; i<items.length; i++){
-           sums+=items[i].sum;
+       for (let i = 0; i<x.length; i++){
+           sums+=x[i].sum;
        }
        alert(sums);
    }
-   sad(items);
+   sad(cop);
 
    function sortByAge(items) {
        console.log(items.sort((a, b) => a.sum > b.sum ? 1 : -1));
