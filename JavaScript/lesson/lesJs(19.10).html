@@ -61,6 +61,15 @@
    }
    sad(items);
 
+   function sortByAge(items) {
+       console.log(items.sort((a, b) => a.sum > b.sum ? 1 : -1));
+   }
+   sortByAge(items);
+
+
+
+
+/*
 
     function compareF(a,b) { //сортировка от большего к меньшему
         if (a.sum > b.sum)return -1
@@ -69,6 +78,7 @@
     }
  alert(items.sort(compareF));
 
+*/
 
 
 
