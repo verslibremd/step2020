@@ -62,7 +62,6 @@
 
 
    class Shopper{
-    /*bil = 0;*/
 
     constructor(name,surname,bil) {
         this.name = name;
@@ -72,13 +71,9 @@
     }
     metInfo(){
        alert("Имя : " + this.name);
-       alert("фамилия : " + this.surname);
-       alert("счет : " + this.bil);
+       alert("Фамилия : " + this.surname);
+       alert("Счет : " + this.bil);
     }
-
-  /* argBil(){
-        alert("Счет : " + this.bil);
-    }*/
 
     set name (len){
         if (len.length <= 2){
@@ -94,7 +89,8 @@
     }
 
     set bil (a){
-        if (a !== Number || a<0){
+        if (a === String || a<0){
+            Number(a);
             return alert("ERROR");
         }
         else {
@@ -108,8 +104,7 @@
 
    }
 
-
-   let obj = new Shopper("yyy","Мальченко","adsad");//
+   let obj = new Shopper("Дмитрий","Мальченко","140 000 000");//
    obj.metInfo();
 
 

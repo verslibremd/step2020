@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0359a01-60db-428d-9a9c-459b715d0cb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson/lesJS-class(16.10).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson/lesJs(19.10).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/lesJS-class(16.10).html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson/lesJS-class(16.10).html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,8 @@
       <updated>1602785640657</updated>
       <workItem from="1602785642079" duration="2955000" />
       <workItem from="1602792811574" duration="430000" />
-      <workItem from="1602862931789" duration="8476000" />
+      <workItem from="1602862931789" duration="8718000" />
+      <workItem from="1603121716857" duration="8617000" />
     </task>
     <servers />
   </component>
@@ -90,6 +92,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1602793137735">
