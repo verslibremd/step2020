@@ -12,13 +12,33 @@
   // добавив вместо них троеточие.
   // Например: truncate(“Hello, world!”, 8) должна вернуть“Hello...”.
 
+/!*!//1 вариант ( к длине + ... )
+
     function getStr(str,maxLength) {
         let result =  str;
         if (str.length > maxLength){
           return result = str.slice (0,maxLength) + " . . .";
         }
     }
-     alert(getStr("1234567890",3));*/
+     alert(getStr("1234567890",3));*!/
+
+/!*!//2 вариант ( длина как указали )
+
+function getStr(str,maxLength) {
+    let result =  str;
+    if (str.length > maxLength){
+        return result = str.substr(0,maxLength -3) + " . . .";
+    }
+}
+alert(getStr("1234567890",8));*!/*/
+
+//2. Написать функцию, которая проверяет, является ли переданная строка палиндромом.
+
+
+
+
+
+
 
 /* //3. Написать функцию, которая считает количество слов в предложении.
 
@@ -30,13 +50,37 @@
     }
   calcWord(str);*/
 
+/*//4. Написать функцию, которая возвращает самое длинное слово из предложения.
+
+let str = "1 22 333 4444 55555";
+
+function getWordMax (str){
+    let str2 = str.split(" ").sort((a, b) => b.length - a.length);
+    return str2[0];
+}
+//alert(getWordMax (str));*/
+
+/*//5. Написать функцию, которая считает среднюю длину слова в предложении.
+
+//нужно получить длину всех элементов и разделить ее на количество элементов
+
+    let str = "давайте возьмём паузу и подумаем что же происходит"
+
+    function calcAverageLenWord(str) {
+            let str2 = str.split(" "); //8
+            let str3 = str2.reduce((sum,current) => sum + current.length,0); //43
+            let result = Math.floor(str3 / str2.length);
+            return `средняя длина слова в предложении = ${result}`;
+    }
+    //alert(calcAverageLenWord(str));*/
+
 /*//6. Написать функцию, которая принимает строку и символ и выводит индексы,
-// по которым находится этот символ в строке.
+        // по которым находится этот символ в строке.
 // Также вывести, сколько всего раз встречается этот символ в строке.
 
     function showIndex(str,symbol) {
 
-        let pos = 0; // индексы
+        let pos = 0;            // индексы
         while (true){
            let res = str.indexOf(symbol,pos);
            if (res == -1){
@@ -46,7 +90,7 @@
            alert(`индекс символа : ${pos}`);
         }
 
-       let i = 0;   // сколько всего раз встречается этот символ в строке
+       let i = 0;               // сколько всего раз встречается этот символ в строке
        let j = str.indexOf(symbol);
        while (j != -1){
            i++;
@@ -55,6 +99,8 @@
 
     }
     showIndex("Дмитрий","и");*/
+
+
 
 
 
