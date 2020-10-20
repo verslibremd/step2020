@@ -80,17 +80,44 @@
        }
    }
 
-   let obj = new Worker("Антон","Чехов",3000,10);
-   obj.getSalary();*/
+   let w = new Worker("Антон","Чехов",3000,10);
+   w.getSalary();*/
 
 
 //Реализуйте класс MyString, который будет иметь следующие методы:
 // метод reverse(), который параметром принимает строку, а возвращает ее в перевернутом виде,
-// метод ucFirst(), который параметром принимает строку, а возвращает эту же строку,
-// сделав ее первую букву заглавной и метод ucWords, который принимает строку и делает заглавной
-// первую букву каждого слова этой строки.
+// метод ucFirst(), который параметром принимает строку, а возвращает эту же строку,  сделав ее первую букву заглавной
+// и метод ucWords(), который принимает строку и делает заглавной первую букву каждого слова этой строки.
 
- 
+
+let word = "java script";
+
+
+    class MyString {
+
+        reverse(str){
+          return str.split("").reverse().join("");
+        }
+
+        ucFirst(str){
+            return str[0].toUpperCase() + str.slice(1);
+        }
+
+        ucWords(str) {
+            let n =  str.split(" ");
+             for (let i = 0; i < n.length; i++){
+                alert(n[i]);
+             }
+        }
+
+    }
+
+    let s = new MyString();
+
+   // alert(s.reverse(word));
+   // alert(s.ucFirst(word));
+    alert(s.ucWords(word))
+
 
 
 

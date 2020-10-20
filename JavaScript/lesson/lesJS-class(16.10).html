@@ -89,9 +89,9 @@
     }
 
     set bil (a){
-        if (a === String || a<0){
+        if (a === String || a < 0){
             Number(a);
-            return alert("ERROR");
+            alert("ERROR");
         }
         else {
             this._bil = a;
@@ -104,7 +104,7 @@
 
    }
 
-   let obj = new Shopper("Дмитрий","Мальченко","140 000 000");//
+   let obj = new Shopper("Дмитрий","Мальченко","-15");//
    obj.metInfo();
 
 
