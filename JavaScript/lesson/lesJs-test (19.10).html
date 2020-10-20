@@ -92,7 +92,6 @@
 
 let word = "java script";
 
-
     class MyString {
 
         reverse(str){
@@ -106,7 +105,9 @@ let word = "java script";
         ucWords(str) {
             let n =  str.split(" ");
              for (let i = 0; i < n.length; i++){
-                alert(n[i]);
+               //let zen = n[i][0].toUpperCase() + n[i].slice(1);
+                let zen = n[i][0].toUpperCase() + n[i].slice(1);
+                alert(zen);
              }
         }
 
