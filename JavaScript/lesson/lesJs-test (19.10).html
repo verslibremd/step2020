@@ -103,11 +103,10 @@ let word = "java script";
         }
 
         ucWords(str) {
+            let p = [];
             let n =  str.split(" ");
              for (let i = 0; i < n.length; i++){
-              //alert(n[i])
                 let zen = this.ucFirst(n[i]);
-               //alert(zen);
              }
 
         }
@@ -118,7 +117,7 @@ let word = "java script";
 
    // alert(s.reverse(word));
    // alert(s.ucFirst(word));
-   //alert(s.ucWords(word))
+  alert(s.ucWords(word))
 
 
 

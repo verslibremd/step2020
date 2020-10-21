@@ -32,7 +32,19 @@ function getStr(str,maxLength) {
 }
 alert(getStr("1234567890",8));*!/*/
 
+let str = "шалаш";
+let str2 = "абрикос";
 
+function palindrome(str) {
+    let str9 = str.split("").reverse().join("");
+   // alert(str9);
+    if (str > str9 || str < str9){
+        return "нет";
+    }
+    return "да";
+}
+//alert(palindrome(str2));
+//alert(palindrome(str));
 
 /* //3. Написать функцию, которая считает количество слов в предложении.
 
