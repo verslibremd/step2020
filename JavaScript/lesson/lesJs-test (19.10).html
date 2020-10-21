@@ -7,7 +7,7 @@
 <body>
 <script>
 
-/* // 1
+// 1
   // Дан пустой массив let a = [];
     //Дан массив let b = [‘item1’, ‘item2’, ‘item3’, ‘item4’];
     //Необходимо перенести элементы из массива b в массив a так, чтобы в массиве a элементы были в обратном порядке. Использовать метод reverse() запрещено
@@ -17,9 +17,9 @@
    for (let i = 0; i < b.length; i++) {
         a.unshift(b[i]);
    }
-   alert(a);*/
+   //alert(a);
 
-/* //2
+ //2
  // Дан массив объектов.
  // Нужно создать копию этого массива, в котором элементы будут отсортированы по sum от большего к меньшему,
  // записать в переменную сумму всех значений  sum
@@ -38,11 +38,11 @@
        {id: 11, sum: 2},
    ];
 
-/!*!//1. копия
+//1. копия
 
- let cop = items.slice();*!/
+ let cop = items.slice();
 
-/!*!//2. сортировка от MAX к MIN
+//2. сортировка от MAX к MIN
 
      function sortByAge(arr) {
          console.log(arr.sort((a, b) => a.sum < b.sum ? 1 : -1));
@@ -50,7 +50,7 @@
 
      //sortByAge(cop);*!/
 
-/!*!//3. сумма
+//3. сумма
     function sad(x){
         let sums = 0;
         for (let i = 0; i<x.length; i++){
@@ -59,7 +59,7 @@
         console.log(sums);
     }
 
-   sad(cop);*!/*/
+   sad(cop);
 
 /* // 3
    //Реализуйте класс Worker (Работник), который будет иметь следующие свойства:
@@ -106,9 +106,10 @@ let word = "java script";
             let n =  str.split(" ");
              for (let i = 0; i < n.length; i++){
               //alert(n[i])
-                let zen = n[i][0].toUpperCase() + n[i].slice(1);
-               alert(zen);
+                let zen = this.ucFirst(n[i]);
+               //alert(zen);
              }
+
         }
 
     }
@@ -117,7 +118,7 @@ let word = "java script";
 
    // alert(s.reverse(word));
    // alert(s.ucFirst(word));
-    alert(s.ucWords(word))
+   //alert(s.ucWords(word))
 
 
 
