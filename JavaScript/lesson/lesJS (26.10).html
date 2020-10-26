@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+/*    //Наследование классов
+
+    // квадрат, прямоугольник, треугольник
+    // params массив
+
+
+    class Figure{
+
+        constructor(params) {
+            this.params = params;
+        }
+
+        getArea(){
+
+        }
+        get(){
+            return this.name;
+        }
+
+    }
+
+    class Square extends Figure{
+        constructor(params) {
+            super(params);
+            this.name = "Квадрат";
+        }
+        getArea() {
+            return this.params[0] ** 2;
+        }
+    }
+
+    class Triangle extends Figure {
+        constructor(params) {
+            super(params);
+            this.name = "треугольник";
+        }
+        getArea() {
+            let height = this.getHeight(this.params[0], this.params[2])
+            return (height * this.params[0] / 2);
+        }
+        getHeight(a,b) {
+            return ( a * b ) / Math.sqrt(( a ** 2 + b ** 2 ));
+        }
+    }
+
+   /!*let objSquare = new Square([2,2,2,2]);
+    console.log(objSquare.getArea());*!/
+
+/!* let objTriangle = new Triangle([1,2,3]);
+    console.log(objTriangle.getArea());
+    console.log(objTriangle.get());*!/
+
+    /!*class Rectangle extends Figure {
+        constructor(params) {
+            super(params);
+            this.name = "Прямоугольник";
+        }
+        getArea() {
+            return this.params[0] * this.params[1];
+        }
+
+        getP() {
+            return (this.params[0] * this.params[1] * 2);
+        }
+    }
+    let objRectangle = new Rectangle([2,3]);
+    console.log(objRectangle.getArea());
+    console.log(objRectangle.get());
+    console.log(objRectangle.getP());*!/*/
+
+    // DOM
+
+  
+
+</script>
+
+</body>
+</html>

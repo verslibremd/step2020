@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0359a01-60db-428d-9a9c-459b715d0cb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson/lesJS (21.10).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson/lesJS (26.10).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson/lesJs-test (19.10).html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson/lesJs-test (19.10).html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Мальченко/step2020/projects from phpstorm/inkwell" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -76,7 +76,8 @@
       <workItem from="1602792811574" duration="430000" />
       <workItem from="1602862931789" duration="8718000" />
       <workItem from="1603121716857" duration="10270000" />
-      <workItem from="1603294758953" duration="6797000" />
+      <workItem from="1603294758953" duration="6798000" />
+      <workItem from="1603726197972" duration="5706000" />
     </task>
     <servers />
   </component>
