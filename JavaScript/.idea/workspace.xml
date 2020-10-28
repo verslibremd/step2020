@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0359a01-60db-428d-9a9c-459b715d0cb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson/lesJS (26.10).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson/lesJS (28.10)-DOM.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/lesJS (26.10).html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson/lesJS (26.10).html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,8 @@
       <workItem from="1602862931789" duration="8718000" />
       <workItem from="1603121716857" duration="10270000" />
       <workItem from="1603294758953" duration="6798000" />
-      <workItem from="1603726197972" duration="5706000" />
+      <workItem from="1603726197972" duration="6308000" />
+      <workItem from="1603898418330" duration="6805000" />
     </task>
     <servers />
   </component>
