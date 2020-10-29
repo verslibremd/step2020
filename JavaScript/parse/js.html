@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>js</title>
-    <script src="js.js"></script>
-    <script src="homework.js"></script>
+    <!--<script src="js.js"></script>
+    <script src="homework.js"></script>-->
+
 </head>
 <body>
+<div>Пользователи:</div>
+<ul>
+    <li>Джон</li>
+    <li>Пит</li>
+</ul>
 
-<p  id="Log"></p>
+<script>
 
+    //элемент <div>
+    let a = document.body.firstElementChild;
+   //console.log(a);
+
+    //<ul>
+    let b = a.nextElementSibling;
+    console.log(b);
+
+    //второй <li> (с именем Пит)
+    let c = b.lastElementChild;
+    //console.log(c);
+
+
+
+
+
+</script>
 
 </body>
 </html>
