@@ -5,6 +5,16 @@
     <title>js</title>
     <!--<script src="js.js"></script>
     <script src="homework.js"></script>-->
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 3px 5px;
+        }
+    </style>
 
 </head>
 <body>
@@ -70,6 +80,36 @@
 
     //2
     //Напишите код, который выделит красным цветом все ячейки в таблице по диагонали.
+    //Для получения доступа к диагональным ячейкам таблицы используем свойства rows и cells.
+    let table = document.body.firstElementChild;
+    //console.log(table);
+    //table.rows[i].style.backgroundColor = 'red';
+
+/* for (let i = 0; i<table.rows.length; i++){
+       //console.log(table.rows[i]);
+       for (let j = 0; j<table.rows[i].cells.length;j++){
+           if (i == j){
+              table.rows[i].cells[j].style.backgroundColor = 'red';
+           }
+
+       }
+    }*/
+
+  for (let i = 0; i<table.rows.length; i++){
+       //console.log(table.rows[i]);
+       for (let j = 2; j<table.rows[i].cells.length;j++){
+           if (j == 2){
+              table.rows[i].cells[j].style.backgroundColor = 'red';
+              table.rows[2].style.backgroundColor = 'red';
+           }
+
+       }
+    }
+
+
+
+    //console.log(document.table.cells);
+
 
 
 
