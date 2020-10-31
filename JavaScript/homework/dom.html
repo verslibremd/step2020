@@ -34,6 +34,40 @@
 выведем на страницу блок “а эти дела, пожалуй, лучше перенести на завтра:”
 и далее список дел, которые не удовлетворяют ограничению.*/
 
+//помыть кота, помыть себя, покормить кота, покормить себя, погладить кота, погладить себя, покурить
+
+let title = document.createElement("h1");
+title.innerHTML = "Список дел :";
+document.body.append(title);
+
+let ul = document.createElement("ul");
+document.body.append(ul);
+
+while (true){
+    let a = prompt("список дел");
+
+    if (!a) break;
+
+
+    let li = document.createElement("li");
+    li.textContent = a;
+    ul.append(li);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
