@@ -34,48 +34,36 @@
 выведем на страницу блок “а эти дела, пожалуй, лучше перенести на завтра:”
 и далее список дел, которые не удовлетворяют ограничению.*/
 
-//помыть кота, помыть себя, покормить кота, покормить себя, погладить кота, погладить себя, покурить
-
-
 
 let ul = document.createElement("ul");
 document.body.append(ul);
-
 
 let title = document.createElement("h1");
 title.innerHTML = "Список дел :";
 ul.before(title);
 
 while (true){
+
     let a = prompt("список дел","1");
 
     if (!a) break;
 
-    let li = document.createElement("li");
-    li.textContent = a;
-    ul.append(li);
-    
+    let li = document.createElement("li");  // создаю тег li
+    li.append(a); // вводимый текста из списка добавляю в li
+    ul.append(li); // li добавляю в ul
+
+    li.insertAdjacentText("afterbegin", "00:00 "); // вставил "время"(текст) перед текстом в li
+
+    let d = document.querySelectorAll("li"); // крашу все эл. после 6-го (после 12:00)
+    //console.log(d.length);
+
+    for (let i = 6; i < d.length; i++){
+        d[i].style.color = "red";
+    }
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 </script>
 
 </body>
