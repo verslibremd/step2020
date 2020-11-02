@@ -1,0 +1,40 @@
+
+.boxInForm{
+    width: 500px;
+    height: 500px;
+    background: fuchsia;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+
+}
+
+.xxx{
+    width: 8%;
+    height: 8%;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.formA{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: darkseagreen;
+    align-items: center;
+}
+
+input{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
