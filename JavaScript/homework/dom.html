@@ -42,18 +42,40 @@ let title = document.createElement("h1");
 title.innerHTML = "Список дел :";
 ul.before(title);
 
-let a = prompt("список дел","1");
-a.s
+let list = prompt("список дел","j, a, v, a, s, c, r, i, p, t");
+let arrList = list.split(",");
 
-let li = document.createElement("li");  // создаю тег li
-li.append(a); // вводимый текста из списка добавляю в li
-ul.append(li); // li добавляю в ul
+let resT = [];
 
-
-
-for (let i = 0; i < a.length; i++){
-
+for (let t = 7; t <= 24; t++){
+    if (t < 10){
+        resT.push("0" + t + " : 00 ");
+    }else{
+        resT.push(t + " : 00 ");
+    }
 }
+
+let li = 0;
+
+for (let i = 0; i < arrList.length; i++){
+        li = document.createElement("li");
+        li.append(resT[i] + arrList[i]);
+        ul.append(li);
+}
+
+let d = document.querySelectorAll("li");
+
+for (let j = 6; j < d.length; j++){
+    d[j].style.color = "red";
+}
+
+let dd = document.getElementsByTagName("li")[5];
+
+let par = document.createElement("p");
+par.innerHTML = "а эти дела, пожалуй, лучше перенести на завтра :";
+par.style.color = "red";
+dd.after(par);
+
 
 /*while (true){
 
@@ -75,7 +97,6 @@ for (let i = 0; i < a.length; i++){
     }
 
 }*/
-
 
 </script>
 
