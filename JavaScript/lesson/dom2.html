@@ -6,77 +6,47 @@
     <link rel="stylesheet " href="all.css">
 </head>
 <body>
-<!--<div class="qwerty">
-    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
-    несколько абзацев более менее осмысленного текста рыбы на русском языке,
-    а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-    При создании генератора мы использовали небезизвестный универсальный код речей.
-    Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
-    что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
-</div>-->
 
-<button class="buttonUp" type="button">click</button>
-
-<div class="boxInForm">
-    <button class="xxx">X</button>
-    <form class="formA" >
-        <input type="text" value="text">
-        <input type="text" value="text">
-        <input type="button" value="button">
+<section class="jsForm">
+    <button class="buttonUp" type="submit">click</button>
+    <form class="form">
+        <fieldset class="border">
+            <input class="buttonEx" type="button" value="x">
+            <legend>Контактная информация</legend>
+            <p><input type="text" placeholder="login"></p>
+            <p><input type="text" placeholder="password"></p>
+            <p><input type="tel" placeholder="phone number"></p>
+            <p><input class="buttonInForm" type="submit" value="Отправить"></p>
+        </fieldset>
     </form>
-</div>
-
-
-
+</section>
 
 
 <script>
-  /*  let arr = ["дизайнеру", "верстальщику", "вебмастеру" , "код"];
 
+     let upButton = document.querySelector(".buttonUp");
 
-    let aSt = document.querySelector(".qwerty").innerHTML;
-   // console.log(aSt);
-
-    let b = aSt.split(" ");
-    //console.log(b)
-
-  /!*  for (let z in b){
-        //console.log(b[z])
-        for (let awe in arr){
-            //console.log(arr[awe]);
-        }
-    }*!/
-
-    for (let x = 0; x<b.length; x++){
-        //console.log(b[x]);
-        for (let tt = 0; tt<arr.length; tt++){
-            //console.log(arr[tt]);
-            if (b[x] == arr[tt]){
-                // b[x].style.color = "red";
-            }
-        }
-    }
-*/
-
-      let upButton = document.querySelector(".buttonUp");
+     let form = document.querySelector(".form");
 
         function a() {
-          document.body.style.backgroundColor = "black";
-          if (document.body.style.backgroundColor === "black"){
-              //console.log(document.body.querySelector(".boxInForm"));
+          document.body.style.backgroundColor = "rgb(176, 176, 176)";
+
+          if (document.body.style.backgroundColor === "rgb(176, 176, 176)"){
+              form.style.display = 'block';
           }
         }
+     upButton.onclick = a;
 
+        let buttonExit = document.querySelector(".buttonEx");
 
+     function exitForm() {
+         form.style.display = 'none';
+         if (form.style.display === 'none'){
+             document.body.style.backgroundColor = "rgb(255, 255, 255)";
+         }
+     }
 
-    upButton.onclick = a;
-
-
-
-
-
-
-
+     buttonExit.onclick = exitForm;
 
 
 

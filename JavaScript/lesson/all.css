@@ -1,40 +1,62 @@
-
-.boxInForm{
-    width: 500px;
-    height: 500px;
-    background: fuchsia;
-    margin: 0 auto;
+.jsForm{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    display: none;
+}
+
+.buttonUp{
+    width: 150px;
+    height: 50px;
+    background: #6280db;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.form{
+    margin: 0 auto;
 
 }
 
-.xxx{
-    width: 8%;
-    height: 8%;
-    background: antiquewhite;
+.border{
+    border: 1px solid #117dff;
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.buttonEx{
+    width: 22px;
+    height: 22px;
+    color: white;
+    border: 1px solid #878787;
+    background-color: #878787;
     align-self: flex-end;
 }
 
-.formA{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    background: darkseagreen;
-    align-items: center;
+legend{
+    font-size: 16px;
+    color: #627fda;
 }
 
 input{
-    width: 80%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #9494b1;
+    border-radius: 25px;
     text-align: center;
+}
+
+.buttonInForm{
+    background-color: #627fda;
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
 }
