@@ -7,15 +7,18 @@
 </head>
 <body>
 
+<p class="prompt"></p>
+<p class="error"></p>
+
 <section class="jsForm">
     <button class="buttonUp" type="submit">click</button>
-    <form class="form">
+    <form class="form" name="form">
         <fieldset class="border">
             <input class="buttonEx" type="button" value="x">
             <legend>Контактная информация</legend>
-            <p><input type="text" placeholder="login"></p>
-            <p><input type="text" placeholder="password"></p>
-            <p><input type="tel" placeholder="phone number"></p>
+            <p class="error"><input name="userName" type="text"  placeholder="name"></p>
+            <p><input type="text" placeholder="surname" tabindex="-1"></p>
+            <p><input type="tel" name="phone" placeholder="phone number"></p>
             <p><input class="buttonInForm" type="submit" value="Отправить"></p>
         </fieldset>
     </form>
@@ -31,7 +34,7 @@
         function a() {
           document.body.style.backgroundColor = "rgb(176, 176, 176)";
 
-          if (document.body.style.backgroundColor === "rgb(176, 176, 176)"){
+          if (document.body.style.backgroundColor = "rgb(176, 176, 176)"){
               form.style.display = 'block';
           }
         }
@@ -48,7 +51,52 @@
 
      buttonExit.onclick = exitForm;
 
+     let focusName = document.form.elements.userName;
+     //console.log(focusName);
 
+
+   /*  for (let i = 0; i< arrNum.length; i++){
+         //console.log(i);
+     }*/
+
+     //let par = document.createElement("p");
+
+     let prom = document.querySelector(".prompt");
+     prom.style.color = "gray";
+
+     let er = document.querySelector(".error");
+     er.style.color = "red";
+
+     focusName.onfocus = function () {
+         prom.innerHTML = "> 2 символов и без цифр";
+         focusName.before(prom);
+
+         er.remove();
+     }
+
+     focusName.onblur = function () {
+         let arrNum = ["0","1","2","3","4","5","6","7","8","9"];
+         let z = focusName.value.split("");
+         for (let x of arrNum){
+             for (let y of z)
+             if (x === y || focusName.value.length < 2){
+                 er.innerHTML = "error";
+                 focusName.after(er);
+             }
+         }
+         prom.remove();
+     }
+
+     let tel = document.form.elements.phone;
+     console.log(tel);
+
+     tel.onfocus = function () {
+         prom.innerHTML = "11 символов и только цифры";
+         tel.before(prom);
+
+         er.remove();
+     }
+    
 
 
 </script>
