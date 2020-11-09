@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0359a01-60db-428d-9a9c-459b715d0cb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson/dom2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson/jQuery(1).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -82,7 +81,8 @@
       <workItem from="1603294758953" duration="6798000" />
       <workItem from="1603726197972" duration="6308000" />
       <workItem from="1603898418330" duration="6807000" />
-      <workItem from="1604331251867" duration="8828000" />
+      <workItem from="1604331251867" duration="8879000" />
+      <workItem from="1604935618314" duration="8750000" />
     </task>
     <servers />
   </component>
