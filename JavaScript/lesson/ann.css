@@ -1,0 +1,39 @@
+.accordion{
+    width: 500px;
+    background-color: #7b92af;
+}
+
+.but{
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    margin: 0 0 20px 420px ;
+}
+
+.text{
+    display: none;
+}
+
+
+
+.menu-hover__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+}
+
+.nov{
+    height: 30px;
+    background-color: #bdb726;
+    border: 2px solid green;
+    opacity: 0;
+}
+
+.hov{
+    margin: 100px 20px 0 20px;
+}
