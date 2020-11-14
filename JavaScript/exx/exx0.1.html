@@ -48,7 +48,8 @@
     let scr = document.querySelector('.s');
 
     calc.addEventListener('click',function (event) {
-        scr.innerText = "" + event.target.innerHTML;
+        let textScreen = event.target.innerHTML;
+        scr.innerHTML = textScreen;
     })
 
 
