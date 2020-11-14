@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calc.css">
+    <title>Title</title>
+</head>
+<body>
+<section id="calc">
+    <div class="clear-screen">
+        <div class="b b--color">C</div>
+        <p class="s"></p>
+    </div>
+    <div class="button">
+        <div class="button_row">
+            <div class="b">7</div>
+            <div class="b">4</div>
+            <div class="b">1</div>
+            <div class="b">0</div>
+        </div>
+         <div class="button_row">
+            <div class="b">8</div>
+            <div class="b">5</div>
+            <div class="b">2</div>
+            <div class="b">.</div>
+        </div>
+         <div class="button_row">
+            <div class="b">9</div>
+            <div class="b">6</div>
+            <div class="b">3</div>
+            <div class="b">=</div>
+        </div>
+         <div class="button_row">
+            <div class="b" >+</div>
+                <div class="b">-</div>
+                <div class="b">\</div>
+                <div class="b">*</div>
+        </div>
+    </div>
+
+</section>
+
+
+<script>
+    let b = document.querySelector('.b');
+    let calc = document.querySelector('#calc');
+    let scr = document.querySelector('.s');
+
+    calc.addEventListener('click',function (event) {
+        scr.innerText = "" + event.target.innerHTML;
+    })
+
+
+
+</script>
+
+<!--Второй способ создать обработчик события — это
+вызов специального метода «addEventListener» у нужного
+элемента.-->
+
+</body>
+</html>
+
+
+
+
+
+
+

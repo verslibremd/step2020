@@ -1,0 +1,30 @@
+#calc{
+    background-color: #e3baba;
+    width: 250px;
+    height: 310px;
+}
+.clear-screen{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    display: flex;
+    flex-direction:row;
+}
+.button_row{
+    display: flex;
+    flex-direction: column;
+}
+.b{
+    width:60px;
+    height: 60px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.b--color{
+    background-color: #f65669;
+}
+.s{
+    width: 172px;
+}
