@@ -74,6 +74,51 @@ childNodes похож на массив. На самом деле это не м
 Только для узлов-элементов: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.
 -->
 
+<!--
+Есть 6 основных методов поиска элементов в DOM:
+
+document.getElementById(id)
+
+elem.querySelectorAll(css)
+возвращает все элементы внутри elem, удовлетворяющие данному CSS-селектору.
+
+elem.querySelector(css)
+возвращает первый элемент, соответствующий данному CSS-селектору.
+результат такой же, как при вызове elem.querySelectorAll(css)[0],
+но он сначала найдёт все элементы, а потом возьмёт первый,
+в то время как elem.querySelector найдёт только первый и остановится
+
+matches
+elem.matches(css) ничего не ищет, а проверяет,
+удовлетворяет ли elem CSS-селектору, и возвращает true или false
+
+closest
+Предки элемента – родитель, родитель родителя, его родитель и так далее.
+Вместе они образуют цепочку иерархии от элемента до вершины.
+Метод elem.closest(css) ищет ближайшего предка, который соответствует CSS-селектору.
+Сам элемент также включается в поиск.
+Другими словами, метод closest поднимается вверх от элемента и проверяет каждого из родителей.
+Если он соответствует селектору, поиск прекращается. Метод возвращает либо предка, либо null,
+если такой элемент не найден
+
+elem.getElementsByTagName(tag)
+ищет элементы с данным тегом и возвращает их коллекцию.
+Передав "*" вместо тега, можно получить всех потомков.
+
+elem.getElementsByClassName(className)
+
+document.getElementsByName(name)
+
+Одна из самых частых ошибок начинающих разработчиков (впрочем, иногда и не только) – это забыть букву "s".
+То есть пробовать вызывать метод getElementByTagName вместо getElementsByTagName.
+Буква "s" отсутствует в названии метода getElementById, так как в данном случае возвращает один элемент.
+Но getElementsByTagName вернёт список элементов, поэтому "s" обязательна.
+
+Живые коллекции
+Все методы "getElementsBy*" возвращают живую коллекцию.
+Такие коллекции всегда отражают текущее состояние документа и автоматически обновляются при его изменении.
+-->
+
 <!--<div>Пользователи:</div>
 <ul>
     <li>Джон</li>
@@ -118,6 +163,41 @@ childNodes похож на массив. На самом деле это не м
     </tr>
 </table>-->
 
+<!--<form name="search" wfd-id="4">
+    <label wfd-id="5">Search the site:
+        <input type="text" name="search" wfd-id="14">
+    </label>
+    <input type="submit" value="Search!" wfd-id="13">
+</form>
+<form name="search-person" wfd-id="0">
+    Search the visitors:
+    <table id="age-table">
+        <tbody><tr>
+            <td>Age:</td>
+            <td id="age-list">
+                <label wfd-id="3">
+                    <input type="radio" name="age" value="young" wfd-id="12">less than 18</label>
+                <label wfd-id="2">
+                    <input type="radio" name="age" value="mature" wfd-id="11">18-50</label>
+                <label wfd-id="1">
+                    <input type="radio" name="age" value="senior" wfd-id="10">more than 50</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Additionally:</td>
+            <td>
+                <input type="text" name="info[0]" wfd-id="9">
+                <input type="text" name="info[1]" wfd-id="8">
+                <input type="text" name="info[2]" wfd-id="7">
+            </td>
+        </tr>
+
+        </tbody></table>
+
+    <input type="submit" value="Search!" wfd-id="6">
+</form>-->
+
 <script>
 
   /* //Напишите код, как получить…
@@ -152,6 +232,27 @@ childNodes похож на массив. На самом деле это не м
           }
       }
     }*/
+
+/*  //Как найти?
+  // Таблицу с id="age-table".
+  // Все элементы label внутри этой таблицы (их три).
+  // Первый td в этой таблице (со словом «Age»).
+  // Форму form с именем name="search".
+  // Первый input в этой форме.
+  // Последний input в этой форме.
+
+  let table = document.getElementById('age-table');
+  //console.log(table);
+  let lab = table.querySelectorAll("label");
+  //console.log(lab.length);
+  let ageTd = table.querySelector('td');
+  //console.log(ageTd);
+  let form = document.querySelector("form");
+  //console.log(form);
+  let oneInpt = form.firstElementChild.firstElementChild;
+  //console.log(oneInpt);
+  let twoInpt = form.lastElementChild;
+  //console.log(twoInpt);*/
 
 </script>
 </body>
