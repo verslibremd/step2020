@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom3</title>
+</head>
+<body>
+
+Когда браузер загружает страницу, он «читает» (также говорят: «парсит») HTML и генерирует из него DOM-объекты.
+Для узлов-элементов большинство стандартных HTML-атрибутов автоматически становятся свойствами DOM-объектов.
+
+DOM-свойства:
+можно добавлять свои
+DOM-узлы – это обычные объекты JavaScript. Можно их изменять
+Также можно изменять встроенные прототипы, такие как Element.prototype и добавлять новые методы ко всем элементам
+
+HTML-атрибуты
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section><div></div></section>
+<p></p>
+
+
+<script>
+    let ss = document.querySelector("section");
+    //console.log(ss);
+    //новое свойство для section
+    ss.myName = {
+        name: 'Dima',
+        day: '8'
+    };
+    //alert(ss.myName.day);
+
+    //мeтод для div
+    let dd = document.querySelector("div");
+    //console.log(dd)
+    dd.sayTagName = function () {
+        alert(this.tagName);
+    }
+    //dd.sayTagName();
+
+    //Также можно изменять встроенные прототипы, такие как Element.prototype и добавлять новые методы ко всем элементам
+    Element.prototype.sayHi = function () {
+        alert(`hello, I m ${this.tagName}`);
+    }
+    //dd.sayHi();
+    //ss.sayHi();
+
+</script>
+
+</body>
+</html>
