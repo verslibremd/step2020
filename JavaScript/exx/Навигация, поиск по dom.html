@@ -2,22 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <!--  <style>
-          table {
-              border-collapse: collapse;
-          }
+    <title>dom</title>
+   <!-- <style>
+        table {
+            border-collapse: collapse;
+        }
 
-          td {
-              border: 1px solid black;
-              padding: 3px 5px;
-          }
-      </style>-->
+        td {
+            border: 1px solid black;
+            padding: 3px 5px;
+        }
+    </style>-->
 </head>
 <body>
+<!--
+Document Object Model, сокращённо DOM – объектная модель документа,
+которая представляет все содержимое страницы в виде объектов, которые можно менять.
+Объект document – основная «входная точка». С его помощью мы можем что-то создавать или менять на странице.
 
-<!-- 1
-<div>Пользователи:</div>
+Объектная модель браузера (Browser Object Model, BOM) – это дополнительные объекты,
+предоставляемые браузером (окружением), чтобы работать со всем, кроме документа.
+
+Теги являются узлами-элементами (или просто элементами). Они образуют структуру дерева
+
+Существует 12 типов узлов. Но на практике мы в основном работаем с 4 из них:
+document – «входная точка» в DOM.
+узлы-элементы – HTML-теги, основные строительные блоки.
+текстовые узлы – содержат текст.
+комментарии – иногда в них можно включить информацию, которая не будет показана, но доступна в DOM для чтения JS.
+
+Дети: childNodes, firstChild, lastChild
+
+Дочерние узлы (или дети) – элементы, которые являются непосредственными детьми узла.
+Другими словами, элементы, которые лежат непосредственно внутри данного. Например, head и body являются детьми элемента html.
+Потомки – все элементы, которые лежат внутри данного, включая детей, их детей и т.д.
+
+Коллекция childNodes содержит список всех детей, включая текстовые узлы.
+
+Свойства firstChild и lastChild обеспечивают быстрый доступ к первому и последнему дочернему элементу.
+Для проверки наличия дочерних узлов существует также специальная функция elem.hasChildNodes().
+
+DOM-коллекции
+childNodes похож на массив. На самом деле это не массив, а коллекция – особый перебираемый объект-псевдомассив.
+1/Для перебора коллекции мы можем использовать for..of
+(Это работает, потому что коллекция является перебираемым объектом (есть требуемый для этого метод Symbol.iterator))
+2/Методы массивов не будут работать, потому что коллекция – это не массив
+(мы можем создать настоящий массив из коллекции, используя Array.from) -> Array.from(document.body.childNodes)
+
+Соседи и родитель
+Соседи – это узлы, у которых один и тот же родитель.
+Следующий узел того же родителя (следующий сосед) – в свойстве nextSibling, а предыдущий – в previousSibling
+Родитель доступен через parentNode
+
+Навигация только по элементам
+  набор ссылок, которые учитывают только узлы-элементы:
+    children – коллекция детей, которые являются элементами.
+    firstElementChild, lastElementChild – первый и последний дочерний элемент.
+    previousElementSibling, nextElementSibling – соседи-элементы.
+    parentElement – родитель-элемент.
+
+Свойство parentElement возвращает родитель-элемент, а parentNode возвращает «любого родителя».
+Обычно эти свойства одинаковы: они оба получают родителя.
+За исключением document.documentElement
+Причина в том, что родителем корневого узла document.documentElement (html) является document.
+Но document – это не узел-элемент, так что parentNode вернёт его, а parentElement нет.
+
+ИТОГО:
+Получив DOM-узел, мы можем перейти к его ближайшим соседям используя навигационные ссылки.
+Есть два основных набора ссылок:
+Для всех узлов: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.
+Только для узлов-элементов: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.
+-->
+
+<!--<div>Пользователи:</div>
 <ul>
     <li>Джон</li>
     <li>Пит</li>
@@ -61,117 +118,41 @@
     </tr>
 </table>-->
 
-<!--<form name="search" wfd-id="4">
-<label wfd-id="5">Search the site:
-    <input type="text" name="search" wfd-id="14">
-</label>
-<input type="submit" value="Search!" wfd-id="13">
-</form>
-
-<hr>
-
-<form name="search-person" wfd-id="0">
-Search the visitors:
-<table id="age-table">
-    <tbody><tr>
-        <td>Age:</td>
-        <td id="age-list">
-            <label wfd-id="3">
-                <input type="radio" name="age" value="young" wfd-id="12">less than 18</label>
-            <label wfd-id="2">
-                <input type="radio" name="age" value="mature" wfd-id="11">18-50</label>
-            <label wfd-id="1">
-                <input type="radio" name="age" value="senior" wfd-id="10">more than 50</label>
-        </td>
-    </tr>
-
-    <tr>
-        <td>Additionally:</td>
-        <td>
-            <input type="text" name="info[0]" wfd-id="9">
-            <input type="text" name="info[1]" wfd-id="8">
-            <input type="text" name="info[2]" wfd-id="7">
-        </td>
-    </tr>
-
-    </tbody></table>
-
-<input type="submit" value="Search!" wfd-id="6">
-</form>-->
-
 <script>
 
-/* 1
-//элемент <div>
-let a = document.body.firstElementChild;
-//console.log(a);
+  /* //Напишите код, как получить…
+    // элемент <div>?
+    // <ul>?
+    // второй <li> (с именем Пит)?
 
-//<ul>
-let b = a.nextElementSibling;
-console.log(b);
+    console.log(document.body.firstElementChild);
+    console.log(document.body.firstElementChild.nextElementSibling);
+    console.log(document.body.firstElementChild.nextElementSibling.lastElementChild); */
 
-//второй <li> (с именем Пит)
-let c = b.lastElementChild;
-//console.log(c);*/
+/*//Напишите код, который выделит красным цветом все ячейки в таблице по диагонали.
 
-/*
-
-    //2
-    //Напишите код, который выделит красным цветом все ячейки в таблице по диагонали.
-    //Для получения доступа к диагональным ячейкам таблицы используем свойства rows и cells.
-    //let table = document.body.firstElementChild;
+    let table = document.body. firstElementChild;
     //console.log(table);
-    //table.rows[i].style.backgroundColor = 'red';
 
-    /!* for (let i = 0; i<table.rows.length; i++){
-           //console.log(table.rows[i]);
-           for (let j = 0; j<table.rows[i].cells.length;j++){
-               if (i == j){
-                  table.rows[i].cells[j].style.backgroundColor = 'red';
-               }
+    for (let i = 0; i<table.rows.length; i++){
+        //console.log(table.rows[i])
+        for (let j = 0; j<table.rows[i].cells.length;j++){
+            if (i == j){
+                table.rows[i].cells[j].style.backgroundColor = 'red';
+            }
+        }
+    }
 
-           }
-        }*!/
-
-    /!* for (let i = 0; i<table.rows.length; i++){
-          //console.log(table.rows[i]);
-          for (let j = 2; j<table.rows[i].cells.length;j++){
-              if (j == 2){
-                 table.rows[i].cells[j].style.backgroundColor = 'red';
-                 table.rows[2].style.backgroundColor = 'red';
-              }
-
+    for (let i = 0; i<table.rows.length; i++){
+      //console.log(table.rows[i]);
+      for (let j = 2; j<table.rows[i].cells.length;j++){
+          if (j == 2){
+              table.rows[i].cells[j].style.backgroundColor = 'red';
+              table.rows[2].style.backgroundColor = 'red';
           }
-       }*!/
-*/
-
-/*//3
-
-//Таблицу с id="age-table".
-let a = document.getElementById("age-table");
-//console.log(a);
-
-//Все элементы label внутри этой таблицы (их три).
-let b = a.querySelectorAll("label");
-//console.log(b);
-
-//Первый td в этой таблице (со словом «Age»).
-let c = a.rows[0].cells[0];
-// console.log(c);
-
-//Форму form с именем name="search".
-let d = document.getElementsByName("search")[0];
-//console.log(d);
-
-//   Первый input в этой форме.
-let e = d.getElementsByTagName("input")[0];
-//console.log(e);
-
-//   Последний input в этой форме.
-let f = d.getElementsByTagName("input")[1];
-//console.log(f);*/
+      }
+    }*/
 
 </script>
-
 </body>
 </html>

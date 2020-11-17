@@ -8,76 +8,104 @@
 </head>
 <body>
 <section id="calc">
-    <div class="clear-screen">
-        <button class="clear clear--color" type="button" value="C">C</button>
+    <div class="fl1 fl1--mt">
         <div class="screen"></div>
+        <button class="cl">C</button>
     </div>
-    <div class="button">
-        <div class="button_row">
-            <button class="b" type="button" value="7">7</button>
-            <button class="b" type="button" value="4">4</button>
-            <button class="b" type="button" value="1">1</button>
-            <button class="b" type="button" value="0">0</button>
-        </div>
-         <div class="button_row">
-             <button class="b" type="button" value="8">8</button>
-             <button class="b" type="button" value="5">5</button>
-             <button class="b" type="button" value="2">2</button>
-             <button class="z" type="button" value="z">.</button>
-        </div>
-         <div class="button_row">
-             <button class="b" type="button" value="9">9</button>
-             <button class="b" type="button" value="6">6</button>
-             <button class="b" type="button" value="3">3</button>
-             <button class="z" type="button" value="=">=</button>
-        </div>
-         <div class="button_row">
-            <button class="z" type="button" value="+">+</button>
-            <button class="z" type="button" value="-">-</button>
-            <button class="z" type="button" value="\">\</button>
-            <button class="z" type="button" value="*">*</button>
-        </div>
+    <div class="fl2 fl2--mt">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
     </div>
-
+    <div class="fl2">
+        <button class="number">6</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="number">0</button>
+    </div>
+    <div class="fl2">
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator umn">*</button>
+        <button class="operator">/</button>
+        <button class="operator">=</button>
+    </div>
 </section>
 
-
 <script>
-    let but = document.querySelector('.button');
-    let butt = document.querySelector('.b');
-    let calc = document.querySelector('#calc');
+    let calculator = document.querySelector('#calc');
+    //console.log(calculator);
     let screen = document.querySelector('.screen');
-    let clear = document.querySelector('.clear');
-    let sim = document.querySelector('.z');
-
-    let textScreen;
-
-   /* but.onclick = function(event){
-        textScreen = event.target.innerHTML;
-        screen.innerHTML = textScreen;
-    }*/
-
-    calc.addEventListener('click',function(event) {
-
-        let target = event.target;
-        let targetInner = target.innerHTML;
-        //let zz = Number(but);
-
-
-        screen.innerHTML = targetInner;
+    let numbers = document.querySelectorAll('.number');
+    let cl = document.querySelector('.cl');
+    let operators = document.querySelectorAll('.operator.umn');
+    //console.log(operators);
 
 
 
-       if (target == clear){
-           screen.innerHTML = "";
+
+    calculator.addEventListener('click',function (event) {
+
+         let evTar = event.target;
+         //console.log(evTar);
+
+         let iEvTar = event.target.innerHTML;
+         //console.log(iEvTar);
+
+         let scrVal = screen.innerHTML + iEvTar;
+         screen.innerHTML = scrVal;
+        //screen.innerHTML = screen.innerHTML + iEvTar;
+
+        /*let numbers = document.querySelectorAll('.number');
+        let arrNum = Array.prototype.slice.call(numbers);
+        console.log(arrNum);*/
+
+        let arrScrVal = scrVal.slice();
+
+        //let strArr = arrScrVal.toString();
+        let z = arrScrVal.slice(0).split("").join("");
+        console.log(z);
+
+        console.log(arrScrVal.indexOf("-",0));
+
+
+
+
+        function getNewArr(arr) {
+
+            /*if (arr.indexOf("-", 0) != -1){
+               console.log('тут');
+            }*/
+
+
+
+
+
+        }
+        getNewArr(arrScrVal)
+        //let strArr2 = arrScrVal.slice(6).toString();
+        //console.log(strArr2 + "это строка массива 2");
+
+
+         if (evTar == cl){
+             screen.innerHTML = '';
+         }
+    });
+
+
+    /* for (let i = 0; i<arrScrVal.length; i++){
+           let ii = arrScrVal.toString();
+           num1.unshift(ii);
+          // console.log(ii);
+           //num1.unshift(arrScrVal[i].split(" ").join(" "));
+           //console.log(arrScrVal[i].split("").join(" "));
        }
-
-
-
-    })
-
-
-
+      // console.log(arrScrVal.length)
+      //console.log(num1.length);
+     */
 
 
 
