@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<style>
+    .api{
+        display: none;
+        margin-top: 30px;
+    }
+    .d_n{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .api__box{
+        margin-left: 16px;
+        border: 1px blue solid;
+    }
+    .but{
+        text-align: center;
+        width: 100px;
+        height: 30px;
+    }
+    .b_d{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .b_d >p{
+        margin: 0 10px;
+    }
+</style>
+<body>
+<section class="b_d">
+    <p>Ваш город Тула ?</p>
+    <button class="but" type="submit">ДA</button>
+    <button class="but" type="submit">НЕТ</button>
+</section>
+
+<section class="api">
+    <div class="d_n">
+        <div class="api__box-key">
+            <div>Температура</div>
+            <div>Скорость ветра </div>
+            <div>Давление</div>
+        </div>
+        <div class="api__box">
+            <div class="tmp"></div>
+            <span class="vtr"></span>
+            <span class="davl"></span>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+<script>
+    let ap = document.querySelector(".api");
+
+    let b = document.querySelector(".but");
+
+    b.onclick = function(){
+            ap.style.display = "block"
+    }
+
+
+    fetch('http://194.58.122.219/test/weather-api-test2/?t=16380a77-c35d-4ba3-99d2-ffb2d3045a7a&lat=54&lon=37',)
+    .then((response) =>{
+        return response.json();
+    })
+    .then ((response) =>{
+        console.log(response);
+        let temp = response.data.fact.temp;
+        console.log(temp);
+        let tmp = document.querySelector(".tmp").innerHTML = temp;
+        let vtr = response.data.fact.wind_speed;
+        let vt = document.querySelector(".vtr").innerHTML = vtr;
+        let davl = response.data.forecasts.pressure_mm;
+        let davl2 = document.querySelector(".davl").innerHTML = davl;
+    });
+
+
+</script>
+
+</body>
+</html>
