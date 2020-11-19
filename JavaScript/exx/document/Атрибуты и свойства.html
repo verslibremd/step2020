@@ -162,7 +162,7 @@ DOM-свойства не всегда являются строками. Нап
       }*/
 
     for (let elem of document.body.querySelectorAll("a")) {
-        if (elem.href.includes('.')) { // опасно  
+        if (elem.href.includes('.')) { // опасно
             if (elem.href.startsWith('http://internal.com')) continue;
             elem.style.color = "orange" ;
         }

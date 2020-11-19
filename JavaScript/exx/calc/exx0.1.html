@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +28,9 @@
     <div class="fl2">
         <button class="operator">+</button>
         <button class="operator">-</button>
-        <button class="operator umn">*</button>
+        <button class="operator">*</button>
         <button class="operator">/</button>
-        <button class="operator">=</button>
+        <button class="operator rov">=</button>
     </div>
 </section>
 
@@ -42,70 +41,37 @@
     let numbers = document.querySelectorAll('.number');
     let cl = document.querySelector('.cl');
     let operators = document.querySelectorAll('.operator.umn');
-    //console.log(operators);
+    let rov = document.querySelector('.operator.rov');
+    let operatorss = document.querySelectorAll(".operator")
+    //console.log(roww)
+    //console.log();
 
 
 
 
     calculator.addEventListener('click',function (event) {
-
          let evTar = event.target;
-         //console.log(evTar);
 
          let iEvTar = event.target.innerHTML;
-         //console.log(iEvTar);
 
          let scrVal = screen.innerHTML + iEvTar;
          screen.innerHTML = scrVal;
+
+
+
+
+       rov.onclick = function () {
+            screen.textContent = iEvTar + eval(screen.textContent);
+        }
+
         //screen.innerHTML = screen.innerHTML + iEvTar;
 
-        /*let numbers = document.querySelectorAll('.number');
-        let arrNum = Array.prototype.slice.call(numbers);
-        console.log(arrNum);*/
-
-        let arrScrVal = scrVal.slice();
-
-        //let strArr = arrScrVal.toString();
-        let z = arrScrVal.slice(0).split("").join("");
-        console.log(z);
-
-        console.log(arrScrVal.indexOf("-",0));
-
-
-
-
-        function getNewArr(arr) {
-
-            /*if (arr.indexOf("-", 0) != -1){
-               console.log('тут');
-            }*/
-
-
-
-
-
-        }
-        getNewArr(arrScrVal)
-        //let strArr2 = arrScrVal.slice(6).toString();
-        //console.log(strArr2 + "это строка массива 2");
-
-
-         if (evTar == cl){
-             screen.innerHTML += '';
+         if (evTar === cl){
+             screen.textContent = "";
          }
     });
 
 
-    /* for (let i = 0; i<arrScrVal.length; i++){
-           let ii = arrScrVal.toString();
-           num1.unshift(ii);
-          // console.log(ii);
-           //num1.unshift(arrScrVal[i].split(" ").join(" "));
-           //console.log(arrScrVal[i].split("").join(" "));
-       }
-      // console.log(arrScrVal.length)
-      //console.log(num1.length);
-     */
 
 
 
