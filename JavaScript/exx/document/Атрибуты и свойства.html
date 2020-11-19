@@ -54,47 +54,25 @@ DOM-свойства не всегда являются строками. Нап
 или чтобы «помечать» HTML-элементы для JavaScript.
 Также они могут быть использованы, чтобы стилизовать элементы.
 .....Чтобы избежать конфликтов, существуют атрибуты вида data-*
-Все атрибуты, начинающиеся с префикса «data-», зарезервированы для использования программистами.
-Они доступны в свойстве dataset.
+Все атрибуты, начинающиеся с префикса «data-», зарезервированы для использования. Они доступны в свойстве dataset.
 Например, если у elem есть атрибут "data-about", то обратиться к нему можно как elem.dataset.about.
-
-
-
-
+Атрибуты, состоящие из нескольких слов, к примеру data-order-state, становятся свойствами,
+записанными с помощью верблюжьей нотации: dataset.orderState
 
 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section><div></div></section>
+<section><div><div data-widget-name="menu">Choose the genre</div></div></section>
 <p></p>
-<div data-widget-name="menu">Choose the genre</div>
 
+<a name="list">the list</a>
+<ul>
+    <li><a href="http://google.com">http://google.com</a></li>
+    <li><a href="/tutorial">/tutorial.html</a></li>
+    <li><a href="local/path">local/path</a></li>
+    <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+    <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+    <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+</ul>
 
 <script>
     let ss = document.querySelector("section");
@@ -160,9 +138,41 @@ DOM-свойства не всегда являются строками. Нап
         //alert( `${attr.name} = ${attr.value}` );
     }
 
-    //Напишите код для выбора элемента с атрибутом data-widget-name из документа и прочитайте его значение
+    /*//Напишите код для выбора элемента с атрибутом data-widget-name из документа и прочитайте его значение
 
-  
+    //let atrZ = document.body.firstElementChild.firstElementChild.firstElementChild;
+    //console.log(atrZ.dataset.widgetName);
+
+    //let elem = document.querySelector('[data-widget-name]');
+    //alert(elem.dataset.widgetName);*/
+
+    //Сделайте внешние ссылки оранжевыми
+    //Ссылка является внешней, если:
+    // Её href содержит ://
+    // Но не начинается с http://internal.com.
+
+    //console.log(document.body.querySelectorAll('a[href^="http://"]'));
+    /* let aOr = document.body.querySelectorAll('a[href^="http://"]');
+     console.log(aOr)
+     */
+
+    /*  for (let ell of el){
+          //console.log(ell);
+          console.log(ell.getAttribute("href"))
+      }*/
+
+    for (let elem of document.body.querySelectorAll("a")) {
+        if (elem.href.includes('.')) { // опасно  
+            if (elem.href.startsWith('http://internal.com')) continue;
+            elem.style.color = "orange" ;
+        }
+    }
+
+
+
+
+
+
 
 
 
