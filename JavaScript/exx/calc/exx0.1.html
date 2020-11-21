@@ -30,41 +30,25 @@
         <button class="operator">-</button>
         <button class="operator">*</button>
         <button class="operator">/</button>
-        <button class="operator rov">=</button>
+        <input class="operator rov" type="button" value="=">
     </div>
 </section>
 
 <script>
     let calculator = document.querySelector('#calc');
-    //console.log(calculator);
     let screen = document.querySelector('.screen');
-    let numbers = document.querySelectorAll('.number');
     let cl = document.querySelector('.cl');
-    let operators = document.querySelectorAll('.operator.umn');
     let rov = document.querySelector('.operator.rov');
-    let operatorss = document.querySelectorAll(".operator")
-    //console.log(roww)
-    //console.log();
 
     calculator.addEventListener('click',function (event) {
-         let evTar = event.target;
-         let evTarTextCont = evTar.textContent;
-
-         let screenVal = screen.textContent + evTarTextCont;
-         screen.innerHTML = screenVal;
-
-        rov.onclick = function () {
-           rov.textContent
-           //rov.textContent = "";
-            screen.textContent = eval(screen.textContent);
-        }
-
-        //screen.innerHTML = screen.innerHTML + iEvTar;
-
-         if (evTar === cl){
-             screen.textContent = "";
-         }
+        let evTar = event.target;
+        let evTarTextCont = evTar.textContent;
+        let screenVal = screen.textContent + evTarTextCont;
+        screen.innerHTML = screenVal;
+        if (evTar === rov) screen.textContent = eval(screen.textContent);
+        if (evTar === cl) screen.textContent = "";
     });
+    
 
 
 
