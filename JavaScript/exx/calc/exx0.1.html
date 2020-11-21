@@ -46,22 +46,17 @@
     //console.log(roww)
     //console.log();
 
-
-
-
     calculator.addEventListener('click',function (event) {
          let evTar = event.target;
+         let evTarTextCont = evTar.textContent;
 
-         let iEvTar = event.target.innerHTML;
+         let screenVal = screen.textContent + evTarTextCont;
+         screen.innerHTML = screenVal;
 
-         let scrVal = screen.innerHTML + iEvTar;
-         screen.innerHTML = scrVal;
-
-
-
-
-       rov.onclick = function () {
-            screen.textContent = iEvTar + eval(screen.textContent);
+        rov.onclick = function () {
+           rov.textContent
+           //rov.textContent = "";
+            screen.textContent = eval(screen.textContent);
         }
 
         //screen.innerHTML = screen.innerHTML + iEvTar;
