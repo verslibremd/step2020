@@ -56,7 +56,7 @@
         let sel = $(".sel").val();
         let pass1 = $(".pas_one").val();
         let pass2 = $(".pas_two").val();
-        
+
         $.ajax({
             url: "http://194.58.122.219/test/jq.php", // указываем URL
             method: "GET",            // HTTP метод, по умолчанию GET
@@ -70,6 +70,9 @@
             success: function (data) {
                 console.log(data);
                 // вешаем свой обработчик события success
+            },
+            error : function (error){
+                console.log(error);
             }
         });
     });
