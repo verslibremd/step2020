@@ -6,69 +6,56 @@
 </head>
 <style>
     .api{
-        display: none;
-        margin-top: 30px;
-    }
-    .d_n{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .api__box{
-        margin-left: 16px;
+        width: 500px;
+        height: 200px;
         border: 1px blue solid;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .but{
-        text-align: center;
-        width: 100px;
-        height: 30px;
+    .imgB{
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+
     }
-    .b_d{
+    .cont{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-    .b_d >p{
-        margin: 0 10px;
+
+    .box-name-info > p{
+        font-family: "Calibri Light", sans-serif;
+        font-weight: lighter;
     }
+
 </style>
 <body>
-<section class="b_d">
-    <p>Ваш город Тула ?</p>
-    <button class="but" type="submit">ДA</button>
-    <button class="but" type="submit">НЕТ</button>
-</section>
 
 <section class="api">
-    <div class="d_n">
-        <div class="api__box-key">
-            <div>Температура</div>
-            <div>Скорость ветра </div>
-            <div>Давление</div>
+    <img class="imgB" src="https://yastatic.net/weather/i/icons/blueye/color/svg/ovc_ra_sn.svg" alt="">
+    <div class="cont">
+        <div class="box-name-info">
+            <p class="t">Температура :</p>
+            <p class="t">Ощущается как :</p>
+            <p class="t">Скорость ветра :</p>
+            <p class="t">Давление :</p>
         </div>
-        <div class="api__box">
-            <div class="tmp"></div>
-            <span class="vtr"></span>
-            <span class="davl"></span>
+        <div class="box-info">
+            <p class="cook date"></p>
+            <p class="cook temp"></p>
+            <p class="cook temp__sens"></p>
+            <p class="cook wind-speed"></p>
+            <p class="cook pressure"></p>
         </div>
     </div>
-
-
 </section>
-
-
-
 
 
 <script>
-    let ap = document.querySelector(".api");
-
-    let b = document.querySelector(".but");
-
-    b.onclick = function(){
-            ap.style.display = "block"
-    }
-
+    //let apI = document.querySelector(".api");
 
     fetch('http://194.58.122.219/test/weather-api-test2/?t=16380a77-c35d-4ba3-99d2-ffb2d3045a7a&lat=54&lon=37',)
     .then((response) =>{
@@ -76,15 +63,61 @@
     })
     .then ((response) =>{
         console.log(response);
+
         let temp = response.data.fact.temp;
-        console.log(temp);
-        let tmp = document.querySelector(".tmp").innerHTML = temp;
-        let vtr = response.data.fact.wind_speed;
-        let vt = document.querySelector(".vtr").innerHTML = vtr;
-        let davl = response.data.forecasts.pressure_mm;
-        let davl2 = document.querySelector(".davl").innerHTML = davl;
+        let tempSens = response.data.fact.feels_like;
+        let wS = response.data.fact.wind_speed;
+        let respMM = response.data.fact.pressure_mm;
+
+        let imBac = document.querySelector(".imgB");
+        let t = document.querySelector(".temp").innerHTML = temp + "°C";
+        let tS = document.querySelector(".temp__sens").innerHTML = tempSens + "°C";
+        let windS = document.querySelector(".wind-speed").innerHTML = wS + " м/с";
+        let resp = document.querySelector(".pressure").innerHTML = respMM + " мм рт. ст.";
+
     });
 
+    function setCookie(name, value, options = {}) {
+
+        options = {
+            path: '/',
+            // при необходимости добавьте другие значения по умолчанию
+            ...options
+        };
+
+        if (options.expires instanceof Date) {
+            options.expires = options.expires.toUTCString();
+        }
+
+        let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+        for (let optionKey in options) {
+            updatedCookie += "; " + optionKey;
+            let optionValue = options[optionKey];
+            if (optionValue !== true) {
+                updatedCookie += "=" + optionValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+
+    let par = document.querySelectorAll(".t").forEach(function (elem) {
+        //console.log(elem.textContent)
+    });
+
+
+
+    setCookie("myAPI", par, options = {'max-age': 3600});
+    getCookie("myAPI");
 
 </script>
 
