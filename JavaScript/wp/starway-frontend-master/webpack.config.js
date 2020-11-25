@@ -122,26 +122,7 @@ module.exports = (env = {}, argv) => {
                 // publicPath: '..' // use relative path
               },
             },
-            {
-              loader: 'image-webpack-loader',
-              options: {
-                bypassOnDebug: !isProduction,
-                mozjpeg: {
-                  progressive: true,
-                  quality: 65,
-                },
-                optipng: {
-                  enabled: false,
-                },
-                pngquant: {
-                  quality: '65-90',
-                  speed: 4,
-                },
-                gifsicle: {
-                  interlaced: false,
-                },
-              },
-            },
+
           ],
         },
         {
