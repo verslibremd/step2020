@@ -1,0 +1,62 @@
+@media all and (max-width: 1025px){
+    .grid{
+        width: 768px;
+        background-color: #ebbcff;
+    }
+    .header__content{
+        width: 728px;
+    }
+    .header__logo-description{
+        display: none;
+    }
+    .header__logo{
+        width: 70px;
+        margin: 0 45px 0 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .header-menu__link--margin-left-right{
+        margin: 0 30px;
+    }
+    .phone-number--margin-left-right{
+        margin: 0 45px 0 48px;
+    }
+/*3*/
+    .container>.box:nth-last-child(1){
+        display: none;
+    }
+    .styles-for-text-tt-norms--color-margin-align{
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom:40px;
+    }
+   .box__title{
+       font-size: 16px;
+       line-height: 22px;
+   }
+    .box__description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .box>img{
+        height: 100px;
+    }
+    .c-carousel{
+        display: flex;
+        justify-content: center;
+        margin-top: 62px;
+    }
+    .c-carousel>.carousel__circle:nth-child(3),.c-carousel>.carousel__circle:nth-child(4) {
+        display: none;
+    }
+    .carousel__circle{
+       background: #DDDEDB;
+    }
+    .carousel__circle--active{
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
+    }
+
+}
+
