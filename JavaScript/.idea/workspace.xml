@@ -21,6 +21,57 @@
   <component name="ChangeListManager">
     <list default="true" id="a0359a01-60db-428d-9a9c-459b715d0cb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/logo--mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/menu--1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/menu--2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/menu--3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/common/menu--4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/icons/cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/icons/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/icons/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/index/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/index/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/index/item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/index/item-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/images/index/item-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/dist/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/fonts/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/logo--mobile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/menu--1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/menu--2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/menu--3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/common/menu--4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/icons/cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/icons/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/icons/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/index/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/index/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/index/item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/index/item-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/images/index/item-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/pages/include/layout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/pages/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/styles/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/styles/scss/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/styles/scss/layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/styles/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/styles/scss/vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/src/vue/Quiz.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/wp/starway-frontend-master/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +105,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,6 +113,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,6 +136,7 @@
       <workItem from="1604935618314" duration="8982000" />
       <workItem from="1605109222594" duration="7830000" />
       <workItem from="1605540661938" duration="41000" />
+      <workItem from="1606740817011" duration="1027000" />
     </task>
     <servers />
   </component>
