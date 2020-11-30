@@ -4,18 +4,27 @@
   }
 
   .list{
-    font-family: 'Cormorant Unicase';
-
-    &__box-name{
-      color: #814D4D;
-    }
+    font-family: 'Cormorant Unicase', sans-serif;
   }
 
+  .list__box-name{
+    font-size: 25px;
+  }
 
+  .list__title{
+    color: #814D4D;
+  }
 
     .list__name{
       list-style-type: none;
-      margin-left: 39px;
+      margin: 20px 0;
+
+      a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #313131;
+      }
     }
 
 
