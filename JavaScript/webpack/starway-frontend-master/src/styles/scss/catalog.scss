@@ -1,31 +1,54 @@
 
-  .header__menu {
-    display: none;
+  .title{
+    margin-left: 308px;
   }
 
-  .list{
+  .list-product{
     font-family: 'Cormorant Unicase', sans-serif;
-  }
+    margin-right: 100px;
 
-  .list__box-name{
-    font-size: 25px;
-  }
-
-  .list__title{
-    color: #814D4D;
-  }
-
-    .list__name{
-      list-style-type: none;
-      margin: 20px 0;
-
-      a{
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-        color: #313131;
-      }
+    .list-product__fabric{
+      font-size: 25px;
+      font-weight: 600;
+      color: #313131;
     }
+
+    .list-product__fiber{
+      color: #814D4D;
+      font-weight:normal;
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    a:hover{
+      color: #814D4D;
+    }
+
+    .list-product__name-product{
+      font-size: 16px;
+      font-weight: 600;
+      color: #313131;
+      line-height: 11px;
+      margin-top: 20px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
