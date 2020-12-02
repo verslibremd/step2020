@@ -2,12 +2,13 @@ extends include/layout
 append sharedVars
     - const pageUrl = '/';
     - const pageTitle = 'Коллекция';
-    - const bodyAdditionClass = '';
+    - const bodyAdditionClass = 'catalog-page';
     - const pageAdditionClass = 'main-page';
 block content
-    p.title коллекция
-    p.title.title__name Бамбук
+
     section.list-product.inner
+        p.title.title-name-page коллекция
+        p.title Бамбук
         ul.list-product__fabric Шелк
             p.list-product__fiber Бамбук
             li
@@ -32,4 +33,13 @@ block content
                 a.list-product__name-product(href='#') Трусики слипы <br> на высокой посадке
             li
                 a.list-product__name-product(href='#') Шорты
+    section.product-visual
+        div.product-visual__box-up.box-img-up
+            img.box-img-up__pict-one(src=require("../images/catalog/one.png"))
+            img.box-img-up__pict-two(src=require("../images/catalog/two.png"))
+            img.box-img-up__pict-three(src=require("../images/catalog/three.png"))
+        div.product-visual__box-down.box-img-down
+            img.box-img-up__pict-one(src=require("../images/catalog/one-d.png"))
+            img.box-img-up__pict-two(src=require("../images/catalog/two-d.png"))
+            img.box-img-up__pict-three(src=require("../images/catalog/three-d.png"))
 

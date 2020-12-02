@@ -1,43 +1,64 @@
+  .catalog-page header {
+    background: white;
+  }
 
-  .title{
-    margin-left: 308px;
+  .wrap{
+    display: flex;
+    flex-direction: row;
   }
 
   .list-product{
     font-family: 'Cormorant Unicase', sans-serif;
     margin-right: 100px;
 
+    .title{
+      margin-left: 289px;
+      font-size: 60px;
+      line-height: 100%;
+      margin-top: 0;
+      margin-block-start: 0;
+    }
+    .title-name-page{
+      font-family: Rubik, sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 90%;
+      color: rgba(49, 49, 49, 0.8);
+    }
+
     .list-product__fabric{
       font-size: 25px;
       font-weight: 600;
       color: #313131;
-    }
+      padding-inline-start:0;
 
-    .list-product__fiber{
-      color: #814D4D;
-      font-weight:normal;
-    }
+      li{
+        list-style-type: none;
+        margin-left: 36px;
+        a{
+          text-decoration: none;
+          &:hover{
+            color: #814D4D;
+          }
+        }
+      }
+      .list-product__fiber{
+        color: #814D4D;
+        font-weight:normal;
+        margin-left: 36px;
+      }
 
-    li{
-      list-style-type: none;
-    }
+      .list-product__name-product{
+        font-size: 16px;
+        font-weight: 600;
+        color: #313131;
+        line-height: 11px;
+        margin-top: 20px;
+      }
 
-    a{
-      text-decoration: none;
-    }
-
-    a:hover{
-      color: #814D4D;
-    }
-
-    .list-product__name-product{
-      font-size: 16px;
-      font-weight: 600;
-      color: #313131;
-      line-height: 11px;
-      margin-top: 20px;
     }
   }
+
 
 
 
