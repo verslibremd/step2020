@@ -9,37 +9,44 @@ block content
     section.list-product.inner
         p.title.title-name-page коллекция
         p.title Бамбук
-        ul.list-product__fabric Шелк
-            p.list-product__fiber Бамбук
-            li
-                a.list-product__name-product(href='#') Брюки
-            li
-                a.list-product__name-product(href='#') Велосипедки
-            li
-                a.list-product__name-product(href='#') Кроп-топ
-            li
-                a.list-product__name-product(href='#') Лиф с захлестом
-            li
-                a.list-product__name-product(href='#') Лиф с треугольным <br> вырезом
-            li
-                a.list-product__name-product(href='#') Лонгслив
-            li
-                a.list-product__name-product(href='#') Майка
-            li
-                a.list-product__name-product(href='#') Трусики бразильяно
-            li
-                a.list-product__name-product(href='#') Трусики слипы
-            li
-                a.list-product__name-product(href='#') Трусики слипы <br> на высокой посадке
-            li
-                a.list-product__name-product(href='#') Шорты
-    section.product-visual
-        div.product-visual__box-up.box-img-up
-            img.box-img-up__pict-one(src=require("../images/catalog/one.png"))
-            img.box-img-up__pict-two(src=require("../images/catalog/two.png"))
-            img.box-img-up__pict-three(src=require("../images/catalog/three.png"))
-        div.product-visual__box-down.box-img-down
-            img.box-img-up__pict-one(src=require("../images/catalog/one-d.png"))
-            img.box-img-up__pict-two(src=require("../images/catalog/two-d.png"))
-            img.box-img-up__pict-three(src=require("../images/catalog/three-d.png"))
+        div.list-product__wrap
+            ul.list-product__fabric Шелк
+                p.list-product__fiber Бамбук
+                li
+                    a.list-product__name-product(href='#') Брюки
+                li
+                    a.list-product__name-product(href='#') Велосипедки
+                li
+                    a.list-product__name-product(href='#') Кроп-топ
+                li
+                    a.list-product__name-product(href='#') Лиф с захлестом
+                li
+                    a.list-product__name-product(href='#') Лиф с треугольным <br> вырезом
+                li
+                    a.list-product__name-product(href='#') Лонгслив
+                li
+                    a.list-product__name-product(href='#') Майка
+                li
+                    a.list-product__name-product(href='#') Трусики бразильяно
+                li
+                    a.list-product__name-product(href='#') Трусики слипы
+                li
+                    a.list-product__name-product(href='#') Трусики слипы <br> на высокой посадке
+                li
+                    a.list-product__name-product(href='#') Шорты
+            div.product-visual
+                div.box-img-up
+                    div.wr
+                        img.box-img-up__image.box-img-up__image--1-size(src=require("../images/catalog/one.png"))
+                        span.wr__title Бамбуковые брюки
+                        span.wr__sum 2000P
+                    img.box-img-up__image.box-img-up__image--margin.box-img-up__image--size(src=require("../images/catalog/two.png"))
+                    img.box-img-up__image.box-img-up__image--margin-b.box-img-up__image--size(src=require("../images/catalog/three.png"))
+                div.box-img-down
+                    div.wr
+                        img.box-img-down__image(src=require("../images/catalog/one-d.png"))
+                        span.wr__title Бамбуковые велосипедки
+                        span.wr__sum 2000P
+                    img.box-img-down__image.box-img-up__image--margin(src=require("../images/catalog/two-d.png"))
+                    img.box-img-down__image.box-img-up__image--margin-b(src=require("../images/catalog/three-d.png"))
 
