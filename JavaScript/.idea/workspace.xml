@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mwp/hello-webpack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -63,6 +63,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -86,6 +87,14 @@
       <workItem from="1605109222594" duration="7830000" />
       <workItem from="1605540661938" duration="41000" />
       <workItem from="1606740817011" duration="2056000" />
+      <workItem from="1606764001775" duration="1707000" />
+      <workItem from="1606765783370" duration="23000" />
+      <workItem from="1606765831638" duration="2878000" />
+      <workItem from="1606836065444" duration="12376000" />
+      <workItem from="1607010281554" duration="9520000" />
+      <workItem from="1607101597030" duration="4746000" />
+      <workItem from="1607272393146" duration="7270000" />
+      <workItem from="1607419184537" duration="116000" />
     </task>
     <servers />
   </component>
@@ -105,10 +114,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1606742214228">
+    <state x="181" y="142" key="EditFileWatcherDialog" timestamp="1606765872650">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1606742214228" />
+    <state x="181" y="142" key="EditFileWatcherDialog/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1606765872650" />
+    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1607419308962">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1607419308962" />
     <state x="548" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605540703807" />
+    <state x="13" y="9" key="SettingsEditor" timestamp="1606765711647">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="13" y="9" key="SettingsEditor/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1606765711647" />
+    <state x="168" y="162" key="run.anything.popup" timestamp="1606845048739">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="168" y="162" key="run.anything.popup/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1606845048739" />
   </component>
 </project>
