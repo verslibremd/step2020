@@ -1,0 +1,11 @@
+{
+    "name": "admin/eshop",
+    "autoload":{
+        "psr-4":{
+            "Eshop\\": "src/Eshop"
+        }
+    },
+    "require": {}
+}
+
+
