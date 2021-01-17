@@ -61,10 +61,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6bb69f11-8839-41a4-8a91-e3a425c95cc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello2 (3).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../СУБД MySQL/mysql.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,6 +118,8 @@
       <updated>1610374946734</updated>
       <workItem from="1610374949468" duration="573000" />
       <workItem from="1610464278321" duration="8765000" />
+      <workItem from="1610479941121" duration="414000" />
+      <workItem from="1610743020611" duration="171000" />
     </task>
     <servers />
   </component>
@@ -141,9 +139,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1610468968866">
+    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1610743194898">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1610468968866" />
+    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1610743194898" />
   </component>
 </project>

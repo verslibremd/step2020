@@ -33,4 +33,34 @@
 //нужно выбрать всех сотрудников зарплата которых больше 50к
 //SELECT * FROM `users` WHERE `position_id` IN (SELECT `id` FROM `positions` WHERE `salary` > 50000);
 
+/*
+ на примере бд (а)
 
+ ---INNER JOIN
+ Запрос вернет объединенные данные, которые пересекаются по условию, указанному в INNER JOIN ON <..>.
+В нашем случае условие <таблица_пользователей>.<идентификатор_отдела> должен совпадать с
+<таблица_отделов>.<идентификатор>
+
+Выбираются только совпадающие данные из объединяемых таблиц.
+
+SELECT u.id, u.name, p.name AS p_name
+FROM users u
+INNER JOIN positions p ON u.position_id = p.id
+
+
+ ---Чтобы получить данные, которые подходят по условию частично, необходимо использовать
+внешнее объединение - OUTER JOIN.
+
+Существует два типа внешнего объединения OUTER JOIN - LEFT OUTER JOIN и RIGHT OUTER JOIN.
+Работают они одинаково, разница заключается в том что LEFT - указывает что "внешней" таблицей будет находящаяся слева.
+Ключевое слово OUTER можно опустить. Запись LEFT JOIN идентична LEFT OUTER JOIN.
+
+SELECT u.id, u.name, p.name AS p_name
+FROM users u
+LEFT OUTER JOIN positions p ON u.position_id = p.id
+
+
+
+
+
+*/
