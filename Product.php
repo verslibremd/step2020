@@ -41,6 +41,14 @@ class Product
             throw new \Exception('Передали неверные данные');
         }
 
+        $fileP = $_SERVER['DOCUMENT_ROOT']. '/img/' . $fields['file']['name'];
+        $fileW = move_uploaded_file($fields['file']['tmp_name'], $fileP);
+        echo "<pre>";
+        print_r($fileW);
+        echo "</pre>";
+
+
+
         foreach ($fields as $k => &$field) {
             if (!in_array($k, $this->requireFields)) {
                 unset($fields[$k]);
