@@ -1,0 +1,17 @@
+
+SELECT SUM(quantity) FROM itemsinbasket
+INNER JOIN basket
+ON basket.user_id = itemsinbasket.cart_id
+INNER JOIN users 
+ON  users.id = basket.user_id 
+WHERE users.id = 1
+
+
+SELECT SUM(products.price * itemsinbasket.quantity) FROM `itemsinbasket`
+INNER JOIN basket
+ON basket.id  = itemsinbasket.cart_id
+INNER JOIN users
+ON users.id = basket.user_id
+INNER JOIN products
+ON products.id = itemsinbasket.product_id
+WHERE users.id = 1
