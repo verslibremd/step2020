@@ -1,0 +1,53 @@
+CREATE TABLE product 
+( 
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(20),
+	price INTEGER,
+	idCategory INTEGER,
+);
+
+CREATE TABLE user2
+(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(20) 
+);
+
+CREATE TABLE cart
+(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	userId INTEGER,
+    productId INTEGER,
+    FOREIGN KEY (productId) REFERENCES product(id),
+    FOREIGN KEY (userId) REFERENCES user2(id)
+);
+
+CREATE TABLE category
+(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(20)
+);
+
+ALTER TABLE product
+ADD FOREIGN KEY (idCategory)
+REFERENCES category(id);
+
+
+INSERT INTO user2 (`name`) VALUES ('name1')
+INSERT INTO `cart`(`userId`, `productId`) VALUES ('13','4')
+INSERT INTO category (`name`) VALUE ('tech')
+INSERT INTO `product`(`name`, `price`, `idCategory`) VALUES ('micro', '1000', '3') 
+
+SELECT `name` FROM `user2` WHERE 1
+
+SELECT cart.userId, user2.name, product.name, product.price, category.name
+FROM cart 
+INNER JOIN user2
+ON cart.userId = user2.id
+INNER JOIN product
+ON cart.productId = product.id
+INNER JOIN category
+ON product.idCategory = category.id
+GROUP BY user2.id
+
+
+
