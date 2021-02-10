@@ -1,3 +1,5 @@
+
+1,2
 CREATE TABLE product 
 ( 
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
@@ -31,43 +33,53 @@ ALTER TABLE product
 ADD FOREIGN KEY (idCategory)
 REFERENCES category(id);
 
-
+3
 INSERT INTO user2 (`name`) VALUES ('name1')
 INSERT INTO `cart`(`userId`, `productId`) VALUES ('13','4')
 INSERT INTO category (`name`) VALUE ('tech')
 INSERT INTO `product`(`name`, `price`, `idCategory`) VALUES ('micro', '1000', '3') 
 
+5
+
+a)
 SELECT `name` FROM `user2` WHERE 1
 
-SELECT cart.userId, user2.name, product.name, product.price, category.name
-FROM cart 
-INNER JOIN user2
-ON cart.userId = user2.id
-INNER JOIN product
-ON cart.productId = product.id
+b)
+SELECT * FROM cart 
+INNER JOIN user2 ON cart.userId = user2.id
+INNER JOIN product ON cart.productId = product.id
+INNER JOIN category ON product.idCategory = category.id
+GROUP BY cart.userId
+
+c)
+SELECT user2.name, product.name, category.name
+FROM product 
+INNER JOIN cart ON product.id = cart.productId
+INNER JOIN user2 ON user2.id = cart.userId
+INNER JOIN category ON product.idCategory = category.id
+
+d)
+SELECT user2.name, product.name, category.name
+FROM product 
+INNER JOIN cart ON product.id = cart.productId
+INNER JOIN user2 ON user2.id = cart.userId
+INNER JOIN category ON product.idCategory = category.id
+
+e)
+SELECT user2.id, user2.name, category.name AS category_name
+FROM user2 
+INNER JOIN cart 
+ON user2.id = cart.userId
+INNER JOIN product 
+ON product.id = cart.productId
 INNER JOIN category
 ON product.idCategory = category.id
-GROUP BY user2.id
 
 
 
 
-SELECT SUM(quantity) FROM itemsinbasket
-INNER JOIN basket
-ON basket.user_id = itemsinbasket.cart_id
-INNER JOIN users 
-ON  users.id = basket.user_id 
-WHERE users.id = 1
 
 
-SELECT SUM(products.price * itemsinbasket.quantity) FROM `itemsinbasket`
-INNER JOIN basket
-ON basket.id  = itemsinbasket.cart_id
-INNER JOIN users
-ON users.id = basket.user_id
-INNER JOIN products
-ON products.id = itemsinbasket.product_id
-WHERE users.id = 1
 
 
 
