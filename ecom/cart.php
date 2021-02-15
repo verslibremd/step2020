@@ -11,8 +11,6 @@ $prodData = $objProd->getProducts();
 
 ?>
 
-
-
 <!--Добавление товара-->
 
 <table border="1" style="border-color: blue">
@@ -50,9 +48,11 @@ $prodData = $objProd->getProducts();
     let inc = document.querySelectorAll('.inc');
     inc.forEach(function (elemInc) {
         elemInc.addEventListener('click',function (e) {
-            let curVal = counter.innerHTML;
+            let currentCounter = elemInc.closest('td').querySelector('.counter');
+            //console.log(currentCounter)
+            let curVal = currentCounter.innerHTML;
             let newValue = Number(curVal) + 1;
-            counter.innerHTML = newValue;
+            currentCounter.innerHTML = newValue;
         });
     });
 
@@ -60,12 +60,13 @@ $prodData = $objProd->getProducts();
     let dec = document.querySelectorAll('.dec');
     dec.forEach(function (elemDec) {
         elemDec.addEventListener('click',function (e) {
-            let curVal = counter.innerHTML;
+            let currentCou = elemDec.closest('td').querySelector('.counter');
+            let curVal = currentCou.innerHTML;
             let newValue = Number(curVal) - 1;
-            counter.innerHTML = newValue;
+            currentCou.innerHTML = newValue;
 
-            if (counter.innerHTML < 0){
-                counter.innerHTML = "0";
+            if (currentCou.innerHTML < 0){
+                currentCou.innerHTML = "0";
             }
         });
     });
@@ -75,10 +76,11 @@ $prodData = $objProd->getProducts();
         elemButtons.addEventListener('click', function (e) {
             let parentsTr = this.closest('tr');
             let recordsId = parentsTr.dataset.recid;
-            let amt = counter.innerHTML;
+            let amts = parentsTr.querySelector('.counter');
+            let amt = amts.innerHTML;
             console.log(parentsTr);
             console.log(recordsId);
-            //console.log(coll)
+            console.log(amt)
 
             let param = {
                 product_id: recordsId,
@@ -95,37 +97,7 @@ $prodData = $objProd->getProducts();
         });
     });
 
-    /*    id.addEventListener('click',function (event) {
-        let evTar = event.target;
-        let curVal = counter.innerHTML;
-
-        if (evTar === inc){
-           let newValue = Number(curVal) + 1;
-            counter.innerHTML = newValue;
-        }
-        else{
-            newValue = Number(curVal) - 1;
-            counter.innerHTML = newValue;
-        }
-
-    });*/
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -149,7 +121,7 @@ $prodData = $objProd->getProducts();
             <td><?= $item['name'] ?></td>
             <td>
                 <input name="per" type="button" class="decs" value="-">
-                <span class="counts"><?= $item['quantity'] ?></span>
+                <span class="counters"><?= $item['quantity'] ?></span>
                 <input name="per" type="button" class="incs" value="+">
             </td>
             <td><?=$item['price']?></td>
@@ -163,22 +135,57 @@ $prodData = $objProd->getProducts();
 <div style="font-size: 18px">
     Итоговая цена: <span class="total-data"><?=$cartData['total_price']?></span>
 </div>
+<a href="orders.php" target="_blank">
+    <input type="submit" value="ОФОРМИТЬ ЗАКАЗ" style="background: aquamarine">
+</a>
+
+
+
 <script>
 
-   let counters = document.querySelector('.counts');
+    let counters = document.querySelector('.counters');
+    //console.log(counters)
+
+
+    let incs = document.querySelectorAll('.incs');
+    incs.forEach(function (elemInc) {
+        elemInc.addEventListener('click',function (e) {
+            let currentCounters = elemInc.closest('td').querySelector('.counters');
+            //console.log(currentCounter)
+            let curVal = currentCounters.innerHTML;
+            let newValue = Number(curVal) + 1;
+            currentCounters.innerHTML = newValue;
+        });
+    });
+
+    let decs = document.querySelectorAll('.decs');
+    decs.forEach(function (elemDec) {
+        elemDec.addEventListener('click',function (e) {
+            let currentCous = elemDec.closest('td').querySelector('.counters');
+            let curVal = currentCous.innerHTML;
+            let newValue = Number(curVal) - 1;
+            currentCous.innerHTML = newValue;
+
+            if (currentCous.innerHTML < 0){
+                currentCous.innerHTML = "0";
+            }
+        });
+    });
+
+
     let but = document.getElementsByName('per');
-    but.forEach(function (ee) {
-        ee.addEventListener('click', function (e) {
+    but.forEach(function (elementDub) {
+        elementDub.addEventListener('click', function (e) {
+            let cur = elementDub.closest('td').querySelector('.counters');
+            let curV = cur.innerHTML;
+            //console.log(curV + " это значение");
             let parentTr = this.closest('tr');
             let rec = parentTr.dataset.recordid;
-            let ass = Number(counters.innerHTML) + 1 ;
-            //console.log(ass);
-            //console.log(rec + "это айди");
-
+            //console.log(rec + " это айди");
 
             let par = {
                 prod: rec,
-                col: ass,
+                col: curV,
                 method: 'per'
             };
             let response = fetch('handle.php', {
@@ -188,33 +195,18 @@ $prodData = $objProd->getProducts();
                 },
                 body: JSON.stringify(par)
             })
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data)
+                    let totalData = document.querySelector('.total-data').innerHTML = data.totalP;
+
+                });
+
         });
     })
 
-
-    let incs = document.querySelectorAll('.incs');
-    incs.forEach(function (elemInc) {
-        elemInc.addEventListener('click',function (e) {
-            let curVal = counters.innerHTML;
-            let newValue = Number(curVal) + 1;
-            counters.innerHTML = newValue;
-        });
-    });
-
-
-    let decs = document.querySelectorAll('.decs');
-    decs.forEach(function (elemDec) {
-        elemDec.addEventListener('click',function (e) {
-            let curVal = counters.innerHTML;
-            let newValue = Number(curVal) - 1;
-            counters.innerHTML = newValue;
-
-            if (counters.innerHTML < 0){
-                counters.innerHTML = "0";
-            }
-        });
-    });
-    
 
     let deleteButtons = document.querySelectorAll('.delete-record');
     deleteButtons.forEach(function (elemButton) {

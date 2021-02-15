@@ -52,9 +52,8 @@ elseif ($request['method'] == 'addCartProduct') {
 }
 elseif ($request['method'] == 'per') {
     $objA = new \Eshop\Cart(1);
-    $get = $objA->updateCart($request["prod"],$request["col"]);
+    $get = $objA->updateCart($request["prod"], $request["col"]);
     $getRes = $objA->getCartData();
-
-
+    echo json_encode(['result' => $get, 'totalP' => $getRes['total_price']]);
 }
 
