@@ -50,13 +50,7 @@
         return matches ? decodeURIComponent(matches[1]) : undefined;
     }
 
-    document.querySelector('.inc').addEventListener('click', function () {
-        let counter = document.querySelector('.counter');
-        let curVal = counter.innerHTML;
-        let newValue = Number(curVal) + 1;
-        counter.innerHTML = newValue;
-        setCookie('myCounter', newValue);
-    })
+
 
     document.querySelector('.dec').addEventListener('click', function () {
         let counter = document.querySelector('.counter');
