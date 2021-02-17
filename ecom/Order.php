@@ -15,12 +15,16 @@ class Order
         $this->db = new Db();
     }
 
-    public function addOrder($n,$s, $c, $p, $m)
+    public function addOrder($array)
     {
-        $query = "INSERT INTO {$this->orderTable} (`name`, `surname`, `city`, `phone`, `mail`) VALUES ('{$n}','{$s}','{$c}','{$p}','{$m}')";
+        $query = "INSERT INTO {$this->orderTable} (`name`, `surname`, `adress`, `phone`, `mail`) VALUES ('{$array['name']}','{$array['surname']}','{$array['adress']}','{$array['phone']}','{$array['mail']}')";
         $result = $this->db->query($query);
 
         return $result;
     }
+
+
+
+
 
 }

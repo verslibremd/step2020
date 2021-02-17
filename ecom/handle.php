@@ -13,7 +13,8 @@ if (empty($request)) {
 //var_dump($request);
 
 $obj = new \Eshop\Product();
-
+var_dump($request);
+var_dump(file_get_contents('php://input'));
 
 
 if ($request['method'] == 'update')
@@ -58,8 +59,8 @@ elseif ($request['method'] == 'per') {
 }
 elseif ($request['method'] == 'formOrder') {
     $objO = new \Eshop\Order();
-    $objO->addOrder($request["n"], $request["s"], $request["c"], $request["p"], $request["m"]);
-    echo "<pre>"; print_r($request); echo "</pre>";
+    $objO->addOrder($request);
+    //echo "<pre>"; print_r($request); echo "</pre>";
 
 }
 

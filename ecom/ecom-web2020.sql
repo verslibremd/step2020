@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 17 2021 г., 16:49
+-- Время создания: Фев 17 2021 г., 21:02
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -29,16 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `cart`
 --
 
-INSERT INTO `cart` (`id`, `user_id`) VALUES
-(8, 1),
-(2, 3);
+INSERT INTO `cart` (`id`, `user_id`, `status`) VALUES
+(2, 3, 0),
+(8, 1, 0),
+(9, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -75,24 +77,23 @@ INSERT INTO `in_cart` (`id`, `product_id`, `quantity`, `cart_id`) VALUES
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `surname` varchar(20) NOT NULL,
-  `city` varchar(20) NOT NULL,
+  `cart_id` int(11) DEFAULT NULL,
+  `status` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `surname` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `adress` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `phone` int(11) NOT NULL,
-  `mail` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `mail` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `orders`
 --
 
-INSERT INTO `orders` (`id`, `name`, `surname`, `city`, `phone`, `mail`) VALUES
-(1, 'дима', 'mal', 'tula', 111, 'vs'),
-(5, 'fдима', 'fmal', 'ftula', 2111, 'svs'),
-(6, 'fдима', 'fmal', 'ftula', 2111, 'svs'),
-(7, 'Дмитрий', 'Мальченко', '7/A', 8915, 'k'),
-(8, 'Дмитрий', 'Мальченко', 'A', 8915, 'k'),
-(9, 'j', 'j', 'j', 4, 'j');
+INSERT INTO `orders` (`id`, `cart_id`, `status`, `name`, `surname`, `adress`, `phone`, `mail`) VALUES
+(1, NULL, 'new', 'a', 'b', 'c', 1, 'd'),
+(2, NULL, 'new', '1', '2', 'c', 1, 'd'),
+(3, NULL, NULL, 'sr', 'fv', 'oc', 17, 'ru');
 
 -- --------------------------------------------------------
 
@@ -217,7 +218,8 @@ ALTER TABLE `in_cart`
 -- Индексы таблицы `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `cart_id` (`cart_id`);
 
 --
 -- Индексы таблицы `products`
@@ -253,19 +255,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `in_cart`
 --
 ALTER TABLE `in_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `products`
@@ -307,6 +309,12 @@ ALTER TABLE `cart`
 ALTER TABLE `in_cart`
   ADD CONSTRAINT `in_cart_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
   ADD CONSTRAINT `in_cart_ibfk_2` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `in_cart` (`cart_id`);
 
 --
 -- Ограничения внешнего ключа таблицы `quantity`

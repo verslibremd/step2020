@@ -3,7 +3,9 @@ require('vendor/autoload.php');
 
 $obj = new \Eshop\Cart(1);
 $cData = $obj->getCartData();
-//echo "<pre>"; print_r($cData); echo "</pre>";
+
+//$cData= $obj->getCartData();
+echo "<pre>"; print_r($cData); echo "</pre>";
 
 ?>
 <style>
@@ -26,80 +28,32 @@ $cData = $obj->getCartData();
         border-radius: 5px;
     }
 </style>
-
 <form id="formS" method="post" >
     <fieldset class="border-form">
         <legend class="title">Контактная информация</legend><br>
         <input class="inp" type="text" name="name" placeholder="имя"><br>
         <input class="inp" type="text" name="surname" placeholder="фамилия"><br>
-        <input class="inp" type="text" name="city" placeholder="адрес доставки"><br>
-        <input class="inp" type="email" name="mail" placeholder="эл.почта"><br>
+        <input class="inp" type="text" name="adress" placeholder="адрес доставки"><br>
         <input class="inp" type="text" name="phone" placeholder="номер телефона"><br>
+        <input class="inp" type="text" name="mail" placeholder="эл.почта"><br>
         <input class="inp inp--sub" name="go" type="submit" value="отправить">
     </fieldset>
 </form>
 
 <script>
     let form = document.querySelector('#formS');
-    let goBut = form.querySelector('[name=go]');
 
-
-
-    form.onsubmit = function (e) {
-        e.preventDefault();
-
-        let name = form.querySelector('[name=name]').value;
-        let surname = form.querySelector('[name=surname]').value;
-        let city = form.querySelector('[name=city]').value;
-        let mail = form.querySelector('[name=mail]').value;
-        let phone = form.querySelector('[name=phone]').value;
-
-
-        let p = {
-            n: name,
-            s: surname,
-            c: city,
-            p: phone,
-            m: mail,
-            method: 'formOrder'
-        };
-        let response = fetch('handle.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            },
-            body: JSON.stringify(p)
-        })
-    }
-
-
-
- /*   form.onsubmit = function (e) {
+   form.onsubmit = function (e) {
         e.preventDefault();
 
         let formData = new FormData(form);
-        let obj = {};
-
-        formData.forEach((value, key) => {
-            obj[key] = value;
-        });
-        let json = JSON.stringify(obj);
+        formData.append('method', 'formOrder');
 
         let response = fetch('handle.php', {
             method: 'POST',
-            body: JSON.stringify(json);
+            body: formData
         })
-    }*/
-
-
-  /*
     }
-*/
-
-    //console.log(goBut);
-
-
-
 </script>
 
 
