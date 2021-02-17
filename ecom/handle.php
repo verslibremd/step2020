@@ -56,4 +56,11 @@ elseif ($request['method'] == 'per') {
     $getRes = $objA->getCartData();
     echo json_encode(['result' => $get, 'totalP' => $getRes['total_price']]);
 }
+elseif ($request['method'] == 'formOrder') {
+    $objO = new \Eshop\Order();
+    $objO->addOrder($request["n"], $request["s"], $request["c"], $request["p"], $request["m"]);
+    echo "<pre>"; print_r($request); echo "</pre>";
+
+}
+
 

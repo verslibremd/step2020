@@ -7,6 +7,7 @@ namespace Eshop;
 class Order
 {
 
+    protected $orderTable = 'orders';
     protected $db = null;
 
     public function __construct()
@@ -14,22 +15,12 @@ class Order
         $this->db = new Db();
     }
 
-    public function getProductInCart()
+    public function addOrder($n,$s, $c, $p, $m)
     {
-        $query = "SELECT products.name, in_cart.quantity, products.price 
-        FROM `in_cart`
-        INNER JOIN products ON products.id = in_cart.product_id";
-
+        $query = "INSERT INTO {$this->orderTable} (`name`, `surname`, `city`, `phone`, `mail`) VALUES ('{$n}','{$s}','{$c}','{$p}','{$m}')";
         $result = $this->db->query($query);
-        $return = $result->fetch_all(MYSQLI_ASSOC);
-        //var_dump($return);
+
+        return $result;
     }
-
-
-/*
- SELECT products.name, in_cart.quantity, products.price
-FROM in_cart
-INNER JOIN products ON products.id = in_cart.product_id
-*/
 
 }

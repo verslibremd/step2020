@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 10 2021 г., 21:13
+-- Время создания: Фев 17 2021 г., 16:49
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `ecom`
+-- База данных: `ecom-web2020`
 --
 
 -- --------------------------------------------------------
@@ -58,7 +58,41 @@ CREATE TABLE `in_cart` (
 --
 
 INSERT INTO `in_cart` (`id`, `product_id`, `quantity`, `cart_id`) VALUES
-(13, 10, 3, 8);
+(39, 3, 3, 2),
+(40, 10, 5, 2),
+(41, 9, 1, 2),
+(42, 2, 5, 2),
+(43, 7, 5, 2),
+(44, 10, 5, 2),
+(67, 2, 8, 8),
+(71, 4, 2, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `surname` varchar(20) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `phone` int(11) NOT NULL,
+  `mail` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `orders`
+--
+
+INSERT INTO `orders` (`id`, `name`, `surname`, `city`, `phone`, `mail`) VALUES
+(1, 'дима', 'mal', 'tula', 111, 'vs'),
+(5, 'fдима', 'fmal', 'ftula', 2111, 'svs'),
+(6, 'fдима', 'fmal', 'ftula', 2111, 'svs'),
+(7, 'Дмитрий', 'Мальченко', '7/A', 8915, 'k'),
+(8, 'Дмитрий', 'Мальченко', 'A', 8915, 'k'),
+(9, 'j', 'j', 'j', 4, 'j');
 
 -- --------------------------------------------------------
 
@@ -180,6 +214,12 @@ ALTER TABLE `in_cart`
   ADD KEY `cart_id` (`cart_id`);
 
 --
+-- Индексы таблицы `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `products`
 --
 ALTER TABLE `products`
@@ -219,7 +259,13 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT для таблицы `in_cart`
 --
 ALTER TABLE `in_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+
+--
+-- AUTO_INCREMENT для таблицы `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `products`
