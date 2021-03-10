@@ -1,0 +1,12 @@
+https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&INDEX=Y
+
+
+Шаблоны страниц хранятся в каталогах: /bitrix/templates/.default/page_templates/;
+
+Все используемые в системе шаблоны хранятся в отдельных папках каталога /bitrix/templates/ 
+(например, /bitrix/templates/demo/ или /bitrix/templates/template1/), 
+либо, начиная с версии 14.0.0, в /local/templates/. 
+Также существует специальная папка .default, которая не является полноценным шаблоном сайта, 
+а содержит шаблоны компонентов и файлы, общие для остальных шаблонов сайта.
+
+Для собственных, не штатных, шаблонов рекомендуется использовать папку /local/templates/
