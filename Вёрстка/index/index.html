@@ -7,38 +7,33 @@
 </head>
 <body>
 <section id="greed">
-    <header>
+    <button class="cub"></button>
+    <div class="block">
+    </div>
+    <!--<header>
         <nav class="menu">
             <a class="menu menu__link" href="#">Главная</a>
-            <a class="menu menu__link" href="#">Контакты</a>
             <a class="menu menu__link" href="#">Портфолио</a>
             <a class="menu menu__link" href="summary.html" target="_blank">Резюме</a>
-            <a class="menu menu__link" href="https://github.com/verslibreFM" target="_blank">GitHub</a>
+            <a class="menu menu__link" href="#">Контакты</a>
+            &lt;!&ndash;<a class="menu menu__link" href="https://github.com/verslibreFM" target="_blank">GitHub</a>&ndash;&gt;
         </nav>
-    </header>
-
-    <section>
-
-        <form action="">
-            <legend> задать вопрос</legend>
-            <textarea name="" id="" cols="30" rows="6" placeholder="ваш вопрос"></textarea>
-        </form>
-    </section>
+    </header>-->
 
 
-    <!--<button class="clk">click</button>
-    <div class="names" style="display: none"></div>-->
-    <!--<footer>
-        <div>
-            <h4>social media</h4>
-            <span>Instagram</span>
-            <span>VK</span>
-        </div>
-    </footer>-->
+
 </section>
 
 
 <script>
+
+    let m = document.querySelector(".cub");
+    let b = document.querySelector(".block");
+    m.addEventListener('click', function () {
+        b.style.display="block";
+    })
+
+
 
 /*
     let btn = document.querySelector('.clk');
