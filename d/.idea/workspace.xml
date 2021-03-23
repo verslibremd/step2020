@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:JavaScript" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:JavaScript" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:webpack" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:JavaScript" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:webpack" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:starway-frontend-master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e8e581d-e045-4e01-9576-702f74bf2e2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/-/exx/document/Атрибуты и свойства.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/-/exx/document/Изменение документа.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/-/exx/document/Навигация, поиск по dom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/-/exx/document/Свойства узлов.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/-/exx/document/Стили и классы.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/jQuery/lesJS (11.11) - animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaScript/jQuery/lesJS (11.11) - animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/PHP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHP/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/.idea/theatre.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/ArrowLeft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/ArrowRight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/Rectangle 3 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/about-one.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/about-pict.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/about-two.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/active.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/inst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/md-f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/md-i.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/md-vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/md-y.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/menu-sm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/p1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/p2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/partners-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/projects__item-four.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/projects__item-three.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/projects__item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/slider-container.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/slider-containerx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/staging-four.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/staging-one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/staging-three.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/staging-two.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/staging__content-vol-two.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/stars.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/unnamed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre-pict/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/Bootstrap #Большой театр/theatre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/.idea/HTML_CSS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/XS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/XS/.idea/XS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/XS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/XS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/XS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/amway2/.idea/amway2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/amway2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/amway2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/amway2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/amway2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/canteen/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/canteen/.idea/canteen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/canteen/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/canteen/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/canteen/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/МеталлТула/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/МеталлТула/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/МеталлТула/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/МеталлТула/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Вёрстка/HTML_CSS/МеталлТула/.idea/МеталлТула.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/dist/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/dist/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/fonts/FinistC.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/images/index/footer-map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/images/index/footer-phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/images/index/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/images/index/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/images/index/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/pages/include/layout.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/pages/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/styles/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/styles/scss/layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/styles/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/src/styles/scss/vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диплом/tatoo studio/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1q6kgGHh8wzxzuI9k8WXVDCJF0j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../webpack" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e8e581d-e045-4e01-9576-702f74bf2e2d" name="Default Changelist" comment="" />
+      <created>1616407536881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616407536881</updated>
+      <workItem from="1616407539188" duration="19209000" />
+      <workItem from="1616439408196" duration="3576000" />
+      <workItem from="1616510485783" duration="1575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1322" y="173" key="EditFileWatcherDialog" timestamp="1616407756206">
+      <screen x="1024" y="4" width="1366" height="728" />
+    </state>
+    <state x="1322" y="173" key="EditFileWatcherDialog/0.0.1024.728/1024.4.1366.728@1024.4.1366.728" timestamp="1616407756206" />
+    <state x="292" y="119" key="FileChooserDialogImpl" timestamp="1616512324159">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="292" y="119" key="FileChooserDialogImpl/0.0.1024.728/1024.4.1366.728@0.0.1024.728" timestamp="1616512324159" />
+  </component>
+</project>
