@@ -6,6 +6,8 @@ Vue.config.productionTip = false
 
 Vue.use(Vuelidate)
 
+//const axios = require('axios');
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
