@@ -1,4 +1,5 @@
 <template lang="pug">
+
   div.container.mt-5
     div.row
       div.col-sm-5.mx-auto
@@ -60,7 +61,6 @@
                       label(for="file") Пример
                       input(v-on:change="handleFileUpload()"
                           type="file", class="form-control", id="file", ref="file" )
-
                   button(type="button", @click="backStep" class="btn btn-light mt-3") Назад
                   button(@click="nextStep"
                       :disabled="disabledBtn2",
